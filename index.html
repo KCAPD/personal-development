@@ -93,34 +93,92 @@
         </button>
       </div>
 
-      <div class="journey-card" id="yearPanel" aria-live="polite">
+      <div class="journey-card chapter-card" id="yearPanel" aria-live="polite">
         <div class="journey-line" aria-hidden="true">
           <span class="line-fill" id="lineFill"></span>
           <span class="moving-train" id="movingTrain">🚆</span>
         </div>
 
-        <div class="year-content">
-          <div>
-            <p class="year-kicker" id="yearKicker">Platform 1</p>
+        <div class="chapter-header">
+          <div class="chapter-intro">
+            <p class="year-kicker" id="yearKicker">Chapter One</p>
             <h3 id="yearTitle">Year 1 — Beginning the Journey</h3>
             <p id="yearIntro">
               Children begin to recognise their strengths, make positive choices,
               build relationships and participate confidently in school life.
             </p>
-
-            <div class="milestone-grid" id="milestones"></div>
-
-            <div class="experiences">
-              <h4>Key experiences</h4>
-              <div class="experience-tags" id="experiences"></div>
-            </div>
           </div>
 
-          <figure class="year-character-wrap">
+          <figure class="year-character-wrap chapter-character">
             <div class="speech-bubble" id="speechBubble">“Have a go — courage grows every time we try.”</div>
             <img id="yearCharacter" src="images/connor-courage.png" alt="Connor Courage">
             <figcaption id="characterCaption">Connor Courage</figcaption>
           </figure>
+        </div>
+
+        <div class="chapter-content">
+          <section class="chapter-values" aria-labelledby="chapter-values-title">
+            <div class="chapter-section-heading">
+              <p class="eyebrow">What children will grow</p>
+              <h4 id="chapter-values-title">Six values, one journey</h4>
+              <p>Select a value to explore what it looks like in this year group.</p>
+            </div>
+
+            <div class="chapter-value-tabs" role="tablist" aria-label="Personal development values">
+              <button class="chapter-value-tab integrity active" type="button" role="tab" aria-selected="true" data-strand="integrity">
+                <span>I</span><strong>Integrity</strong><small>Making good choices</small>
+              </button>
+              <button class="chapter-value-tab respect" type="button" role="tab" aria-selected="false" data-strand="respect">
+                <span>R</span><strong>Respect</strong><small>Belonging and understanding others</small>
+              </button>
+              <button class="chapter-value-tab endurance" type="button" role="tab" aria-selected="false" data-strand="endurance">
+                <span>E</span><strong>Endurance</strong><small>Managing myself</small>
+              </button>
+              <button class="chapter-value-tab courage" type="button" role="tab" aria-selected="false" data-strand="courage">
+                <span>C</span><strong>Courage</strong><small>Finding and using my voice</small>
+              </button>
+              <button class="chapter-value-tab kindness" type="button" role="tab" aria-selected="false" data-strand="kindness">
+                <span>K</span><strong>Kindness</strong><small>Relationships and contribution</small>
+              </button>
+              <button class="chapter-value-tab aspiration" type="button" role="tab" aria-selected="false" data-strand="aspiration">
+                <span>A</span><strong>Aspiration</strong><small>Future and passions</small>
+              </button>
+            </div>
+
+            <div class="chapter-strand-panel">
+              <div class="chapter-strand-art">
+                <img id="strandImage" src="images/isaac-integrity.png" alt="Isaac Integrity">
+              </div>
+              <div class="chapter-strand-copy">
+                <p class="chapter-strand-label" id="strandLabel">Integrity · Making good choices</p>
+                <h5 id="strandTitle">Making positive choices</h5>
+                <p id="strandSummary"></p>
+                <ul id="strandOutcomes"></ul>
+              </div>
+            </div>
+          </section>
+
+          <section class="chapter-experiences">
+            <div class="chapter-section-heading compact">
+              <p class="eyebrow">Experiences collected</p>
+              <h4>Moments that shape the year</h4>
+            </div>
+            <div class="chapter-stamps" id="experiences"></div>
+          </section>
+
+          <section class="chapter-reflection">
+            <div class="chapter-reflection-book">
+              <div>
+                <p class="eyebrow">Looking back</p>
+                <h4 id="reflectionTitle">My Year 1 reflection</h4>
+                <p>
+                  Each child has space to recognise progress, celebrate important
+                  moments and think about the person they are becoming.
+                </p>
+              </div>
+              <div class="chapter-reflection-prompts" id="reflectionPrompts"></div>
+            </div>
+          </section>
         </div>
       </div>
     </section>
