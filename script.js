@@ -145,3 +145,114 @@ document.getElementById("beginJourney").addEventListener("click", () => {
 });
 
 renderYear(1);
+
+
+const valueStories = {
+  integrity: {
+    title: "Isaac Integrity",
+    strand: "Making good choices",
+    image: "images/isaac-integrity.png",
+    lead: "Isaac does the right thing, even when nobody is watching.",
+    details: [
+      "His strong shell helps him stay true to what he believes is right, rather than being knocked off course by other people’s opinions.",
+      "Isaac examines what he sees and hears so that he can make fair choices. He knows that integrity means being honest, responsible and trustworthy — even when a task is difficult or takes longer."
+    ],
+    action: "Tell the truth, take responsibility and choose what is kind, safe and fair."
+  },
+  respect: {
+    title: "Riley Respect",
+    strand: "Belonging and understanding others",
+    image: "images/riley-respect.png",
+    lead: "Riley understands that differences make the KCA community stronger.",
+    details: [
+      "Each of her unique feathers celebrates the experiences that different people bring. She welcomes everyone and knows that every person belongs at KCA.",
+      "Riley listens carefully, values other people’s opinions and treats adults, visitors and classmates with respect — even when she disagrees."
+    ],
+    action: "Listen carefully, value difference and use kind words and kind acts."
+  },
+  endurance: {
+    title: "Eli Endurance",
+    strand: "Managing myself and staying the course",
+    image: "images/eli-endurance.png",
+    lead: "Eli knows that not everything goes perfectly the first time.",
+    details: [
+      "Mistakes are part of learning, so Eli takes a breath, focuses on the challenge and tries again. He asks for help when he needs it and celebrates the progress that practice brings.",
+      "Eli understands that perseverance helps people become stronger and more confident. His positivity keeps him travelling in the right direction, even when the road is bumpy."
+    ],
+    action: "Keep trying, use helpful strategies and recognise that mistakes help us grow."
+  },
+  courage: {
+    title: "Connor Courage",
+    strand: "Finding and using my voice",
+    image: "images/connor-courage.png",
+    lead: "Connor arrives ready to face a new adventure.",
+    details: [
+      "When something feels difficult or unfamiliar, he remembers to have a go and be brave. He takes positive risks by sharing ideas, speaking in front of others and trying new things.",
+      "Connor knows courage does not mean never wobbling. It means continuing despite the wobble and encouraging other people to be brave too."
+    ],
+    action: "Have a go, speak up and take positive risks in learning and life."
+  },
+  kindness: {
+    title: "Kiki & Kofi Kindness",
+    strand: "Relationships and contribution",
+    image: "images/kiki-kofi-kindness.png",
+    lead: "Kiki and Kofi help others feel included, supported and valued.",
+    details: [
+      "Kiki notices when somebody looks worried, upset or left out and offers compassion. Kofi understands what it feels like to be alone and invites others to join in.",
+      "Together, they show that small caring actions can make a big difference. They help, share, encourage and contribute without always waiting to be asked."
+    ],
+    action: "Notice others, offer help and make sure everyone feels included."
+  },
+  aspiration: {
+    title: "Aria Aspiration",
+    strand: "Exploring my future and my passions",
+    image: "images/aria-aspiration.png",
+    lead: "Aria looks towards the horizon and sees exciting possibilities.",
+    details: [
+      "She explores the world with curiosity, asks thoughtful questions and discovers talents, interests and friendships. Every place explored, book read, fact learned and creative experience adds to her wings.",
+      "Aria knows that exciting futures are built one small step at a time. Aspiration means believing in yourself, working hard and being brave enough to wonder how high you can fly."
+    ],
+    action: "Stay curious, explore your passions and believe in the possibilities ahead."
+  }
+};
+
+const dialog = document.getElementById("characterDialog");
+const dialogClose = document.getElementById("dialogClose");
+const dialogImage = document.getElementById("dialogImage");
+const dialogTitle = document.getElementById("dialogTitle");
+const dialogStrand = document.getElementById("dialogStrand");
+const dialogLead = document.getElementById("dialogLead");
+const dialogDetails = document.getElementById("dialogDetails");
+const dialogAction = document.getElementById("dialogAction");
+
+document.querySelectorAll(".value-card[data-value]").forEach(card => {
+  card.addEventListener("click", () => {
+    const story = valueStories[card.dataset.value];
+    dialogImage.src = story.image;
+    dialogImage.alt = story.title;
+    dialogTitle.textContent = story.title;
+    dialogStrand.textContent = story.strand;
+    dialogLead.textContent = story.lead;
+    dialogDetails.innerHTML = story.details.map(paragraph => `<p>${paragraph}</p>`).join("");
+    dialogAction.textContent = story.action;
+    dialog.showModal();
+    document.body.classList.add("dialog-open");
+  });
+});
+
+function closeCharacterDialog() {
+  dialog.close();
+  document.body.classList.remove("dialog-open");
+}
+
+dialogClose.addEventListener("click", closeCharacterDialog);
+
+dialog.addEventListener("click", event => {
+  if (event.target === dialog) {
+    closeCharacterDialog();
+  }
+});
+
+dialog.addEventListener("close", () => {
+  document.body.classList.remove("dialog-open");
+});

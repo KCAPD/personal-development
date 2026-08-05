@@ -136,32 +136,51 @@
       </div>
 
       <div class="value-grid">
-        <article class="value-card integrity">
+        <button class="value-card integrity" type="button" data-value="integrity">
           <img src="images/isaac-integrity.png" alt="Isaac Integrity">
-          <div><p>Making good choices</p><h3>Isaac Integrity</h3></div>
-        </article>
-        <article class="value-card respect">
+          <div><p>Making good choices</p><h3>Isaac Integrity</h3><span>Discover Isaac’s story →</span></div>
+        </button>
+        <button class="value-card respect" type="button" data-value="respect">
           <img src="images/riley-respect.png" alt="Riley Respect">
-          <div><p>Belonging and understanding others</p><h3>Riley Respect</h3></div>
-        </article>
-        <article class="value-card endurance">
+          <div><p>Belonging and understanding others</p><h3>Riley Respect</h3><span>Discover Riley’s story →</span></div>
+        </button>
+        <button class="value-card endurance" type="button" data-value="endurance">
           <img src="images/eli-endurance.png" alt="Eli Endurance">
-          <div><p>Managing myself and staying the course</p><h3>Eli Endurance</h3></div>
-        </article>
-        <article class="value-card courage">
+          <div><p>Managing myself and staying the course</p><h3>Eli Endurance</h3><span>Discover Eli’s story →</span></div>
+        </button>
+        <button class="value-card courage" type="button" data-value="courage">
           <img src="images/connor-courage.png" alt="Connor Courage">
-          <div><p>Finding and using my voice</p><h3>Connor Courage</h3></div>
-        </article>
-        <article class="value-card kindness">
+          <div><p>Finding and using my voice</p><h3>Connor Courage</h3><span>Discover Connor’s story →</span></div>
+        </button>
+        <button class="value-card kindness" type="button" data-value="kindness">
           <img src="images/kiki-kofi-kindness.png" alt="Kiki and Kofi Kindness">
-          <div><p>Relationships and contribution</p><h3>Kiki &amp; Kofi Kindness</h3></div>
-        </article>
-        <article class="value-card aspiration">
+          <div><p>Relationships and contribution</p><h3>Kiki &amp; Kofi Kindness</h3><span>Discover their story →</span></div>
+        </button>
+        <button class="value-card aspiration" type="button" data-value="aspiration">
           <img src="images/aria-aspiration.png" alt="Aria Aspiration">
-          <div><p>Exploring my future and my passions</p><h3>Aria Aspiration</h3></div>
-        </article>
+          <div><p>Exploring my future and my passions</p><h3>Aria Aspiration</h3><span>Discover Aria’s story →</span></div>
+        </button>
       </div>
     </section>
+
+    <dialog class="character-dialog" id="characterDialog" aria-labelledby="dialogTitle">
+      <button class="dialog-close" id="dialogClose" type="button" aria-label="Close character story">×</button>
+      <div class="dialog-layout">
+        <div class="dialog-art">
+          <img id="dialogImage" src="images/isaac-integrity.png" alt="">
+        </div>
+        <div class="dialog-copy">
+          <p class="dialog-strand" id="dialogStrand">Making good choices</p>
+          <h2 id="dialogTitle">Isaac Integrity</h2>
+          <p class="dialog-lead" id="dialogLead"></p>
+          <div class="dialog-details" id="dialogDetails"></div>
+          <div class="value-in-action">
+            <p>Value in action</p>
+            <strong id="dialogAction"></strong>
+          </div>
+        </div>
+      </div>
+    </dialog>
 
     <section class="final-stop">
       <div>

@@ -18,3 +18,8 @@ A standalone interactive microsite for King's Cross Academy.
 - `images/`
 
 The site requires no plugins, database, or build process.
+
+
+## Version 2
+
+The six value cards now open interactive character-story panels.
