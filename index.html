@@ -3,197 +3,209 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Explore the personal development journey at King's Cross Academy.">
-  <title>Every Child Has a Journey | King's Cross Academy</title>
+  <meta name="description" content="The personal development journey at King's Cross Academy.">
+  <title>The Journey | King's Cross Academy</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <a class="skip-link" href="#journey">Skip to the journey</a>
+  <a class="skip-link" href="#departures">Skip to the journey</a>
 
-  <header class="hero" id="top">
-    <nav class="topbar" aria-label="Main navigation">
-      <a class="brand" href="#top" aria-label="King's Cross Academy Personal Development">
-        <span class="brand-mark">KCA</span>
-        <span>Personal Development</span>
+  <header class="scene hero-scene" id="station">
+    <nav class="topbar">
+      <a class="brand" href="#station">
+        <span class="brand-roundel">KCA</span>
+        <span>The Journey</span>
       </a>
-      <a class="small-link" href="#values">Meet our values</a>
+      <a class="nav-link" href="#companions">Meet the values</a>
     </nav>
 
-    <div class="hero-skyline" aria-hidden="true">
-      <span class="building building-one"></span>
-      <span class="building building-two"></span>
-      <span class="building building-three"></span>
-      <span class="clock-tower"></span>
-      <span class="building building-four"></span>
+    <div class="sky-orb"></div>
+    <button class="station-clock" id="stationClock" type="button" aria-label="Station clock">
+      <span class="clock-face"><i></i><b></b></span>
+      <span class="clock-label">KCA</span>
+    </button>
+
+    <div class="birds" id="birds" aria-hidden="true">
+      <span>⌁</span><span>⌁</span><span>⌁</span><span>⌁</span>
     </div>
 
-    <div class="hero-content">
-      <p class="eyebrow">King's Cross Academy</p>
-      <h1>Every child has a journey.</h1>
-      <p class="hero-copy">
-        From their first brave step to the moment they are ready for what comes next,
-        our children grow in confidence, character and ambition.
+    <div class="station-architecture" aria-hidden="true">
+      <div class="station-roof"></div>
+      <div class="station-sign">KING'S CROSS ACADEMY</div>
+      <div class="arch arch-1"></div>
+      <div class="arch arch-2"></div>
+      <div class="arch arch-3"></div>
+      <div class="arch arch-4"></div>
+      <div class="platform-edge"></div>
+    </div>
+
+    <div class="hero-copy">
+      <p class="eyebrow">Welcome to King’s Cross Academy</p>
+      <h1>Every child<br>has a journey.</h1>
+      <p>
+        Confidence. Character. Voice. Belonging. Resilience. Aspiration.
+        Discover how children grow through KCA.
       </p>
-      <button class="primary-button" id="beginJourney" type="button">
-        Begin the journey
-        <span aria-hidden="true">→</span>
+      <button class="journey-button" id="beginButton" type="button">
+        Begin the journey <span>→</span>
       </button>
     </div>
 
-    <div class="hero-characters" aria-hidden="true">
-      <img class="hero-character hero-aria" src="images/aria-aspiration.png" alt="">
-      <img class="hero-character hero-connor" src="images/connor-courage.png" alt="">
-      <img class="hero-character hero-riley" src="images/riley-respect.png" alt="">
+    <div class="station-characters" aria-hidden="true">
+      <img class="aria" src="images/aria-aspiration.png" alt="">
+      <img class="connor" src="images/connor-courage.png" alt="">
+      <img class="riley" src="images/riley-respect.png" alt="">
     </div>
 
-    <div class="railway" aria-hidden="true">
-      <div class="train">
-        <span class="train-engine"></span>
-        <span class="train-carriage"></span>
-        <span class="train-carriage"></span>
+    <div class="hero-train-wrap" aria-hidden="true">
+      <div class="steam steam-1"></div>
+      <div class="steam steam-2"></div>
+      <div class="hero-train" id="heroTrain">
+        <span class="engine"><i></i></span>
+        <span class="carriage"><i></i><i></i></span>
+        <span class="carriage"><i></i><i></i></span>
       </div>
     </div>
   </header>
 
   <main>
-    <section class="station-intro" id="journey">
-      <div class="section-heading">
-        <p class="eyebrow">Welcome to the KCA line</p>
-        <h2>Choose a platform</h2>
-        <p>
-          Each stop represents a new stage of growth. Select a year group to discover
-          the values, experiences and personal-development milestones children encounter.
-        </p>
+    <section class="scene departures-scene" id="departures">
+      <div class="scene-intro">
+        <p class="eyebrow">KCA Departures</p>
+        <h2>Choose your platform</h2>
+        <p>Select a year group and travel to the next stage of the journey.</p>
       </div>
 
-      <div class="platform-board" role="tablist" aria-label="Year-group journey">
-        <button class="platform active" role="tab" aria-selected="true" data-year="1">
-          <span class="platform-number">1</span>
-          <span><strong>Year 1</strong><small>Beginning the journey</small></span>
-        </button>
-        <button class="platform" role="tab" aria-selected="false" data-year="2">
-          <span class="platform-number">2</span>
-          <span><strong>Year 2</strong><small>Growing in confidence</small></span>
-        </button>
-        <button class="platform" role="tab" aria-selected="false" data-year="3">
-          <span class="platform-number">3</span>
-          <span><strong>Year 3</strong><small>Discovering my strengths</small></span>
-        </button>
-        <button class="platform" role="tab" aria-selected="false" data-year="4">
-          <span class="platform-number">4</span>
-          <span><strong>Year 4</strong><small>Taking responsibility</small></span>
-        </button>
-        <button class="platform" role="tab" aria-selected="false" data-year="5">
-          <span class="platform-number">5</span>
-          <span><strong>Year 5</strong><small>Contributing to my community</small></span>
-        </button>
-        <button class="platform" role="tab" aria-selected="false" data-year="6">
-          <span class="platform-number">6</span>
-          <span><strong>Year 6</strong><small>Ready for my future</small></span>
-        </button>
-      </div>
-
-      <div class="journey-card" id="yearPanel" aria-live="polite">
-        <div class="journey-line" aria-hidden="true">
-          <span class="line-fill" id="lineFill"></span>
-          <span class="moving-train" id="movingTrain">🚆</span>
+      <div class="departures-board" aria-label="KCA departures board">
+        <div class="board-header">
+          <span>Time</span><span>Destination</span><span>Platform</span><span>Status</span>
         </div>
+        <button class="departure active" type="button" data-year="1">
+          <span>09:00</span><strong>Beginning the Journey</strong><b>1</b><em>BOARDING</em>
+        </button>
+        <button class="departure" type="button" data-year="2">
+          <span>09:05</span><strong>Growing in Confidence</strong><b>2</b><em>ON TIME</em>
+        </button>
+        <button class="departure" type="button" data-year="3">
+          <span>09:10</span><strong>Discovering My Strengths</strong><b>3</b><em>ON TIME</em>
+        </button>
+        <button class="departure" type="button" data-year="4">
+          <span>09:15</span><strong>Taking Responsibility</strong><b>4</b><em>ON TIME</em>
+        </button>
+        <button class="departure" type="button" data-year="5">
+          <span>09:20</span><strong>Contributing to My Community</strong><b>5</b><em>ON TIME</em>
+        </button>
+        <button class="departure" type="button" data-year="6">
+          <span>09:25</span><strong>Ready for My Future</strong><b>6</b><em>ON TIME</em>
+        </button>
+      </div>
 
-        <div class="year-content">
-          <div>
-            <p class="year-kicker" id="yearKicker">Platform 1</p>
-            <h3 id="yearTitle">Year 1 — Beginning the Journey</h3>
-            <p id="yearIntro">
-              Children begin to recognise their strengths, make positive choices,
-              build relationships and participate confidently in school life.
-            </p>
+      <div class="ticket-note">
+        <span class="ticket-cut"></span>
+        <p>ADMIT ONE</p>
+        <strong>A journey of growth</strong>
+        <small>King’s Cross Academy · Love Learning Together</small>
+      </div>
+    </section>
 
-            <div class="milestone-grid" id="milestones"></div>
+    <section class="scene journey-scene" id="yearJourney">
+      <div class="route-strip" aria-hidden="true">
+        <span class="route-progress" id="routeProgress"></span>
+        <span class="route-train" id="routeTrain">🚆</span>
+        <i class="stop s1"></i><i class="stop s2"></i><i class="stop s3"></i>
+        <i class="stop s4"></i><i class="stop s5"></i><i class="stop s6"></i>
+      </div>
 
-            <div class="experiences">
-              <h4>Key experiences</h4>
-              <div class="experience-tags" id="experiences"></div>
-            </div>
+      <div class="platform-sign">
+        <span id="platformNumber">PLATFORM 1</span>
+        <strong id="platformSubtitle">BEGINNING THE JOURNEY</strong>
+      </div>
+
+      <div class="year-scene-grid">
+        <div class="year-story">
+          <p class="year-label" id="yearLabel">YEAR 1</p>
+          <h2 id="yearTitle">The journey begins here.</h2>
+          <p class="year-lead" id="yearLead">
+            Children begin to recognise their strengths, make positive choices,
+            build relationships and participate confidently in school life.
+          </p>
+
+          <div class="passport-grid" id="passportGrid"></div>
+
+          <div class="luggage-row">
+            <p>Experiences collected</p>
+            <div id="luggageTags"></div>
           </div>
 
-          <figure class="year-character-wrap">
-            <div class="speech-bubble" id="speechBubble">“Have a go — courage grows every time we try.”</div>
-            <img id="yearCharacter" src="images/connor-courage.png" alt="Connor Courage">
-            <figcaption id="characterCaption">Connor Courage</figcaption>
-          </figure>
+          <div class="year-controls">
+            <button id="previousYear" type="button">← Previous stop</button>
+            <button id="nextYear" type="button">Next stop →</button>
+          </div>
+        </div>
+
+        <div class="character-stage">
+          <div class="speech" id="yearQuote">Have a go — courage grows every time we try.</div>
+          <img id="yearCharacter" src="images/connor-courage.png" alt="Connor Courage">
+          <p id="yearCharacterName">Connor Courage</p>
         </div>
       </div>
     </section>
 
-    <section class="values-section" id="values">
-      <div class="section-heading light">
-        <p class="eyebrow">Six values for life</p>
-        <h2>Meet your travelling companions</h2>
-        <p>
-          Our value characters help children understand how character is built through
-          everyday choices, challenges, relationships and opportunities.
-        </p>
+    <section class="scene companions-scene" id="companions">
+      <div class="scene-intro light">
+        <p class="eyebrow">Travelling companions</p>
+        <h2>Six values for life</h2>
+        <p>Click a character to discover the value they carry through the KCA journey.</p>
       </div>
 
-      <div class="value-grid">
-        <button class="value-card integrity" type="button" data-value="integrity">
+      <div class="companion-track">
+        <button class="companion integrity" type="button" data-value="integrity">
+          <span class="platform-disc">I</span>
           <img src="images/isaac-integrity.png" alt="Isaac Integrity">
-          <div><p>Making good choices</p><h3>Isaac Integrity</h3><span>Discover Isaac’s story →</span></div>
+          <strong>Isaac Integrity</strong><small>Making good choices</small>
         </button>
-        <button class="value-card respect" type="button" data-value="respect">
+        <button class="companion respect" type="button" data-value="respect">
+          <span class="platform-disc">R</span>
           <img src="images/riley-respect.png" alt="Riley Respect">
-          <div><p>Belonging and understanding others</p><h3>Riley Respect</h3><span>Discover Riley’s story →</span></div>
+          <strong>Riley Respect</strong><small>Belonging and understanding others</small>
         </button>
-        <button class="value-card endurance" type="button" data-value="endurance">
+        <button class="companion endurance" type="button" data-value="endurance">
+          <span class="platform-disc">E</span>
           <img src="images/eli-endurance.png" alt="Eli Endurance">
-          <div><p>Managing myself and staying the course</p><h3>Eli Endurance</h3><span>Discover Eli’s story →</span></div>
+          <strong>Eli Endurance</strong><small>Managing myself and staying the course</small>
         </button>
-        <button class="value-card courage" type="button" data-value="courage">
+        <button class="companion courage" type="button" data-value="courage">
+          <span class="platform-disc">C</span>
           <img src="images/connor-courage.png" alt="Connor Courage">
-          <div><p>Finding and using my voice</p><h3>Connor Courage</h3><span>Discover Connor’s story →</span></div>
+          <strong>Connor Courage</strong><small>Finding and using my voice</small>
         </button>
-        <button class="value-card kindness" type="button" data-value="kindness">
+        <button class="companion kindness" type="button" data-value="kindness">
+          <span class="platform-disc">K</span>
           <img src="images/kiki-kofi-kindness.png" alt="Kiki and Kofi Kindness">
-          <div><p>Relationships and contribution</p><h3>Kiki &amp; Kofi Kindness</h3><span>Discover their story →</span></div>
+          <strong>Kiki &amp; Kofi</strong><small>Relationships and contribution</small>
         </button>
-        <button class="value-card aspiration" type="button" data-value="aspiration">
+        <button class="companion aspiration" type="button" data-value="aspiration">
+          <span class="platform-disc">A</span>
           <img src="images/aria-aspiration.png" alt="Aria Aspiration">
-          <div><p>Exploring my future and my passions</p><h3>Aria Aspiration</h3><span>Discover Aria’s story →</span></div>
+          <strong>Aria Aspiration</strong><small>Exploring my future and my passions</small>
         </button>
       </div>
     </section>
 
-    <dialog class="character-dialog" id="characterDialog" aria-labelledby="dialogTitle">
-      <button class="dialog-close" id="dialogClose" type="button" aria-label="Close character story">×</button>
-      <div class="dialog-layout">
-        <div class="dialog-art">
-          <img id="dialogImage" src="images/isaac-integrity.png" alt="">
-        </div>
-        <div class="dialog-copy">
-          <p class="dialog-strand" id="dialogStrand">Making good choices</p>
-          <h2 id="dialogTitle">Isaac Integrity</h2>
-          <p class="dialog-lead" id="dialogLead"></p>
-          <div class="dialog-details" id="dialogDetails"></div>
-          <div class="value-in-action">
-            <p>Value in action</p>
-            <strong id="dialogAction"></strong>
-          </div>
-        </div>
-      </div>
-    </dialog>
-
-    <section class="final-stop">
-      <div>
-        <p class="eyebrow">The journey continues</p>
-        <h2>Ready for whatever comes next.</h2>
+    <section class="scene future-scene">
+      <div class="future-copy">
+        <p class="eyebrow">Final stop?</p>
+        <h2>No. The journey continues.</h2>
         <p>
-          By Year 6, children are ready to lead, advocate, persevere, contribute and
-          speak confidently about their aspirations. They leave KCA with a story of
-          growth that belongs entirely to them.
+          Children leave KCA ready to lead, advocate, persevere, contribute and
+          speak confidently about the future they want to build.
         </p>
-        <a class="secondary-button" href="#top">Return to the station</a>
+        <a href="#station" class="return-ticket">← Return to King’s Cross Station</a>
       </div>
-      <div class="final-characters" aria-hidden="true">
+      <div class="future-line" aria-hidden="true">
+        <div class="distant-train">🚆</div>
+      </div>
+      <div class="future-characters" aria-hidden="true">
         <img src="images/kiki-kofi-kindness.png" alt="">
         <img src="images/isaac-integrity.png" alt="">
         <img src="images/aria-aspiration.png" alt="">
@@ -201,10 +213,24 @@
     </section>
   </main>
 
-  <footer>
-    <p>King's Cross Academy · Love Learning Together</p>
-  </footer>
+  <dialog class="character-dialog" id="characterDialog" aria-labelledby="dialogTitle">
+    <button class="dialog-close" id="dialogClose" type="button" aria-label="Close">×</button>
+    <div class="dialog-layout">
+      <div class="dialog-art"><img id="dialogImage" src="" alt=""></div>
+      <div class="dialog-copy">
+        <p class="dialog-strand" id="dialogStrand"></p>
+        <h2 id="dialogTitle"></h2>
+        <p class="dialog-lead" id="dialogLead"></p>
+        <div class="dialog-details" id="dialogDetails"></div>
+        <div class="value-in-action">
+          <p>Value in action</p>
+          <strong id="dialogAction"></strong>
+        </div>
+      </div>
+    </div>
+  </dialog>
 
+  <footer>King’s Cross Academy · Love Learning Together</footer>
   <script src="script.js"></script>
 </body>
 </html>

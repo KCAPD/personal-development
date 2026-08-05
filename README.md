@@ -1,25 +1,13 @@
-# KCA Personal Development Journey
+# KCA Personal Development Journey — Version 3
 
-A standalone interactive microsite for King's Cross Academy.
+Full-screen interactive experience featuring:
 
-## Publish with GitHub Pages
+- King's Cross Academy station arrival
+- animated departing train
+- interactive departures board
+- six year-group destinations
+- passport-style milestones and luggage-tag experiences
+- six clickable value companions
+- final "The journey continues" scene
 
-1. Upload all files and folders in this project to the root of the repository.
-2. Open **Settings → Pages**.
-3. Under **Build and deployment**, choose **Deploy from a branch**.
-4. Select **main** and **/(root)**, then save.
-5. GitHub will display the public website link after deployment.
-
-## File structure
-
-- `index.html`
-- `style.css`
-- `script.js`
-- `images/`
-
-The site requires no plugins, database, or build process.
-
-
-## Version 2
-
-The six value cards now open interactive character-story panels.
+Upload all files and the `images` folder to the repository root.
