@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore the personal development journey at King's Cross Academy.">
+  <title>Every Child Has a Journey | King's Cross Academy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#journey">Skip to the journey</a>
+
+  <header class="hero" id="top">
+    <nav class="topbar" aria-label="Main navigation">
+      <a class="brand" href="#top" aria-label="King's Cross Academy Personal Development">
+        <span class="brand-mark">KCA</span>
+        <span>Personal Development</span>
+      </a>
+      <a class="small-link" href="#values">Meet our values</a>
+    </nav>
+
+    <div class="hero-skyline" aria-hidden="true">
+      <span class="building building-one"></span>
+      <span class="building building-two"></span>
+      <span class="building building-three"></span>
+      <span class="clock-tower"></span>
+      <span class="building building-four"></span>
+    </div>
+
+    <div class="hero-content">
+      <p class="eyebrow">King's Cross Academy</p>
+      <h1>Every child has a journey.</h1>
+      <p class="hero-copy">
+        From their first brave step to the moment they are ready for what comes next,
+        our children grow in confidence, character and ambition.
+      </p>
+      <button class="primary-button" id="beginJourney" type="button">
+        Begin the journey
+        <span aria-hidden="true">→</span>
+      </button>
+    </div>
+
+    <div class="hero-characters" aria-hidden="true">
+      <img class="hero-character hero-aria" src="images/aria-aspiration.png" alt="">
+      <img class="hero-character hero-connor" src="images/connor-courage.png" alt="">
+      <img class="hero-character hero-riley" src="images/riley-respect.png" alt="">
+    </div>
+
+    <div class="railway" aria-hidden="true">
+      <div class="train">
+        <span class="train-engine"></span>
+        <span class="train-carriage"></span>
+        <span class="train-carriage"></span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="station-intro" id="journey">
+      <div class="section-heading">
+        <p class="eyebrow">Welcome to the KCA line</p>
+        <h2>Choose a platform</h2>
+        <p>
+          Each stop represents a new stage of growth. Select a year group to discover
+          the values, experiences and personal-development milestones children encounter.
+        </p>
+      </div>
+
+      <div class="platform-board" role="tablist" aria-label="Year-group journey">
+        <button class="platform active" role="tab" aria-selected="true" data-year="1">
+          <span class="platform-number">1</span>
+          <span><strong>Year 1</strong><small>Beginning the journey</small></span>
+        </button>
+        <button class="platform" role="tab" aria-selected="false" data-year="2">
+          <span class="platform-number">2</span>
+          <span><strong>Year 2</strong><small>Growing in confidence</small></span>
+        </button>
+        <button class="platform" role="tab" aria-selected="false" data-year="3">
+          <span class="platform-number">3</span>
+          <span><strong>Year 3</strong><small>Discovering my strengths</small></span>
+        </button>
+        <button class="platform" role="tab" aria-selected="false" data-year="4">
+          <span class="platform-number">4</span>
+          <span><strong>Year 4</strong><small>Taking responsibility</small></span>
+        </button>
+        <button class="platform" role="tab" aria-selected="false" data-year="5">
+          <span class="platform-number">5</span>
+          <span><strong>Year 5</strong><small>Contributing to my community</small></span>
+        </button>
+        <button class="platform" role="tab" aria-selected="false" data-year="6">
+          <span class="platform-number">6</span>
+          <span><strong>Year 6</strong><small>Ready for my future</small></span>
+        </button>
+      </div>
+
+      <div class="journey-card" id="yearPanel" aria-live="polite">
+        <div class="journey-line" aria-hidden="true">
+          <span class="line-fill" id="lineFill"></span>
+          <span class="moving-train" id="movingTrain">🚆</span>
+        </div>
+
+        <div class="year-content">
+          <div>
+            <p class="year-kicker" id="yearKicker">Platform 1</p>
+            <h3 id="yearTitle">Year 1 — Beginning the Journey</h3>
+            <p id="yearIntro">
+              Children begin to recognise their strengths, make positive choices,
+              build relationships and participate confidently in school life.
+            </p>
+
+            <div class="milestone-grid" id="milestones"></div>
+
+            <div class="experiences">
+              <h4>Key experiences</h4>
+              <div class="experience-tags" id="experiences"></div>
+            </div>
+          </div>
+
+          <figure class="year-character-wrap">
+            <div class="speech-bubble" id="speechBubble">“Have a go — courage grows every time we try.”</div>
+            <img id="yearCharacter" src="images/connor-courage.png" alt="Connor Courage">
+            <figcaption id="characterCaption">Connor Courage</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="values-section" id="values">
+      <div class="section-heading light">
+        <p class="eyebrow">Six values for life</p>
+        <h2>Meet your travelling companions</h2>
+        <p>
+          Our value characters help children understand how character is built through
+          everyday choices, challenges, relationships and opportunities.
+        </p>
+      </div>
+
+      <div class="value-grid">
+        <article class="value-card integrity">
+          <img src="images/isaac-integrity.png" alt="Isaac Integrity">
+          <div><p>Making good choices</p><h3>Isaac Integrity</h3></div>
+        </article>
+        <article class="value-card respect">
+          <img src="images/riley-respect.png" alt="Riley Respect">
+          <div><p>Belonging and understanding others</p><h3>Riley Respect</h3></div>
+        </article>
+        <article class="value-card endurance">
+          <img src="images/eli-endurance.png" alt="Eli Endurance">
+          <div><p>Managing myself and staying the course</p><h3>Eli Endurance</h3></div>
+        </article>
+        <article class="value-card courage">
+          <img src="images/connor-courage.png" alt="Connor Courage">
+          <div><p>Finding and using my voice</p><h3>Connor Courage</h3></div>
+        </article>
+        <article class="value-card kindness">
+          <img src="images/kiki-kofi-kindness.png" alt="Kiki and Kofi Kindness">
+          <div><p>Relationships and contribution</p><h3>Kiki &amp; Kofi Kindness</h3></div>
+        </article>
+        <article class="value-card aspiration">
+          <img src="images/aria-aspiration.png" alt="Aria Aspiration">
+          <div><p>Exploring my future and my passions</p><h3>Aria Aspiration</h3></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="final-stop">
+      <div>
+        <p class="eyebrow">The journey continues</p>
+        <h2>Ready for whatever comes next.</h2>
+        <p>
+          By Year 6, children are ready to lead, advocate, persevere, contribute and
+          speak confidently about their aspirations. They leave KCA with a story of
+          growth that belongs entirely to them.
+        </p>
+        <a class="secondary-button" href="#top">Return to the station</a>
+      </div>
+      <div class="final-characters" aria-hidden="true">
+        <img src="images/kiki-kofi-kindness.png" alt="">
+        <img src="images/isaac-integrity.png" alt="">
+        <img src="images/aria-aspiration.png" alt="">
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>King's Cross Academy · Love Learning Together</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
