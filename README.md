@@ -1,12 +1,25 @@
-# KCA Personal Development Journey — Version 2.2
+# KCA Personal Development Journey
 
-This version keeps the Version 2 design and adds an interactive year-chapter template:
+A standalone interactive microsite for King's Cross Academy.
 
-- all six year groups use one consistent journal-inspired layout
-- each year contains six clickable value strands
-- value outcomes are based on the KCA Personal Development Journey journal
-- key experiences appear as journey stamps
-- each year contains a journal-inspired reflection section
-- the existing character-story pop-ups are retained
+## Publish with GitHub Pages
 
-Upload all files and the `images` folder to the repository root.
+1. Upload all files and folders in this project to the root of the repository.
+2. Open **Settings → Pages**.
+3. Under **Build and deployment**, choose **Deploy from a branch**.
+4. Select **main** and **/(root)**, then save.
+5. GitHub will display the public website link after deployment.
+
+## File structure
+
+- `index.html`
+- `style.css`
+- `script.js`
+- `images/`
+
+The site requires no plugins, database, or build process.
+
+
+## Version 2
+
+The six value cards now open interactive character-story panels.
