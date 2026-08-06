@@ -789,3 +789,365 @@ body.dialog-open {
     padding: 34px 24px 38px;
   }
 }
+
+
+/* =========================================================
+   KCA MOBILE OPTIMISATION
+   CSS-only release — preserves desktop and site interactions
+   ========================================================= */
+
+@media (max-width: 600px) {
+  .station-intro,
+  .values-section {
+    padding: 56px 12px;
+  }
+
+  .section-heading {
+    margin-bottom: 30px;
+  }
+
+  .section-heading h2 {
+    font-size: clamp(2.25rem, 11vw, 3.15rem);
+  }
+
+  .section-heading > p:last-child {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  /* Hero */
+  .hero {
+    min-height: 720px;
+  }
+
+  .topbar {
+    padding: 16px;
+  }
+
+  .brand {
+    gap: 9px;
+    font-size: .92rem;
+  }
+
+  .brand-mark {
+    width: 42px;
+    height: 42px;
+    flex: 0 0 42px;
+  }
+
+  .hero-content {
+    margin-top: 34px;
+    padding: 0 16px;
+  }
+
+  .hero h1 {
+    max-width: 94%;
+    font-size: clamp(3.25rem, 16vw, 4.35rem);
+    line-height: .94;
+  }
+
+  .hero-copy {
+    max-width: 92%;
+    margin: 20px 0 22px;
+    font-size: 1rem;
+    line-height: 1.55;
+  }
+
+  .primary-button {
+    min-height: 50px;
+    padding: 13px 18px;
+  }
+
+  .hero-characters {
+    opacity: .72;
+  }
+
+  .hero-aria {
+    right: -8%;
+    bottom: 88px;
+    width: min(68vw, 310px);
+  }
+
+  .hero-connor {
+    display: block;
+    right: 44%;
+    bottom: 74px;
+    width: min(34vw, 150px);
+  }
+
+  .hero-riley {
+    display: none;
+  }
+
+  .hero-skyline {
+    bottom: 84px;
+    height: 170px;
+  }
+
+  .railway {
+    height: 86px;
+  }
+
+  /* Year selector: 2 columns rather than one long row */
+  .platform-board {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 9px;
+  }
+
+  .platform {
+    min-width: 0;
+    min-height: 86px;
+    gap: 8px;
+    padding: 11px 9px;
+    border-radius: 15px;
+  }
+
+  .platform-number {
+    flex: 0 0 36px;
+    width: 36px;
+    height: 36px;
+    font-size: 1.12rem;
+  }
+
+  .platform strong {
+    font-size: .92rem;
+    line-height: 1.15;
+  }
+
+  .platform small {
+    margin-top: 4px;
+    font-size: .68rem;
+    line-height: 1.25;
+  }
+
+  /* Journey panel */
+  .journey-card {
+    border-radius: 18px;
+  }
+
+  .journey-line {
+    height: 54px;
+    background:
+      linear-gradient(var(--navy), var(--navy)) center 21px / calc(100% - 46px) 6px no-repeat,
+      repeating-linear-gradient(90deg, transparent 0 24px, #d4dae1 24px 30px) center 33px / calc(100% - 46px) 10px no-repeat,
+      #eff7fa;
+  }
+
+  .line-fill {
+    top: 21px;
+    left: 23px;
+    height: 6px;
+  }
+
+  .moving-train {
+    top: 0;
+    left: 15px;
+    font-size: 1.75rem;
+  }
+
+  .year-content {
+    gap: 24px;
+    padding: 24px 15px 26px;
+  }
+
+  .year-content h3 {
+    font-size: clamp(2rem, 10vw, 2.75rem);
+  }
+
+  #yearIntro {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  /* Milestones remain in pairs */
+  .milestone-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 9px;
+    margin: 22px 0;
+  }
+
+  .milestone {
+    min-width: 0;
+    padding: 13px 10px 13px 12px;
+    border-left-width: 4px;
+    border-radius: 0 11px 11px 0;
+  }
+
+  .milestone h4 {
+    margin-bottom: 5px;
+    font-size: .92rem;
+    line-height: 1.2;
+  }
+
+  .milestone p {
+    font-size: .76rem;
+    line-height: 1.4;
+  }
+
+  .experience-tags {
+    gap: 6px;
+  }
+
+  .experience-tags span {
+    padding: 7px 9px;
+    font-size: .76rem;
+  }
+
+  .year-character-wrap {
+    max-width: 285px;
+  }
+
+  .year-character-wrap img {
+    max-height: 300px;
+  }
+
+  .speech-bubble {
+    padding: 12px 14px;
+    font-size: .92rem;
+  }
+
+  /* Value gallery: two cards per row */
+  .value-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .value-card {
+    min-width: 0;
+    min-height: 278px;
+    border-radius: 17px;
+  }
+
+  .value-card img {
+    top: 12px;
+    width: 94%;
+    height: 183px;
+  }
+
+  .value-card div {
+    padding: 14px 12px;
+  }
+
+  .value-card p {
+    min-height: 30px;
+    margin-bottom: 3px;
+    font-size: .61rem;
+    line-height: 1.25;
+  }
+
+  .value-card h3 {
+    font-size: 1.02rem;
+    line-height: 1.1;
+  }
+
+  .value-card div span {
+    margin-top: 7px;
+    font-size: .7rem;
+  }
+
+  /* Final section */
+  .final-stop {
+    gap: 8px;
+    padding: 56px 17px 36px;
+  }
+
+  .final-stop h2 {
+    font-size: clamp(2.7rem, 13vw, 3.8rem);
+  }
+
+  .final-stop p:not(.eyebrow) {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .final-characters {
+    min-height: 300px;
+  }
+
+  /* Long-form story dialogue remains one column for readability */
+  .character-dialog {
+    width: calc(100% - 12px);
+    max-height: calc(100vh - 12px);
+    border-radius: 18px;
+  }
+
+  .dialog-art {
+    min-height: 270px;
+    padding: 28px 16px 4px;
+  }
+
+  .dialog-art img {
+    max-height: 250px;
+  }
+
+  .dialog-copy {
+    padding: 28px 20px 32px;
+  }
+
+  .dialog-copy h2 {
+    font-size: clamp(2.2rem, 12vw, 3rem);
+  }
+
+  .dialog-lead {
+    font-size: 1.05rem;
+  }
+
+  .dialog-details p {
+    line-height: 1.65;
+  }
+
+  .value-in-action {
+    padding: 16px;
+  }
+}
+
+/* Very narrow phones still retain two-column cards */
+@media (max-width: 380px) {
+  .platform {
+    min-height: 82px;
+    padding: 9px 7px;
+  }
+
+  .platform-number {
+    flex-basis: 32px;
+    width: 32px;
+    height: 32px;
+    font-size: 1rem;
+  }
+
+  .platform strong {
+    font-size: .84rem;
+  }
+
+  .platform small {
+    font-size: .62rem;
+  }
+
+  .milestone {
+    padding: 11px 8px 11px 10px;
+  }
+
+  .milestone h4 {
+    font-size: .84rem;
+  }
+
+  .milestone p {
+    font-size: .7rem;
+  }
+
+  .value-card {
+    min-height: 255px;
+  }
+
+  .value-card img {
+    height: 166px;
+  }
+
+  .value-card h3 {
+    font-size: .92rem;
+  }
+
+  .value-card p {
+    font-size: .56rem;
+  }
+}
