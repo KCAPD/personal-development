@@ -125,6 +125,82 @@
       </div>
     </section>
 
+
+    <section class="journal-section" id="journal">
+      <div class="section-heading">
+        <p class="eyebrow">A glimpse inside</p>
+        <h2>Take a look inside the Journey Journal</h2>
+        <p>
+          Every child receives their own Personal Development Journey Journal.
+          It helps children set goals, recognise the observable behaviours that
+          bring our values to life, and reflect on the person they are becoming.
+        </p>
+        <p class="journal-note">
+          These pages have been selected from different stages of the journey
+          to show how the journal grows with each child.
+        </p>
+      </div>
+
+      <div class="journal-gallery">
+        <button class="journal-page journal-cover-card" type="button" data-journal-index="0">
+          <span class="journal-image-wrap">
+            <img src="images/journal-cover.png" alt="Cover of the KCA Personal Development Journey Journal">
+          </span>
+          <span class="journal-card-copy">
+            <strong>The Journey Journal</strong>
+            <small>Every child receives one</small>
+          </span>
+        </button>
+
+        <button class="journal-page" type="button" data-journal-index="1">
+          <span class="journal-image-wrap">
+            <img src="images/journal-setting-goals-year-2.png" alt="Year 2 journal page for setting personal goals">
+          </span>
+          <span class="journal-card-copy">
+            <strong>Setting goals</strong>
+            <small>Year 2</small>
+          </span>
+        </button>
+
+        <button class="journal-page" type="button" data-journal-index="2">
+          <span class="journal-image-wrap">
+            <img src="images/journal-observable-behaviours-year-1.png" alt="Year 1 observable behaviours for Endurance and Kindness">
+          </span>
+          <span class="journal-card-copy">
+            <strong>Observable behaviours</strong>
+            <small>Year 1</small>
+          </span>
+        </button>
+
+        <button class="journal-page" type="button" data-journal-index="3">
+          <span class="journal-image-wrap">
+            <img src="images/journal-looking-back-year-6.png" alt="Year 6 journal page for looking back on the journey through KCA">
+          </span>
+          <span class="journal-card-copy">
+            <strong>Looking back</strong>
+            <small>Year 6</small>
+          </span>
+        </button>
+      </div>
+    </section>
+
+    <dialog class="journal-dialog" id="journalDialog" aria-labelledby="journalDialogTitle">
+      <button class="journal-dialog-close" id="journalDialogClose" type="button" aria-label="Close journal page">×</button>
+      <div class="journal-dialog-content">
+        <div class="journal-dialog-image-wrap">
+          <img id="journalDialogImage" src="images/journal-cover.png" alt="">
+        </div>
+        <div class="journal-dialog-footer">
+          <button id="journalPrevious" type="button" aria-label="Previous journal page">← Previous</button>
+          <div>
+            <strong id="journalDialogTitle">The Journey Journal</strong>
+            <small id="journalDialogSubtitle">Every child receives one</small>
+          </div>
+          <button id="journalNext" type="button" aria-label="Next journal page">Next →</button>
+        </div>
+      </div>
+    </dialog>
+
     <section class="values-section" id="values">
       <div class="section-heading light">
         <p class="eyebrow">Six values for life</p>

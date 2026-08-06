@@ -792,362 +792,314 @@ body.dialog-open {
 
 
 /* =========================================================
-   KCA MOBILE OPTIMISATION
-   CSS-only release — preserves desktop and site interactions
+   JOURNEY JOURNAL — restrained gallery enhancement
    ========================================================= */
 
-@media (max-width: 600px) {
-  .station-intro,
-  .values-section {
-    padding: 56px 12px;
-  }
+.journal-section {
+  padding: 88px 24px;
+  background:
+    radial-gradient(circle at 16% 12%, rgba(57, 169, 232, .11), transparent 28%),
+    linear-gradient(180deg, #ffffff, #f5fbff);
+}
 
-  .section-heading {
-    margin-bottom: 30px;
-  }
+.journal-section .section-heading {
+  margin-bottom: 34px;
+}
 
-  .section-heading h2 {
-    font-size: clamp(2.25rem, 11vw, 3.15rem);
-  }
+.journal-note {
+  max-width: 690px;
+  margin: 13px auto 0 !important;
+  color: var(--red) !important;
+  font-size: .9rem !important;
+  font-weight: 700;
+}
 
-  .section-heading > p:last-child {
-    font-size: 1rem;
-    line-height: 1.6;
-  }
+.journal-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+  max-width: 1120px;
+  margin: 0 auto;
+  align-items: stretch;
+}
 
-  /* Hero */
-  .hero {
-    min-height: 720px;
-  }
+.journal-page {
+  display: flex;
+  min-width: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #d9e5ec;
+  border-radius: 20px;
+  background: white;
+  color: var(--ink);
+  text-align: left;
+  flex-direction: column;
+  box-shadow: 0 13px 32px rgba(23, 35, 61, .08);
+  transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease;
+}
 
-  .topbar {
-    padding: 16px;
-  }
+.journal-page:nth-child(odd) { transform: rotate(-.45deg); }
+.journal-page:nth-child(even) { transform: rotate(.45deg); }
 
-  .brand {
-    gap: 9px;
-    font-size: .92rem;
-  }
+.journal-page:hover,
+.journal-page:focus-visible {
+  transform: translateY(-7px) rotate(0);
+  border-color: var(--blue);
+  outline: none;
+  box-shadow: 0 20px 42px rgba(23, 35, 61, .14);
+}
 
-  .brand-mark {
-    width: 42px;
-    height: 42px;
-    flex: 0 0 42px;
-  }
+.journal-image-wrap {
+  position: relative;
+  display: block;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  background: #edf5f9;
+}
 
-  .hero-content {
-    margin-top: 34px;
-    padding: 0 16px;
-  }
+.journal-image-wrap::after {
+  content: "Take a closer look";
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  padding: 7px 10px;
+  border-radius: 999px;
+  color: white;
+  background: rgba(19, 35, 63, .88);
+  font-size: .7rem;
+  font-weight: 800;
+  opacity: 0;
+  transform: translateY(5px);
+  transition: opacity .2s ease, transform .2s ease;
+}
 
-  .hero h1 {
-    max-width: 94%;
-    font-size: clamp(3.25rem, 16vw, 4.35rem);
-    line-height: .94;
-  }
+.journal-page:hover .journal-image-wrap::after,
+.journal-page:focus-visible .journal-image-wrap::after {
+  opacity: 1;
+  transform: translateY(0);
+}
 
-  .hero-copy {
-    max-width: 92%;
-    margin: 20px 0 22px;
-    font-size: 1rem;
-    line-height: 1.55;
-  }
+.journal-image-wrap img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  transition: transform .28s ease;
+}
 
-  .primary-button {
-    min-height: 50px;
-    padding: 13px 18px;
-  }
+.journal-page:hover img,
+.journal-page:focus-visible img {
+  transform: scale(1.025);
+}
 
-  .hero-characters {
-    opacity: .72;
-  }
+.journal-cover-card .journal-image-wrap img {
+  object-fit: contain;
+  padding: 7px;
+  background: white;
+}
 
-  .hero-aria {
-    right: -8%;
-    bottom: 88px;
-    width: min(68vw, 310px);
-  }
+.journal-card-copy {
+  display: block;
+  padding: 17px 16px 18px;
+}
 
-  .hero-connor {
-    display: block;
-    right: 44%;
-    bottom: 74px;
-    width: min(34vw, 150px);
-  }
+.journal-card-copy strong,
+.journal-card-copy small {
+  display: block;
+}
 
-  .hero-riley {
-    display: none;
-  }
+.journal-card-copy strong {
+  font-family: "Fredoka", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.15;
+}
 
-  .hero-skyline {
-    bottom: 84px;
-    height: 170px;
-  }
+.journal-card-copy small {
+  margin-top: 5px;
+  color: var(--muted);
+  font-weight: 700;
+}
 
-  .railway {
-    height: 86px;
-  }
+.journal-dialog {
+  width: min(920px, calc(100% - 26px));
+  max-height: calc(100vh - 26px);
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  border-radius: 24px;
+  background: #eef6fa;
+  box-shadow: 0 30px 95px rgba(8, 21, 39, .42);
+}
 
-  /* Year selector: 2 columns rather than one long row */
-  .platform-board {
+.journal-dialog::backdrop {
+  background: rgba(8, 18, 34, .86);
+  backdrop-filter: blur(6px);
+}
+
+.journal-dialog-close {
+  position: absolute;
+  z-index: 4;
+  top: 14px;
+  right: 14px;
+  display: grid;
+  width: 44px;
+  height: 44px;
+  place-items: center;
+  border: 0;
+  border-radius: 50%;
+  color: white;
+  background: var(--navy);
+  font-size: 1.7rem;
+  line-height: 1;
+}
+
+.journal-dialog-content {
+  display: flex;
+  max-height: calc(100vh - 26px);
+  flex-direction: column;
+}
+
+.journal-dialog-image-wrap {
+  display: grid;
+  min-height: 0;
+  padding: 22px 22px 12px;
+  overflow: auto;
+  place-items: center;
+  flex: 1;
+}
+
+.journal-dialog-image-wrap img {
+  display: block;
+  max-width: 100%;
+  max-height: calc(100vh - 145px);
+  object-fit: contain;
+  box-shadow: 0 14px 38px rgba(23, 35, 61, .16);
+}
+
+.journal-dialog-footer {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 16px;
+  align-items: center;
+  padding: 15px 18px;
+  border-top: 1px solid #d4e0e7;
+  background: white;
+  text-align: center;
+}
+
+.journal-dialog-footer button {
+  padding: 10px 13px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--navy);
+  background: white;
+  font-weight: 800;
+}
+
+.journal-dialog-footer button:hover,
+.journal-dialog-footer button:focus-visible {
+  outline: none;
+  border-color: var(--navy);
+  background: var(--navy);
+  color: white;
+}
+
+.journal-dialog-footer strong,
+.journal-dialog-footer small { display: block; }
+
+.journal-dialog-footer strong {
+  font-family: "Fredoka", sans-serif;
+  font-size: 1.15rem;
+}
+
+.journal-dialog-footer small {
+  margin-top: 3px;
+  color: var(--muted);
+}
+
+body.journal-dialog-open { overflow: hidden; }
+
+@media (max-width: 780px) {
+  .journal-gallery {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 9px;
+    gap: 12px;
   }
 
-  .platform {
-    min-width: 0;
-    min-height: 86px;
-    gap: 8px;
-    padding: 11px 9px;
-    border-radius: 15px;
-  }
-
-  .platform-number {
-    flex: 0 0 36px;
-    width: 36px;
-    height: 36px;
-    font-size: 1.12rem;
-  }
-
-  .platform strong {
-    font-size: .92rem;
-    line-height: 1.15;
-  }
-
-  .platform small {
-    margin-top: 4px;
-    font-size: .68rem;
-    line-height: 1.25;
-  }
-
-  /* Journey panel */
-  .journey-card {
-    border-radius: 18px;
-  }
-
-  .journey-line {
-    height: 54px;
-    background:
-      linear-gradient(var(--navy), var(--navy)) center 21px / calc(100% - 46px) 6px no-repeat,
-      repeating-linear-gradient(90deg, transparent 0 24px, #d4dae1 24px 30px) center 33px / calc(100% - 46px) 10px no-repeat,
-      #eff7fa;
-  }
-
-  .line-fill {
-    top: 21px;
-    left: 23px;
-    height: 6px;
-  }
-
-  .moving-train {
-    top: 0;
-    left: 15px;
-    font-size: 1.75rem;
-  }
-
-  .year-content {
-    gap: 24px;
-    padding: 24px 15px 26px;
-  }
-
-  .year-content h3 {
-    font-size: clamp(2rem, 10vw, 2.75rem);
-  }
-
-  #yearIntro {
-    font-size: 1rem;
-    line-height: 1.6;
-  }
-
-  /* Milestones remain in pairs */
-  .milestone-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 9px;
-    margin: 22px 0;
-  }
-
-  .milestone {
-    min-width: 0;
-    padding: 13px 10px 13px 12px;
-    border-left-width: 4px;
-    border-radius: 0 11px 11px 0;
-  }
-
-  .milestone h4 {
-    margin-bottom: 5px;
-    font-size: .92rem;
-    line-height: 1.2;
-  }
-
-  .milestone p {
-    font-size: .76rem;
-    line-height: 1.4;
-  }
-
-  .experience-tags {
-    gap: 6px;
-  }
-
-  .experience-tags span {
-    padding: 7px 9px;
-    font-size: .76rem;
-  }
-
-  .year-character-wrap {
-    max-width: 285px;
-  }
-
-  .year-character-wrap img {
-    max-height: 300px;
-  }
-
-  .speech-bubble {
-    padding: 12px 14px;
-    font-size: .92rem;
-  }
-
-  /* Value gallery: two cards per row */
-  .value-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 10px;
-  }
-
-  .value-card {
-    min-width: 0;
-    min-height: 278px;
-    border-radius: 17px;
-  }
-
-  .value-card img {
-    top: 12px;
-    width: 94%;
-    height: 183px;
-  }
-
-  .value-card div {
-    padding: 14px 12px;
-  }
-
-  .value-card p {
-    min-height: 30px;
-    margin-bottom: 3px;
-    font-size: .61rem;
-    line-height: 1.25;
-  }
-
-  .value-card h3 {
-    font-size: 1.02rem;
-    line-height: 1.1;
-  }
-
-  .value-card div span {
-    margin-top: 7px;
-    font-size: .7rem;
-  }
-
-  /* Final section */
-  .final-stop {
-    gap: 8px;
-    padding: 56px 17px 36px;
-  }
-
-  .final-stop h2 {
-    font-size: clamp(2.7rem, 13vw, 3.8rem);
-  }
-
-  .final-stop p:not(.eyebrow) {
-    font-size: 1rem;
-    line-height: 1.6;
-  }
-
-  .final-characters {
-    min-height: 300px;
-  }
-
-  /* Long-form story dialogue remains one column for readability */
-  .character-dialog {
-    width: calc(100% - 12px);
-    max-height: calc(100vh - 12px);
-    border-radius: 18px;
-  }
-
-  .dialog-art {
-    min-height: 270px;
-    padding: 28px 16px 4px;
-  }
-
-  .dialog-art img {
-    max-height: 250px;
-  }
-
-  .dialog-copy {
-    padding: 28px 20px 32px;
-  }
-
-  .dialog-copy h2 {
-    font-size: clamp(2.2rem, 12vw, 3rem);
-  }
-
-  .dialog-lead {
-    font-size: 1.05rem;
-  }
-
-  .dialog-details p {
-    line-height: 1.65;
-  }
-
-  .value-in-action {
-    padding: 16px;
+  .journal-page:nth-child(odd),
+  .journal-page:nth-child(even) {
+    transform: none;
   }
 }
 
-/* Very narrow phones still retain two-column cards */
-@media (max-width: 380px) {
-  .platform {
-    min-height: 82px;
-    padding: 9px 7px;
+@media (max-width: 600px) {
+  .journal-section {
+    padding: 58px 12px;
   }
 
-  .platform-number {
-    flex-basis: 32px;
-    width: 32px;
-    height: 32px;
-    font-size: 1rem;
+  .journal-section .section-heading {
+    margin-bottom: 25px;
   }
 
-  .platform strong {
-    font-size: .84rem;
+  .journal-note {
+    font-size: .82rem !important;
+    line-height: 1.5 !important;
   }
 
-  .platform small {
-    font-size: .62rem;
+  .journal-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 9px;
   }
 
-  .milestone {
-    padding: 11px 8px 11px 10px;
+  .journal-page { border-radius: 15px; }
+
+  .journal-card-copy {
+    padding: 12px 10px 13px;
   }
 
-  .milestone h4 {
-    font-size: .84rem;
+  .journal-card-copy strong { font-size: .95rem; }
+  .journal-card-copy small { font-size: .7rem; }
+  .journal-image-wrap::after { display: none; }
+
+  .journal-dialog {
+    width: calc(100% - 10px);
+    max-height: calc(100vh - 10px);
+    border-radius: 17px;
   }
 
-  .milestone p {
-    font-size: .7rem;
+  .journal-dialog-content {
+    max-height: calc(100vh - 10px);
   }
 
-  .value-card {
-    min-height: 255px;
+  .journal-dialog-image-wrap {
+    padding: 14px 8px 8px;
   }
 
-  .value-card img {
-    height: 166px;
+  .journal-dialog-image-wrap img {
+    max-height: calc(100vh - 132px);
   }
 
-  .value-card h3 {
-    font-size: .92rem;
+  .journal-dialog-footer {
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    padding: 10px;
   }
 
-  .value-card p {
-    font-size: .56rem;
+  .journal-dialog-footer > div {
+    grid-column: 1 / -1;
+    grid-row: 1;
+  }
+
+  .journal-dialog-footer button {
+    grid-row: 2;
+    padding: 9px 10px;
+    font-size: .82rem;
+  }
+
+  .journal-dialog-close {
+    top: 9px;
+    right: 9px;
+    width: 40px;
+    height: 40px;
   }
 }

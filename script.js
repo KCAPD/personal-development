@@ -256,3 +256,88 @@ dialog.addEventListener("click", event => {
 dialog.addEventListener("close", () => {
   document.body.classList.remove("dialog-open");
 });
+
+
+/* Journey Journal viewer */
+const journalPages = [
+  {
+    image: "images/journal-cover.png",
+    alt: "Cover of the KCA Personal Development Journey Journal",
+    title: "The Journey Journal",
+    subtitle: "Every child receives one"
+  },
+  {
+    image: "images/journal-setting-goals-year-2.png",
+    alt: "Year 2 journal page for setting personal goals",
+    title: "Setting goals",
+    subtitle: "Year 2"
+  },
+  {
+    image: "images/journal-observable-behaviours-year-1.png",
+    alt: "Year 1 observable behaviours for Endurance and Kindness",
+    title: "Observable behaviours",
+    subtitle: "Year 1"
+  },
+  {
+    image: "images/journal-looking-back-year-6.png",
+    alt: "Year 6 journal page for looking back on the journey through KCA",
+    title: "Looking back",
+    subtitle: "Year 6"
+  }
+];
+
+const journalDialog = document.getElementById("journalDialog");
+const journalDialogImage = document.getElementById("journalDialogImage");
+const journalDialogTitle = document.getElementById("journalDialogTitle");
+const journalDialogSubtitle = document.getElementById("journalDialogSubtitle");
+const journalDialogClose = document.getElementById("journalDialogClose");
+const journalPrevious = document.getElementById("journalPrevious");
+const journalNext = document.getElementById("journalNext");
+let activeJournalPage = 0;
+
+function renderJournalPage(index) {
+  activeJournalPage = (index + journalPages.length) % journalPages.length;
+  const page = journalPages[activeJournalPage];
+
+  journalDialogImage.src = page.image;
+  journalDialogImage.alt = page.alt;
+  journalDialogTitle.textContent = page.title;
+  journalDialogSubtitle.textContent = page.subtitle;
+}
+
+document.querySelectorAll(".journal-page[data-journal-index]").forEach(button => {
+  button.addEventListener("click", () => {
+    renderJournalPage(Number(button.dataset.journalIndex));
+    journalDialog.showModal();
+    document.body.classList.add("journal-dialog-open");
+  });
+});
+
+journalPrevious.addEventListener("click", () => {
+  renderJournalPage(activeJournalPage - 1);
+});
+
+journalNext.addEventListener("click", () => {
+  renderJournalPage(activeJournalPage + 1);
+});
+
+function closeJournalDialog() {
+  journalDialog.close();
+  document.body.classList.remove("journal-dialog-open");
+}
+
+journalDialogClose.addEventListener("click", closeJournalDialog);
+
+journalDialog.addEventListener("click", event => {
+  if (event.target === journalDialog) closeJournalDialog();
+});
+
+journalDialog.addEventListener("close", () => {
+  document.body.classList.remove("journal-dialog-open");
+});
+
+document.addEventListener("keydown", event => {
+  if (!journalDialog.open) return;
+  if (event.key === "ArrowLeft") renderJournalPage(activeJournalPage - 1);
+  if (event.key === "ArrowRight") renderJournalPage(activeJournalPage + 1);
+});
