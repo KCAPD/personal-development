@@ -1854,3 +1854,53 @@ body.journal-dialog-open { overflow: hidden; }
     font-size: 1.28rem;
   }
 }
+
+
+/* =========================================================
+   RELEASE 3.2.3 — MOBILE YEAR-DROPDOWN CHARACTER
+   Targets #yearCharacter, not the Growth Map illustration.
+   Desktop remains unchanged.
+   ========================================================= */
+
+@media screen and (max-width: 600px) {
+  .year-character-wrap {
+    width: 100%;
+    max-width: 100% !important;
+    margin: 2px auto 0 !important;
+  }
+
+  .year-character-wrap .speech-bubble {
+    width: min(100%, 320px);
+    margin: 0 auto 8px;
+    padding: 10px 13px;
+    font-size: .82rem;
+    line-height: 1.4;
+  }
+
+  #yearCharacter {
+    width: 108px !important;
+    max-width: 108px !important;
+    height: auto !important;
+    max-height: 145px !important;
+    margin: 0 auto;
+    object-fit: contain;
+  }
+
+  .year-character-wrap figcaption {
+    margin-top: 4px;
+    font-size: .78rem;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  #yearCharacter {
+    width: 92px !important;
+    max-width: 92px !important;
+    max-height: 126px !important;
+  }
+
+  .year-character-wrap .speech-bubble {
+    width: min(100%, 285px);
+    font-size: .77rem;
+  }
+}
