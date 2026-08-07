@@ -136,6 +136,14 @@ function renderYear(number) {
     button.classList.toggle("active", active);
     button.setAttribute("aria-selected", active ? "true" : "false");
   });
+
+  const isYear3 = number === 3;
+  yearGrowthSection.hidden = !isYear3;
+
+  if (!isYear3) {
+    inlineGrowthMap.hidden = true;
+    courageGrowthButton.setAttribute("aria-expanded", "false");
+  }
 }
 
 buttons.forEach(button => {
@@ -273,12 +281,15 @@ const year3CourageGrowthMap = [
   }
 ];
 
-const growthMapPanel = document.getElementById("growthMapPanel");
-const behaviourAccordion = document.getElementById("behaviourAccordion");
+
+const yearGrowthSection = document.getElementById("yearGrowthSection");
+const courageGrowthButton = document.querySelector('.year-growth-value[data-growth-value="courage"]');
+const inlineGrowthMap = document.getElementById("inlineGrowthMap");
+const inlineBehaviourAccordion = document.getElementById("inlineBehaviourAccordion");
 const year3CurriculumLink = document.getElementById("year3CurriculumLink");
 
-function renderYear3CourageGrowthMap() {
-  behaviourAccordion.innerHTML = year3CourageGrowthMap.map((item, index) => `
+function renderInlineCourageGrowthMap() {
+  inlineBehaviourAccordion.innerHTML = year3CourageGrowthMap.map((item, index) => `
     <article class="behaviour-item${index === 0 ? " open" : ""}">
       <button class="behaviour-trigger"
               type="button"
@@ -314,12 +325,12 @@ function renderYear3CourageGrowthMap() {
     </article>
   `).join("");
 
-  behaviourAccordion.querySelectorAll(".behaviour-trigger").forEach(trigger => {
+  inlineBehaviourAccordion.querySelectorAll(".behaviour-trigger").forEach(trigger => {
     trigger.addEventListener("click", () => {
       const item = trigger.closest(".behaviour-item");
       const willOpen = !item.classList.contains("open");
 
-      behaviourAccordion.querySelectorAll(".behaviour-item").forEach(other => {
+      inlineBehaviourAccordion.querySelectorAll(".behaviour-item").forEach(other => {
         other.classList.remove("open");
         other.querySelector(".behaviour-trigger").setAttribute("aria-expanded", "false");
       });
@@ -332,18 +343,32 @@ function renderYear3CourageGrowthMap() {
   });
 }
 
+courageGrowthButton.addEventListener("click", () => {
+  const opening = inlineGrowthMap.hidden;
+
+  if (opening) {
+    renderInlineCourageGrowthMap();
+    inlineGrowthMap.hidden = false;
+    courageGrowthButton.setAttribute("aria-expanded", "true");
+
+    requestAnimationFrame(() => {
+      inlineGrowthMap.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    });
+  } else {
+    inlineGrowthMap.hidden = true;
+    courageGrowthButton.setAttribute("aria-expanded", "false");
+  }
+});
+
 year3CurriculumLink.addEventListener("click", event => {
   if (year3CurriculumLink.getAttribute("aria-disabled") === "true") {
     event.preventDefault();
   }
 });
 
-
 document.querySelectorAll(".value-card[data-value]").forEach(card => {
   card.addEventListener("click", () => {
-    const value = card.dataset.value;
-    const story = valueStories[value];
-
+    const story = valueStories[card.dataset.value];
     dialogImage.src = story.image;
     dialogImage.alt = story.title;
     dialogTitle.textContent = story.title;
@@ -351,15 +376,6 @@ document.querySelectorAll(".value-card[data-value]").forEach(card => {
     dialogLead.textContent = story.lead;
     dialogDetails.innerHTML = story.details.map(paragraph => `<p>${paragraph}</p>`).join("");
     dialogAction.textContent = story.action;
-
-    const showGrowthMap = activeYear === 3 && value === "courage";
-    growthMapPanel.hidden = !showGrowthMap;
-    dialog.classList.toggle("growth-map-active", showGrowthMap);
-
-    if (showGrowthMap) {
-      renderYear3CourageGrowthMap();
-    }
-
     dialog.showModal();
     document.body.classList.add("dialog-open");
   });
@@ -368,8 +384,6 @@ document.querySelectorAll(".value-card[data-value]").forEach(card => {
 function closeCharacterDialog() {
   dialog.close();
   document.body.classList.remove("dialog-open");
-  dialog.classList.remove("growth-map-active");
-  growthMapPanel.hidden = true;
 }
 
 dialogClose.addEventListener("click", closeCharacterDialog);
