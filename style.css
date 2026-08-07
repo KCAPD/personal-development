@@ -1770,3 +1770,23 @@ body.journal-dialog-open { overflow: hidden; }
     font-size: .55rem;
   }
 }
+
+
+/* =========================================================
+   RELEASE 3.2.1 — MOBILE CHARACTER GRID GUARD
+   ========================================================= */
+
+@media screen and (max-width: 600px) {
+  .values-section .value-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 10px !important;
+  }
+
+  .values-section .value-card {
+    width: auto !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    margin: 0 !important;
+  }
+}
