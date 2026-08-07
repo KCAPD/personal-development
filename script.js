@@ -154,7 +154,6 @@ document.getElementById("beginJourney").addEventListener("click", () => {
   document.getElementById("journey").scrollIntoView({ behavior: "smooth" });
 });
 
-renderYear(1);
 
 
 const valueStories = {
@@ -365,6 +364,8 @@ year3CurriculumLink.addEventListener("click", event => {
     event.preventDefault();
   }
 });
+
+renderYear(1);
 
 document.querySelectorAll(".value-card[data-value]").forEach(card => {
   card.addEventListener("click", () => {

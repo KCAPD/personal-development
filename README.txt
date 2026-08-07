@@ -1,16 +1,11 @@
-KCA Journey Journal Section
+KCA Release 3.1.1 — Character Popup Fix
 
-Upload and replace:
-- index.html
-- style.css
-- script.js
+Replace ONLY script.js.
 
-Upload these four NEW files into the existing images folder:
-- journal-cover.png
-- journal-setting-goals-year-2.png
-- journal-observable-behaviours-year-1.png
-- journal-looking-back-year-6.png
+Cause fixed:
+renderYear(1) was being called before the new Year 3 Growth Map DOM variables were initialised.
+That caused JavaScript execution to stop before the character-card click handlers were attached.
 
-The new section sits between the year journey and the value characters.
-It uses four compact cards on desktop and a 2 x 2 grid on mobile.
-The existing hero, year journey, value cards, character stories and ending remain unchanged.
+This patch moves the initial renderYear(1) call to the correct point in the script.
+
+No HTML, CSS or image changes are required.
