@@ -1274,6 +1274,347 @@ const provisionalYearEvidence = {
   }
 };
 
+const year4BehaviourEvidence = {
+  "respect": [
+    {
+      "signature": [
+        "Ancient Greek Day",
+        "Romans Day",
+        "Whole School Exhibition"
+      ],
+      "curriculum": "English includes debate, balanced argument and discussion across the year, including the question of whether the Romans were the greatest inventors. History and Geography also require children to compare ideas, evidence and perspectives rather than simply recall facts.",
+      "culture": "Class discussion increasingly expects children to wait, listen carefully, respond to the point somebody else has made and disagree without becoming dismissive.",
+      "why": "Respectful discussion allows children to test ideas without damaging relationships. It helps them become confident thinkers who can disagree thoughtfully."
+    },
+    {
+      "signature": [
+        "Whole School Exhibition",
+        "Collaborative Art and DT",
+        "Group learning presentations"
+      ],
+      "curriculum": "DT, Art, Science and project work involve shared outcomes in which different children bring different ideas and skills. Teachers make space for children to notice and build on contributions that are not their own.",
+      "culture": "Children are encouraged to acknowledge useful ideas, invite quieter voices into group work and recognise effort rather than assuming their own contribution should dominate.",
+      "why": "Valuing contributions develops genuine collaboration. Children learn that a group becomes stronger when different people are taken seriously."
+    },
+    {
+      "signature": [
+        "Kew Gardens & Barbican Conservatory Rainforest Experience",
+        "Exploring Camden & Immigration",
+        "Ancient Greek Day"
+      ],
+      "curriculum": "Geography explores South America, the Amazon Rainforest and Immigration & Settlement. RE includes Hinduism, worldviews represented in the local neighbourhood, peace and marriage across religions. History introduces Ancient Greece and Rome.",
+      "culture": "Children are encouraged to ask respectful questions when they encounter unfamiliar beliefs, traditions or experiences and to distinguish curiosity from judgement.",
+      "why": "Curiosity about difference helps children move beyond stereotypes. Respect deepens when unfamiliarity becomes a reason to learn rather than a reason to exclude."
+    },
+    {
+      "signature": [
+        "Trips and visits beyond school",
+        "Whole School Exhibition",
+        "Collaborative projects"
+      ],
+      "curriculum": "Group tasks across DT, PE, Science and the humanities require children to recognise that their behaviour can either support or disrupt the experience of others.",
+      "culture": "Year 4 children are increasingly expected to notice their own impact without waiting for an adult to point it out, particularly during transitions, group work and shared responsibilities.",
+      "why": "Taking responsibility for behaviour towards others marks a shift from rule-following to social awareness. Children begin to own the quality of the relationships they create."
+    },
+    {
+      "signature": [
+        "Debates and presentations",
+        "PE team activities",
+        "Whole School Exhibition"
+      ],
+      "curriculum": "English debate and persuasive writing give children opportunities to express strong views while still communicating appropriately. PSHE and RE support discussion of relationships, peace and difference.",
+      "culture": "Adults model how to pause, regulate tone and choose words carefully when frustrated, especially during disagreement, competitive activity or collaborative work.",
+      "why": "Respect matters most when emotions are strong. Learning to communicate appropriately under pressure helps children protect relationships and resolve conflict constructively."
+    }
+  ],
+  "integrity": [
+    {
+      "signature": [
+        "Whole School Exhibition",
+        "STEAM battery-light project",
+        "Collaborative DT"
+      ],
+      "curriculum": "DT projects require children to share decisions, equipment and responsibility for a finished outcome. Science and practical group work similarly make individual contribution visible within a team.",
+      "culture": "Children are expected to complete their agreed role, use resources responsibly and contribute rather than relying on others to carry the group.",
+      "why": "Responsibility in collaboration teaches children that integrity includes being dependable. Other people should be able to trust them to do their part."
+    },
+    {
+      "signature": [
+        "Open Afternoon",
+        "Project reflection",
+        "Extended writing and creative work"
+      ],
+      "curriculum": "Across writing, Art and DT, children evaluate outcomes and consider what they would improve. PSHE gives further opportunities to connect reflection on learning with reflection on choices and behaviour.",
+      "culture": "Adults increasingly ask children to explain what worked, what did not and what they will do next, rather than supplying the reflection for them.",
+      "why": "Thoughtful reflection turns experience into improvement. Children become more capable of adjusting both their learning habits and their behaviour independently."
+    },
+    {
+      "signature": [
+        "Trips beyond school",
+        "Independent project work",
+        "Open Afternoon"
+      ],
+      "curriculum": "As tasks become more complex, Year 4 pupils are trusted with greater independence in Art, DT, Computing and project work. They learn that expectations continue even when an adult is not immediately beside them.",
+      "culture": "Children practise making sensible choices in corridors, transitions, group work and independent tasks without relying on constant reminders.",
+      "why": "Integrity becomes meaningful when positive choices are made without surveillance. Children begin to act from internalised values rather than simply adult presence."
+    },
+    {
+      "signature": [
+        "Ancient Greek Day",
+        "Debate and balanced argument",
+        "RE learning about peace"
+      ],
+      "curriculum": "History, RE and English expose children to questions with more than one possible viewpoint. Debate and discussion help them distinguish what they personally want from what may be fair or accountable.",
+      "culture": "Restorative conversations ask children to consider evidence, impact and what a fair repair might look like after a problem.",
+      "why": "Understanding fairness and accountability develops moral reasoning. Children learn that being responsible may involve admitting fault, repairing harm or accepting a consequence."
+    },
+    {
+      "signature": [
+        "Nature Day",
+        "Rainforest Experience",
+        "Food Discovery"
+      ],
+      "curriculum": "The Year 4 enquiries explore responsibility for the natural world, rainforest protection and the global impact of food choices. Geography, Science and DT therefore provide explicit contexts for applying school values beyond interpersonal behaviour.",
+      "culture": "Children are encouraged to connect the six values to real decisions in learning, relationships, care for resources and participation in the wider school community.",
+      "why": "Applying values in different situations shows that character is transferable. Children begin to use the same principles to guide choices across school life rather than treating values as isolated lessons."
+    }
+  ],
+  "endurance": [
+    {
+      "signature": [
+        "Exploring Camden & Immigration",
+        "Swimming",
+        "Challenging practical learning"
+      ],
+      "curriculum": "PSHE: Healthy Me and PE provide language and strategies for managing frustration, while demanding work in Maths, writing and practical subjects gives children authentic opportunities to use those strategies.",
+      "culture": "Children are increasingly expected to pause, reset and return to learning rather than needing an adult to regulate every moment of frustration for them.",
+      "why": "Managing frustration protects learning. Children discover that difficult feelings can be handled without abandoning a task or damaging relationships."
+    },
+    {
+      "signature": [
+        "Whole School Exhibition preparation",
+        "Extended curriculum projects",
+        "Swimming"
+      ],
+      "curriculum": "Longer writing, project work, Art, DT and Maths require children to maintain attention across increasingly complex sequences of learning.",
+      "culture": "Year 4 routines place greater emphasis on beginning promptly, maintaining attention and returning to focus after interruptions.",
+      "why": "Sustained focus allows children to engage with deeper, more demanding learning. It is a key bridge between supported primary learning and later independence."
+    },
+    {
+      "signature": [
+        "Swimming",
+        "DT design process",
+        "PE skill development"
+      ],
+      "curriculum": "In PE, swimming, DT and Maths, children experience strategies that work differently depending on the task. Teachers encourage them to identify which approaches actually helped rather than simply whether they succeeded.",
+      "culture": "Reflection increasingly includes questions such as ‘What helped you?’ and ‘What will you try next time?’ so children build a personal toolkit for challenge.",
+      "why": "Knowing how they learn helps children become more adaptable. They begin to choose strategies deliberately instead of waiting for adults to solve difficulty for them."
+    },
+    {
+      "signature": [
+        "STEAM battery-light project",
+        "Rainforest model",
+        "Whole School Exhibition"
+      ],
+      "curriculum": "DT, Science and extended writing involve testing, revising and persisting when an outcome is not immediately successful. Maths similarly develops stamina through multi-step reasoning.",
+      "culture": "Adults reinforce that difficult work is not a signal to stop. Children are expected to use feedback, resources and prior learning before giving up.",
+      "why": "Persistence develops academic resilience. Children learn that challenge can be worked through and that improvement often depends on staying engaged for longer."
+    },
+    {
+      "signature": [
+        "Trips and visits",
+        "Whole School Exhibition",
+        "Open Afternoon"
+      ],
+      "curriculum": "Year 4 children manage more equipment, deadlines and multi-stage tasks across subjects. Organisation becomes increasingly important to completing learning successfully.",
+      "culture": "Children take greater responsibility for belongings, homework routines, resources, transitions and arriving ready for the next part of the day.",
+      "why": "Organisation reduces dependence on adults and frees children to focus on learning. It is an important part of becoming a reliable, self-managing learner."
+    },
+    {
+      "signature": [
+        "Swimming"
+      ],
+      "curriculum": "Swimming provides a particularly clear context for sustained effort: skills improve through repeated practice, careful listening and willingness to work beyond immediate comfort.",
+      "culture": "Children are encouraged to prepare independently, respond to coaching and recognise progress across a sequence of sessions rather than judging success on one lesson.",
+      "why": "Swimming makes endurance tangible. Children experience how confidence and competence grow when effort is sustained over time."
+    }
+  ],
+  "kindness": [
+    {
+      "signature": [
+        "Ancient Greek Day",
+        "RE learning about peace",
+        "PSHE Relationships"
+      ],
+      "curriculum": "English, RE and PSHE regularly ask children to consider motives, feelings and perspectives. Ancient Greek stories and myths also give rich contexts for discussing how people’s actions affect others.",
+      "culture": "Children are expected to notice when somebody may be uncomfortable, disappointed or excluded and adapt their response rather than focusing only on their own intention.",
+      "why": "Considering feelings develops empathy. It helps children understand that kindness begins with noticing another person’s experience, not simply deciding that their own behaviour was acceptable."
+    },
+    {
+      "signature": [
+        "PSHE Relationships",
+        "OPAL play",
+        "Restorative conversations"
+      ],
+      "curriculum": "PSHE Relationships gives children explicit strategies for managing friendship difficulties, while English and RE provide scenarios in which relationships are tested and repaired.",
+      "culture": "Children are supported to explain their view, listen to the other person, acknowledge impact and agree a constructive next step rather than relying on adults to settle every disagreement.",
+      "why": "Friendship inevitably includes difficulty. Resolving problems respectfully gives children the confidence and skills to maintain relationships rather than avoiding conflict."
+    },
+    {
+      "signature": [
+        "Whole School Exhibition",
+        "Collaborative DT and Art",
+        "PE leadership"
+      ],
+      "curriculum": "Group projects across Art, DT, Science, Music and PE make encouragement useful: children often need peers to persist, contribute an idea or attempt a skill.",
+      "culture": "Adults notice children who build others up, share confidence and help a group succeed without taking over somebody else’s task.",
+      "why": "Encouragement turns kindness into contribution. Children learn that they can positively influence another person’s confidence and willingness to participate."
+    },
+    {
+      "signature": [
+        "Whole School Exhibition",
+        "Ancient Greek Day",
+        "Classroom responsibilities"
+      ],
+      "curriculum": "Shared outcomes and authentic audiences require children to contribute reliably to something larger than their individual piece of work.",
+      "culture": "Class jobs, shared routines and collaborative learning help children see the classroom as a community they help shape rather than a service provided to them.",
+      "why": "Positive contribution develops belonging and responsibility together. Children begin to recognise that communities improve when members actively invest in them."
+    },
+    {
+      "signature": [
+        "OPAL play",
+        "Everyday classroom interactions",
+        "School-wide events"
+      ],
+      "curriculum": "PSHE and RE provide language for kindness, but this behaviour is most strongly tested outside a planned lesson—when children have to decide how to respond without a prompt.",
+      "culture": "Adults deliberately step back where appropriate so children can choose to include, help, reassure or respond generously because they have internalised the value.",
+      "why": "Choosing kindness independently shows that the value is becoming part of character. Children move from performing kindness for adults to acting kindly because they recognise its importance."
+    }
+  ],
+  "courage": [
+    {
+      "signature": [
+        "LAMDA Speaking in Public Entry Level exam",
+        "Whole School Exhibition",
+        "Open Afternoon"
+      ],
+      "curriculum": "English debate, discussion and persuasive writing help children formulate and justify opinions. History also creates genuine questions for debate, including judgements about Roman achievements.",
+      "culture": "Children are encouraged to contribute an opinion even when others may disagree, while learning that confidence should be paired with respect.",
+      "why": "Expressing an opinion respectfully helps children develop an authentic voice. They learn that disagreement does not require silence or conflict."
+    },
+    {
+      "signature": [
+        "LAMDA Speaking in Public Entry Level exam",
+        "Collaborative projects",
+        "Learning presentations"
+      ],
+      "curriculum": "English, LAMDA and group project work require children to explain ideas clearly, respond to others and contribute to a shared outcome.",
+      "culture": "Children increasingly take responsibility for speaking up when they have a useful idea, question or concern rather than waiting for an adult to invite every contribution.",
+      "why": "Using their voice in collaboration helps children see communication as a tool for shaping outcomes, not simply answering teacher questions."
+    },
+    {
+      "signature": [
+        "PE Leadership",
+        "Whole School Exhibition",
+        "Classroom responsibilities"
+      ],
+      "curriculum": "PE includes explicit leadership opportunities, while project work creates roles that require organisation, decision making and responsibility.",
+      "culture": "Children are encouraged to volunteer for jobs, lead parts of routines and take responsibility even when doing so feels more exposing than staying in the background.",
+      "why": "Volunteering develops initiative. Children learn that leadership begins with willingness to step forward and accept responsibility."
+    },
+    {
+      "signature": [
+        "LAMDA preparation",
+        "Swimming",
+        "Challenging extended learning"
+      ],
+      "curriculum": "Performance, physical learning, Maths, writing and DT all include moments where progress can feel slow. Teachers explicitly connect challenge with improvement rather than with lack of ability.",
+      "culture": "Adults help children acknowledge frustration while still expecting them to identify a next step, seek useful support and return to the learning.",
+      "why": "Staying positive under challenge protects confidence. Children learn that difficulty can coexist with progress and does not define what they are capable of."
+    },
+    {
+      "signature": [
+        "Whole School Exhibition",
+        "PE team activities",
+        "Collaborative Music and Art"
+      ],
+      "curriculum": "Group performance and practical work give children opportunities to notice when someone else is hesitant and offer encouragement that helps the whole group move forward.",
+      "culture": "Children are praised for creating conditions in which others feel safe to contribute, particularly when they invite participation rather than dominate it.",
+      "why": "Encouraging participation is a form of confident leadership. Children learn to use their own assurance to strengthen somebody else’s."
+    },
+    {
+      "signature": [
+        "LAMDA Speaking in Public Entry Level exam"
+      ],
+      "curriculum": "LAMDA provides a structured, progressive context in which children prepare, rehearse and deliver spoken work to an external standard, drawing together clarity, confidence and purposeful communication.",
+      "culture": "Preparation normalises rehearsal, feedback, nerves and improvement. Children experience that confidence is built through practice rather than something people simply have or do not have.",
+      "why": "Completing the Entry Level exam gives children concrete evidence that they can prepare for a demanding speaking challenge and succeed in front of an audience."
+    }
+  ],
+  "aspiration": [
+    {
+      "signature": [
+        "Djembe Drums",
+        "Whole School Exhibition",
+        "Open Afternoon"
+      ],
+      "curriculum": "Year 4 offers sustained opportunities across Music, Art, DT, PE and project work. Children begin to experience the difference between briefly trying something and committing long enough to improve.",
+      "culture": "Adults encourage children to return to interests, practise skills and notice the satisfaction that comes from developing competence over time.",
+      "why": "Sustained participation helps interests become meaningful. Children begin to understand that enjoyment can deepen when they invest effort rather than constantly moving to something new."
+    },
+    {
+      "signature": [
+        "Open Afternoon",
+        "Whole School Exhibition",
+        "LAMDA Entry Level exam"
+      ],
+      "curriculum": "Authentic audiences give children reasons to complete, rehearse and present work they can genuinely be proud of. Reflection helps them identify the effort and decisions behind successful outcomes.",
+      "culture": "Celebration focuses on specific achievement, improvement and contribution rather than generic praise, helping children understand what they have actually accomplished.",
+      "why": "Pride in achievement strengthens motivation when it is connected to effort and growth. Children begin to trust that their work can become something worth sharing."
+    },
+    {
+      "signature": [
+        "Food Discovery",
+        "STEAM Ambassador project",
+        "Djembe Drums"
+      ],
+      "curriculum": "Year 4 exposes children to global food and trade, engineering, music, different languages, cultures and historical societies. These encounters widen the range of futures and interests children can imagine.",
+      "culture": "Adults make links between classroom learning and the wider world, encouraging children to ask who does this work, where these skills are used and what opportunities might exist beyond school.",
+      "why": "Curiosity about careers, culture and opportunity expands children’s sense of possibility. They cannot aspire towards worlds they have never been invited to notice."
+    },
+    {
+      "signature": [
+        "Whole School Exhibition",
+        "Open Afternoon",
+        "Trips and cultural experiences"
+      ],
+      "curriculum": "Authentic audiences, visits, performance and project work move learning beyond the classroom. Children experience their knowledge and skills being used in different settings and for different people.",
+      "culture": "Children are encouraged to take opportunities seriously, represent KCA positively and approach unfamiliar settings with openness rather than reluctance.",
+      "why": "Engaging beyond school helps children see learning as connected to real life. It builds confidence to enter new spaces and make use of opportunities when they arise."
+    },
+    {
+      "signature": [
+        "LAMDA",
+        "Music",
+        "PE Leadership",
+        "Creative exhibitions"
+      ],
+      "curriculum": "The range of Year 4 experiences gives children evidence about themselves: speaking, making, performing, leading, solving and creating. Reflection helps them distinguish emerging strengths from areas they are still developing.",
+      "culture": "Teachers talk specifically about talents and interests and encourage children to consider what they might want to practise, pursue or experience next.",
+      "why": "Reflecting on talents helps children make increasingly purposeful choices. Aspiration becomes more grounded when ambition is connected to genuine self-knowledge."
+    },
+    {
+      "signature": [
+        "Djembe Drums",
+        "Whole-class Music"
+      ],
+      "curriculum": "Year 4 introduces structured instrumental learning through Djembe Drums alongside wider Music study of pitch, tempo, dynamics and motifs.",
+      "culture": "Children learn that beginning an instrument involves listening, coordinated practice, repetition and gradual improvement rather than instant performance.",
+      "why": "Starting an instrument offers a powerful experience of aspiration in action: a new skill becomes possible through commitment, practice and willingness to begin as a novice."
+    }
+  ]
+};
+
 const year2BehaviourEvidence = {
   "respect": [
     {
@@ -1942,7 +2283,8 @@ function renderInlineGrowthMap(valueKey) {
     : map.behaviours.map((statement, index) => {
         const detailedEvidenceByYear = {
           1: year1BehaviourEvidence,
-          2: year2BehaviourEvidence
+          2: year2BehaviourEvidence,
+          4: year4BehaviourEvidence
         };
 
         const detailedEvidence = detailedEvidenceByYear[activeYear]?.[valueKey]?.[index] || null;
