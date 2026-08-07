@@ -1790,3 +1790,67 @@ body.journal-dialog-open { overflow: hidden; }
     margin: 0 !important;
   }
 }
+
+
+/* =========================================================
+   RELEASE 3.2.2 — MOBILE-ONLY COURAGE PANEL POLISH
+   Desktop layout remains unchanged.
+   ========================================================= */
+
+@media screen and (max-width: 600px) {
+  .inline-growth-hero {
+    position: relative;
+    display: block;
+    min-height: 0;
+    padding: 15px 92px 15px 13px;
+    overflow: hidden;
+  }
+
+  .inline-growth-hero > div {
+    position: relative;
+    z-index: 2;
+  }
+
+  .inline-growth-hero h3 {
+    max-width: 100%;
+    margin-bottom: 8px;
+    font-size: 1.38rem;
+  }
+
+  .inline-growth-hero > div > p:last-child {
+    font-size: .8rem;
+    line-height: 1.48;
+  }
+
+  .inline-growth-hero img {
+    position: absolute;
+    z-index: 1;
+    top: 8px;
+    right: 4px;
+    width: 86px;
+    max-width: 86px;
+    height: 112px;
+    max-height: 112px;
+    object-fit: contain;
+    object-position: top right;
+    opacity: .94;
+    pointer-events: none;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .inline-growth-hero {
+    padding-right: 80px;
+  }
+
+  .inline-growth-hero img {
+    width: 74px;
+    max-width: 74px;
+    height: 100px;
+    max-height: 100px;
+  }
+
+  .inline-growth-hero h3 {
+    font-size: 1.28rem;
+  }
+}
