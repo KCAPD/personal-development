@@ -1,4 +1,14 @@
 const years = {
+  0: {
+    title: "EYFS — Building the Foundations",
+    intro: "In Nursery and Reception, children experience the KCA values through play, relationships, routines, communication and exploration, building the foundations for their Personal Development Journey.",
+    character: "images/riley-respect.png",
+    alt: "",
+    caption: "",
+    quote: "",
+    milestones: [],
+    experiences: []
+  },
   1: {
     title: "Year 1 — Beginning the Journey",
     intro: "Children begin to recognise their strengths, make positive choices, build relationships and participate confidently in school life.",
@@ -116,16 +126,20 @@ let activeYear = 1;
 function renderYear(number) {
   activeYear = number;
   const year = years[number];
-  kicker.textContent = `Platform ${number}`;
+  const isEYFS = number === 0;
+  kicker.textContent = isEYFS ? "EYFS" : `Platform ${number}`;
   title.textContent = year.title;
   intro.textContent = year.intro;
-  character.src = year.character;
-  character.alt = year.alt;
-  character.style.animation = "none";
-  void character.offsetWidth;
-  character.style.animation = "";
-  caption.textContent = year.caption;
-  speech.textContent = year.quote;
+
+  if (!isEYFS) {
+    character.src = year.character;
+    character.alt = year.alt;
+    character.style.animation = "none";
+    void character.offsetWidth;
+    character.style.animation = "";
+    caption.textContent = year.caption;
+    speech.textContent = year.quote;
+  }
 
   milestones.innerHTML = year.milestones.map(([heading, copy]) => `
     <article class="milestone">
@@ -136,9 +150,9 @@ function renderYear(number) {
 
   experiences.innerHTML = year.experiences.map(item => `<span>${item}</span>`).join("");
 
-  const progress = ((number - 1) / 5) * 100;
+  const progress = (number / 6) * 100;
   fill.style.width = `calc(${progress}% - ${progress === 0 ? 0 : 40}px)`;
-  train.style.left = `calc(30px + (100% - 100px) * ${(number - 1) / 5})`;
+  train.style.left = `calc(30px + (100% - 100px) * ${number / 6})`;
 
   buttons.forEach(button => {
     const active = Number(button.dataset.year) === number;
@@ -148,6 +162,11 @@ function renderYear(number) {
 
   const isYear3 = number === 3;
   yearGrowthSection.hidden = !isYear3;
+  eyfsFoundationSection.hidden = !isEYFS;
+
+  document.querySelector(".milestone-grid").hidden = isEYFS;
+  document.querySelector(".experiences").hidden = isEYFS;
+  document.querySelector(".year-character-wrap").hidden = isEYFS;
 
   if (!isYear3) {
     inlineGrowthMap.hidden = true;
@@ -174,8 +193,7 @@ const valueStories = {
     details: [
       "His strong shell helps him stay true to what he believes is right, rather than being knocked off course by other people’s opinions.",
       "Isaac examines what he sees and hears so that he can make fair choices. He knows that integrity means being honest, responsible and trustworthy — even when a task is difficult or takes longer."
-    ],
-    action: "Tell the truth, take responsibility and choose what is kind, safe and fair."
+    ]
   },
   respect: {
     title: "Riley Respect",
@@ -185,8 +203,7 @@ const valueStories = {
     details: [
       "Each of her unique feathers celebrates the experiences that different people bring. She welcomes everyone and knows that every person belongs at KCA.",
       "Riley listens carefully, values other people’s opinions and treats adults, visitors and classmates with respect — even when she disagrees."
-    ],
-    action: "Listen carefully, value difference and use kind words and kind acts."
+    ]
   },
   endurance: {
     title: "Eli Endurance",
@@ -196,8 +213,7 @@ const valueStories = {
     details: [
       "Mistakes are part of learning, so Eli takes a breath, focuses on the challenge and tries again. He asks for help when he needs it and celebrates the progress that practice brings.",
       "Eli understands that perseverance helps people become stronger and more confident. His positivity keeps him travelling in the right direction, even when the road is bumpy."
-    ],
-    action: "Keep trying, use helpful strategies and recognise that mistakes help us grow."
+    ]
   },
   courage: {
     title: "Connor Courage",
@@ -207,8 +223,7 @@ const valueStories = {
     details: [
       "When something feels difficult or unfamiliar, he remembers to have a go and be brave. He takes positive risks by sharing ideas, speaking in front of others and trying new things.",
       "Connor knows courage does not mean never wobbling. It means continuing despite the wobble and encouraging other people to be brave too."
-    ],
-    action: "Have a go, speak up and take positive risks in learning and life."
+    ]
   },
   kindness: {
     title: "Kiki & Kofi Kindness",
@@ -218,8 +233,7 @@ const valueStories = {
     details: [
       "Kiki notices when somebody looks worried, upset or left out and offers compassion. Kofi understands what it feels like to be alone and invites others to join in.",
       "Together, they show that small caring actions can make a big difference. They help, share, encourage and contribute without always waiting to be asked."
-    ],
-    action: "Notice others, offer help and make sure everyone feels included."
+    ]
   },
   aspiration: {
     title: "Aria Aspiration",
@@ -229,8 +243,7 @@ const valueStories = {
     details: [
       "She explores the world with curiosity, asks thoughtful questions and discovers talents, interests and friendships. Every place explored, book read, fact learned and creative experience adds to her wings.",
       "Aria knows that exciting futures are built one small step at a time. Aspiration means believing in yourself, working hard and being brave enough to wonder how high you can fly."
-    ],
-    action: "Stay curious, explore your passions and believe in the possibilities ahead."
+    ]
   }
 };
 
@@ -241,7 +254,6 @@ const dialogTitle = document.getElementById("dialogTitle");
 const dialogStrand = document.getElementById("dialogStrand");
 const dialogLead = document.getElementById("dialogLead");
 const dialogDetails = document.getElementById("dialogDetails");
-const dialogAction = document.getElementById("dialogAction");
 
 
 const year3CourageGrowthMap = [
@@ -291,6 +303,7 @@ const year3CourageGrowthMap = [
 
 
 const yearGrowthSection = document.getElementById("yearGrowthSection");
+const eyfsFoundationSection = document.getElementById("eyfsFoundationSection");
 const courageGrowthButton = document.querySelector('.year-growth-value[data-growth-value="courage"]');
 const inlineGrowthMap = document.getElementById("inlineGrowthMap");
 const inlineBehaviourAccordion = document.getElementById("inlineBehaviourAccordion");
@@ -368,12 +381,6 @@ courageGrowthButton.addEventListener("click", () => {
   }
 });
 
-year3CurriculumLink.addEventListener("click", event => {
-  if (year3CurriculumLink.getAttribute("aria-disabled") === "true") {
-    event.preventDefault();
-  }
-});
-
 renderYear(1);
 
 document.querySelectorAll(".value-card[data-value]").forEach(card => {
@@ -385,7 +392,6 @@ document.querySelectorAll(".value-card[data-value]").forEach(card => {
     dialogStrand.textContent = story.strand;
     dialogLead.textContent = story.lead;
     dialogDetails.innerHTML = story.details.map(paragraph => `<p>${paragraph}</p>`).join("");
-    dialogAction.textContent = story.action;
     dialog.showModal();
     document.body.classList.add("dialog-open");
   });

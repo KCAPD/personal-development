@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Explore the personal development journey at King's Cross Academy.">
   <title>Every Child Has a Journey | King's Cross Academy</title>
-  <link rel="stylesheet" href="style.css?v=3.2.3">
+  <link rel="stylesheet" href="style.css?v=3.3-final">
 </head>
 <body>
   <a class="skip-link" href="#journey">Skip to the journey</a>
@@ -67,6 +67,10 @@
       </div>
 
       <div class="platform-board" role="tablist" aria-label="Year-group journey">
+        <button class="platform" role="tab" aria-selected="false" data-year="0">
+          <span class="platform-number eyfs-platform-mark">EY</span>
+          <span><strong>EYFS</strong><small>Building the foundations</small></span>
+        </button>
         <button class="platform active" role="tab" aria-selected="true" data-year="1">
           <span class="platform-number">1</span>
           <span><strong>Year 1</strong><small>Beginning the journey</small></span>
@@ -123,10 +127,35 @@
           </figure>
         </div>
 
+        <section class="eyfs-foundations" id="eyfsFoundationSection" hidden aria-labelledby="eyfsFoundationTitle">
+          <div class="eyfs-foundation-heading">
+            <p class="growth-map-eyebrow">EYFS · Nursery &amp; Reception</p>
+            <h3 id="eyfsFoundationTitle">Building the Foundations</h3>
+            <p>
+              In Nursery and Reception, children are immersed in the KCA values through play,
+              relationships, routines, communication and exploration. The focus is on developing
+              a secure, age-appropriate understanding of what each value looks and feels like in
+              everyday life, creating the foundations for the observable behaviours that follow
+              from Year 1 onwards.
+            </p>
+          </div>
+
+          <div class="eyfs-value-grid">
+            <article class="eyfs-value-card integrity"><strong>Integrity</strong><p>Beginning to make positive choices, follow routines and understand why expectations matter.</p></article>
+            <article class="eyfs-value-card respect"><strong>Respect</strong><p>Learning to listen, share, notice difference and understand that everyone belongs.</p></article>
+            <article class="eyfs-value-card endurance"><strong>Endurance</strong><p>Learning to keep trying, manage feelings with support and grow in independence.</p></article>
+            <article class="eyfs-value-card kindness"><strong>Kindness</strong><p>Helping, sharing, including others and showing care for people, animals and the environment.</p></article>
+            <article class="eyfs-value-card courage"><strong>Courage</strong><p>Trying new things, joining in, sharing ideas and becoming increasingly confident.</p></article>
+            <article class="eyfs-value-card aspiration"><strong>Aspiration</strong><p>Exploring interests, asking questions and becoming curious about the wider world.</p></article>
+          </div>
+
+          <a class="eyfs-curriculum-link" href="https://kcapd.github.io/KCACurriculum/">Explore the KCA Curriculum →</a>
+        </section>
+
         <section class="year-growth-section" id="yearGrowthSection" hidden aria-labelledby="yearGrowthTitle">
           <div class="year-growth-heading">
-            <p class="growth-map-eyebrow">Year 3 · Personal Development</p>
-            <h3 id="yearGrowthTitle">Growing Through Year 3</h3>
+            <p class="growth-map-eyebrow">Year 3</p>
+            <h3 id="yearGrowthTitle">Your Personal Development Journey</h3>
             <p>
               Every experience in Year 3 helps children develop the values, confidence and
               character they need to flourish. Choose a value to see the exact observable
@@ -190,14 +219,11 @@
             <div class="behaviour-accordion" id="inlineBehaviourAccordion"></div>
 
             <div class="growth-map-link-wrap">
-              <a class="growth-map-link is-placeholder"
+              <a class="growth-map-link"
                  id="year3CurriculumLink"
-                 href="#"
-                 aria-disabled="true"
-                 title="The Year 3 curriculum URL will be connected once confirmed.">
-                Explore the Year 3 Curriculum →
+                 href="https://kcapd.github.io/KCACurriculum/">
+                Explore the KCA Curriculum →
               </a>
-              <small>The direct curriculum link will be connected once the final Year 3 URL is confirmed.</small>
             </div>
           </section>
         </section>
@@ -329,10 +355,6 @@
           <h2 id="dialogTitle">Isaac Integrity</h2>
           <p class="dialog-lead" id="dialogLead"></p>
           <div class="dialog-details" id="dialogDetails"></div>
-          <div class="value-in-action">
-            <p>Value in action</p>
-            <strong id="dialogAction"></strong>
-          </div>
 
         </div>
       </div>
@@ -361,6 +383,6 @@
     <p>King's Cross Academy · Love Learning Together</p>
   </footer>
 
-  <script src="script.js?v=3.2.1"></script>
+  <script src="script.js?v=3.3-final"></script>
 </body>
 </html>
