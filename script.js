@@ -160,22 +160,24 @@ function renderYear(number) {
     button.setAttribute("aria-selected", active ? "true" : "false");
   });
 
-  const isYear3 = number === 3;
-  yearGrowthSection.hidden = !isYear3;
+  const hasGrowthMap = number === 1 || number === 3;
+  yearGrowthSection.hidden = !hasGrowthMap;
   eyfsFoundationSection.hidden = !isEYFS;
+
+  if (hasGrowthMap) {
+    yearGrowthEyebrow.textContent = `Year ${number}`;
+  }
 
   document.querySelector(".milestone-grid").hidden = isEYFS;
   document.querySelector(".experiences").hidden = isEYFS;
   document.querySelector(".year-character-wrap").hidden = isEYFS;
 
-  if (!isYear3) {
-    inlineGrowthMap.hidden = true;
-    activeGrowthValue = null;
-    growthValueButtons.forEach(button => {
-      button.setAttribute("aria-expanded", "false");
-      button.classList.remove("is-selected");
-    });
-  }
+  inlineGrowthMap.hidden = true;
+  activeGrowthValue = null;
+  growthValueButtons.forEach(button => {
+    button.setAttribute("aria-expanded", "false");
+    button.classList.remove("is-selected");
+  });
 }
 
 buttons.forEach(button => {
@@ -260,6 +262,87 @@ const dialogLead = document.getElementById("dialogLead");
 const dialogDetails = document.getElementById("dialogDetails");
 
 
+
+const year1GrowthMaps = {
+  integrity: {
+    title: "Integrity",
+    strand: "Making good choices",
+    character: "images/isaac-integrity.png",
+    characterAlt: "Isaac Integrity",
+    behaviours: [
+      "I can follow classroom expectations.",
+      "I can tell the truth when supported.",
+      "I can take responsibility for simple actions.",
+      "I can recognise when a choice is kind, safe or fair.",
+      "I can try to make positive choices."
+    ]
+  },
+  respect: {
+    title: "Respect",
+    strand: "Belonging and understanding others",
+    character: "images/riley-respect.png",
+    characterAlt: "Riley Respect",
+    behaviours: [
+      "I can listen when others are speaking.",
+      "I can share resources fairly.",
+      "I can use polite and respectful language.",
+      "I can follow class routines and expectations.",
+      "I can treat others kindly during play and learning."
+    ]
+  },
+  endurance: {
+    title: "Endurance",
+    strand: "Managing myself and staying the course",
+    character: "images/eli-endurance.png",
+    characterAlt: "Eli Endurance",
+    behaviours: [
+      "I can keep trying when learning feels difficult.",
+      "I can begin to manage my emotions with support.",
+      "I can follow routines independently at times.",
+      "I can complete short tasks with encouragement.",
+      "I can recognise when I need help."
+    ]
+  },
+  kindness: {
+    title: "Kindness",
+    strand: "Relationships and contribution",
+    character: "images/kiki-kofi-kindness.png",
+    characterAlt: "Kiki and Kofi Kindness",
+    behaviours: [
+      "I can use kind words and actions.",
+      "I can help others during play and learning.",
+      "I can notice when someone may need help or comfort.",
+      "I can take turns and share fairly.",
+      "I can show care towards others."
+    ]
+  },
+  courage: {
+    title: "Courage",
+    strand: "Finding and using my voice",
+    character: "images/connor-courage.png",
+    characterAlt: "Connor Courage",
+    behaviours: [
+      "I can join in with class discussions and activities.",
+      "I can try new learning with encouragement.",
+      "I can talk to familiar adults and children about my ideas.",
+      "I can share my work or perform with support.",
+      "I can keep going when something feels difficult."
+    ]
+  },
+  aspiration: {
+    title: "Aspiration",
+    strand: "Exploring my future and my passions",
+    character: "images/aria-aspiration.png",
+    characterAlt: "Aria Aspiration",
+    behaviours: [
+      "I can show curiosity about new experiences.",
+      "I can participate in trips, performances and enrichment activities.",
+      "I can talk about things I enjoy learning.",
+      "I can try different activities with encouragement.",
+      "I can begin to develop interests and preferences."
+    ]
+  }
+};
 
 const year3GrowthMaps = {
   integrity: {
@@ -549,6 +632,7 @@ const year3GrowthMaps = {
 
 
 const yearGrowthSection = document.getElementById("yearGrowthSection");
+const yearGrowthEyebrow = document.getElementById("yearGrowthEyebrow");
 const growthValueButtons = document.querySelectorAll('.year-growth-value[data-growth-value]');
 const inlineGrowthMap = document.getElementById("inlineGrowthMap");
 const inlineBehaviourAccordion = document.getElementById("inlineBehaviourAccordion");
@@ -556,19 +640,40 @@ const inlineGrowthEyebrow = document.getElementById("inlineGrowthEyebrow");
 const inlineGrowthHeading = document.getElementById("inlineGrowthHeading");
 const inlineGrowthCulture = document.getElementById("inlineGrowthCulture");
 const inlineGrowthCharacter = document.getElementById("inlineGrowthCharacter");
-const year3CurriculumLink = document.getElementById("year3CurriculumLink");
+const growthCurriculumLink = document.getElementById("growthCurriculumLink");
 let activeGrowthValue = null;
 
 function renderInlineGrowthMap(valueKey) {
-  const map = year3GrowthMaps[valueKey];
+  const isYear1 = activeYear === 1;
+  const maps = isYear1 ? year1GrowthMaps : year3GrowthMaps;
+  const map = maps[valueKey];
   if (!map) return;
 
   activeGrowthValue = valueKey;
   inlineGrowthEyebrow.textContent = `${map.title} · ${map.strand}`;
-  inlineGrowthHeading.textContent = `What ${map.title} feels like at KCA`;
-  inlineGrowthCulture.textContent = map.culture;
   inlineGrowthCharacter.src = map.character;
   inlineGrowthCharacter.alt = map.characterAlt;
+
+  if (isYear1) {
+    inlineGrowthHeading.textContent = `By the end of Year 1...`;
+    inlineGrowthCulture.textContent = `These are the observable behaviours children are beginning to develop through ${map.title.toLowerCase()} in Year 1.`;
+
+    inlineBehaviourAccordion.innerHTML = map.behaviours.map(statement => `
+      <article class="behaviour-item behaviour-statement-only">
+        <div class="behaviour-trigger behaviour-trigger-static">
+          <span class="behaviour-check">✓</span>
+          <strong>${statement}</strong>
+        </div>
+      </article>
+    `).join("");
+
+    growthCurriculumLink.hidden = true;
+    return;
+  }
+
+  inlineGrowthHeading.textContent = `What ${map.title} feels like at KCA`;
+  inlineGrowthCulture.textContent = map.culture;
+  growthCurriculumLink.hidden = false;
 
   inlineBehaviourAccordion.innerHTML = map.behaviours.map(item => `
     <article class="behaviour-item">
@@ -614,7 +719,10 @@ function renderInlineGrowthMap(valueKey) {
 
       inlineBehaviourAccordion.querySelectorAll(".behaviour-item").forEach(other => {
         other.classList.remove("open");
-        other.querySelector(".behaviour-trigger").setAttribute("aria-expanded", "false");
+        const otherTrigger = other.querySelector(".behaviour-trigger");
+        if (otherTrigger && otherTrigger.hasAttribute("aria-expanded")) {
+          otherTrigger.setAttribute("aria-expanded", "false");
+        }
       });
 
       if (willOpen) {
@@ -651,10 +759,10 @@ growthValueButtons.forEach(button => {
   });
 });
 
-year3CurriculumLink.href = "https://kcapd.github.io/KCACurriculum/";
-year3CurriculumLink.removeAttribute("aria-disabled");
-year3CurriculumLink.classList.remove("is-placeholder");
-year3CurriculumLink.removeAttribute("title");
+growthCurriculumLink.href = "https://kcapd.github.io/KCACurriculum/";
+growthCurriculumLink.removeAttribute("aria-disabled");
+growthCurriculumLink.classList.remove("is-placeholder");
+growthCurriculumLink.removeAttribute("title");
 
 
 renderYear(1);

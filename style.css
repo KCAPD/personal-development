@@ -2049,3 +2049,27 @@ body.journal-dialog-open { overflow: hidden; }
     transform: none;
   }
 }
+
+
+/* =========================================================
+   4.0 STEP 1 — YEAR 1 OBSERVABLE BEHAVIOURS
+   ========================================================= */
+.behaviour-trigger-static {
+  cursor: default;
+  grid-template-columns: 32px 1fr;
+}
+
+.behaviour-trigger-static:hover,
+.behaviour-trigger-static:focus-visible {
+  background: #fff;
+}
+
+.behaviour-statement-only .behaviour-trigger {
+  padding: 15px 16px;
+}
+
+@media screen and (max-width: 600px) {
+  .behaviour-trigger-static {
+    grid-template-columns: 28px 1fr;
+  }
+}
