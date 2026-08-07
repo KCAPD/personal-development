@@ -1274,6 +1274,313 @@ const provisionalYearEvidence = {
   }
 };
 
+const year1BehaviourEvidence = {
+  "respect": [
+    {
+      "signature": [
+        "Heritage map and ‘Guess Who?’ class game",
+        "KS1 Performance",
+        "St Pancras Church"
+      ],
+      "curriculum": "English and shared reading ask children to listen carefully before responding. RE introduces different beliefs and traditions, while BSL makes careful attention to another person’s communication especially visible.",
+      "culture": "Carpet sessions, partner talk, class discussions and everyday routines give children repeated practice in listening without interrupting and showing that another person’s contribution matters.",
+      "why": "Listening is one of the first ways children show respect. It strengthens relationships, supports learning and helps children understand that every voice has value."
+    },
+    {
+      "signature": [
+        "Junk-modelling playground challenge",
+        "Practical Art and DT",
+        "Outdoor learning"
+      ],
+      "curriculum": "Art, DT, Science and Maths regularly use shared tools and materials. These practical lessons give children real reasons to negotiate, wait, share and make sure everyone can take part.",
+      "culture": "Shared classroom resources, OPAL play, learning partners and tidy-up routines create everyday moments where children learn that fairness sometimes means taking turns rather than getting what they want immediately.",
+      "why": "Sharing fairly helps children move beyond their own immediate needs. It develops cooperation and an early understanding that everyone deserves the opportunity to participate."
+    },
+    {
+      "signature": [
+        "Open Afternoon",
+        "St Pancras Church",
+        "Local community visits"
+      ],
+      "curriculum": "English develops spoken language, while PSHE and RE explore relationships, belonging and respectful interaction. Children learn that how they say something can matter just as much as what they say.",
+      "culture": "Greeting adults, speaking with classmates, asking for help, thanking others and talking to visitors all provide authentic opportunities to practise respectful language.",
+      "why": "Polite, respectful language helps children build trust and positive relationships. It gives them the communication habits they need to participate confidently in a community."
+    },
+    {
+      "signature": [
+        "Trips beyond the classroom",
+        "Whole-school events"
+      ],
+      "curriculum": "Every subject has routines that make learning possible: listening to instructions in PE, caring for materials in Art, working safely in Science and organising equipment in the classroom.",
+      "culture": "Visual timetables, transitions, lining up, independent organisation and the school’s consistent behaviour expectations help children understand what being ready for learning looks like.",
+      "why": "Routines create security and predictability. Following them with growing independence helps children develop self-regulation and responsibility for the learning environment."
+    },
+    {
+      "signature": [
+        "OPAL play",
+        "Collaborative learning",
+        "Shared celebrations and exhibitions"
+      ],
+      "curriculum": "Stories, PSHE, RE and collaborative practical work encourage children to notice how characters and classmates feel, include others and make choices that support the group.",
+      "culture": "Playtimes, lunchtimes, group work and classroom interactions are where kindness and respect are practised most often. Adults model inclusion and support children to repair small disagreements.",
+      "why": "Treating others kindly helps children build friendships and a genuine sense of belonging. It also helps create a classroom where children feel safe enough to learn and contribute."
+    }
+  ],
+  "integrity": [
+    {
+      "signature": [
+        "Food tasting — crops grown in Kenya",
+        "Open Afternoon",
+        "Kentish Town City Farm"
+      ],
+      "curriculum": "Across practical learning, children are taught what safe and successful participation looks like. PSHE: Being Me in My World helps them connect classroom expectations with the way their choices affect others.",
+      "culture": "From organising belongings to listening, moving around school and caring for resources, children practise making the small choices that help a classroom work well.",
+      "why": "Following expectations helps children become dependable, increasingly independent learners who understand that their choices contribute to everyone’s success."
+    },
+    {
+      "signature": [
+        "Storytelling and character discussion",
+        "PSHE reflection"
+      ],
+      "curriculum": "Stories across English give children opportunities to explore honesty, trust and what happens when characters hide or admit mistakes. PSHE provides space to reflect on real choices in an age-appropriate way.",
+      "culture": "When incidents happen, adults use calm restorative conversations that help children explain what happened truthfully and understand that honesty is the starting point for solving a problem.",
+      "why": "Telling the truth builds trust. Children also learn that making a mistake is manageable when they can be honest about it and accept support to put things right."
+    },
+    {
+      "signature": [
+        "Kentish Town City Farm",
+        "Classroom responsibilities"
+      ],
+      "curriculum": "Practical subjects such as Art, DT and Science require children to look after equipment, complete their part of a task and leave resources ready for others.",
+      "culture": "Looking after reading books, returning equipment, helping with classroom jobs and taking care of shared spaces give children manageable responsibilities that grow with their confidence.",
+      "why": "Taking responsibility helps children understand that their actions matter. Small acts of ownership are the foundation for the greater independence expected later in school."
+    },
+    {
+      "signature": [
+        "Food technology",
+        "Outdoor learning and visits"
+      ],
+      "curriculum": "RE and PSHE encourage children to think about kindness, safety and fairness. Practical activities give them real situations in which choices affect both themselves and other people.",
+      "culture": "Adults regularly prompt children to pause and consider whether a choice is safe, fair and kind, particularly during play, group work and moments of disagreement.",
+      "why": "Recognising a positive choice comes before making it independently. Children begin to develop moral judgement by considering needs beyond their own immediate wants."
+    },
+    {
+      "signature": [
+        "Collaborative projects",
+        "Open Afternoon",
+        "Learning beyond the classroom"
+      ],
+      "curriculum": "Teachers notice and discuss the choices that lead to successful learning: listening to feedback, cooperating, having another attempt and taking care over a shared outcome.",
+      "culture": "Positive choices are reinforced through daily conversations, reflection and celebration. Children learn that integrity is built from repeated everyday decisions rather than one-off acts.",
+      "why": "When children practise making positive choices, those choices gradually become habits. This is the beginning of acting responsibly because it is the right thing to do."
+    }
+  ],
+  "endurance": [
+    {
+      "signature": [
+        "Junk-modelling playground challenge",
+        "Wright Brothers model-plane work",
+        "Practical investigations"
+      ],
+      "curriculum": "DT makes perseverance visible: children design, make, test and improve. Maths, writing and Science also include moments where an answer or idea needs revisiting rather than abandoning.",
+      "culture": "Adults praise effort, strategy and improvement, encouraging children to have another go, try a different approach or ask for support rather than deciding they cannot do something.",
+      "why": "Children who learn to keep trying begin to see challenge as a normal part of learning. That belief supports confidence when tasks become more demanding."
+    },
+    {
+      "signature": [
+        "PE and swimming",
+        "PSHE: Healthy Me"
+      ],
+      "curriculum": "PSHE helps children name feelings and begin using simple strategies to manage them. PE and swimming give practical opportunities to cope with excitement, frustration, nerves and repeated attempts.",
+      "culture": "Adults help children notice when emotions are becoming difficult and use familiar strategies such as pausing, seeking help, returning to a task or talking through what has happened.",
+      "why": "Early self-regulation helps children stay connected to learning and relationships even when feelings are strong. Support now creates the foundations for greater independence later."
+    },
+    {
+      "signature": [
+        "Open Afternoon preparation",
+        "Independent classroom routines"
+      ],
+      "curriculum": "Across the day, children increasingly manage familiar routines without waiting for an adult prompt, from preparing equipment to moving between stages of practical work.",
+      "culture": "Visual routines, consistent expectations and repeated practice help children organise belongings, get ready for lessons and complete familiar transitions increasingly independently.",
+      "why": "Independence grows through small, repeated successes. Following routines without constant prompting helps children see themselves as capable and responsible learners."
+    },
+    {
+      "signature": [
+        "Creative projects completed over several lessons",
+        "Work prepared for exhibition or Open Afternoon"
+      ],
+      "curriculum": "Writing, Art and DT teach children that a worthwhile outcome often takes several steps. Teachers break learning into achievable chunks while still expecting children to see a short task through.",
+      "culture": "Children are encouraged to finish a manageable piece of learning, return resources and recognise the satisfaction of completing what they started.",
+      "why": "Completing short tasks develops attention, responsibility and confidence. It prepares children for the longer periods of sustained learning they will meet as they move through school."
+    },
+    {
+      "signature": [
+        "Collaborative DT challenges",
+        "Outdoor learning"
+      ],
+      "curriculum": "Teachers model questioning and problem solving so children learn that successful learners use support strategically. Practical learning creates natural moments when help is genuinely useful.",
+      "culture": "Children are taught who they can ask, how to ask clearly and that seeking support is different from giving up. Learning partners and trusted adults make help accessible.",
+      "why": "Knowing when to ask for help is an important part of resilience. It allows children to stay with a challenge instead of becoming overwhelmed or withdrawing from it."
+    }
+  ],
+  "kindness": [
+    {
+      "signature": [
+        "Open Afternoon",
+        "Shared performances",
+        "Collaborative Music and Art"
+      ],
+      "curriculum": "English, PSHE, Music and collaborative practical work give children repeated opportunities to practise encouraging, thanking and responding positively to other people.",
+      "culture": "Greetings, play, group work, lunchtime and classroom conversations make kind words and actions part of everyday expectations rather than something reserved for special occasions.",
+      "why": "Kindness becomes part of character through repetition. Choosing kind words and actions helps children create the safe, welcoming relationships that support learning."
+    },
+    {
+      "signature": [
+        "Collaborative construction and design",
+        "Outdoor learning",
+        "Shared reading"
+      ],
+      "curriculum": "Practical learning encourages children to solve problems together. They begin to recognise that explaining an idea, finding a resource or offering encouragement can help someone else succeed.",
+      "culture": "Children are encouraged to notice when classmates need support during play and learning and to help appropriately without taking over.",
+      "why": "Helping others turns kindness into action. Children begin to see themselves as contributors who can make another person’s experience better."
+    },
+    {
+      "signature": [
+        "Stories exploring friendship and feelings",
+        "PSHE Relationships"
+      ],
+      "curriculum": "English, RE and PSHE help children identify feelings and consider different perspectives. Characters and real-life scenarios give them safe ways to discuss when somebody might need reassurance or comfort.",
+      "culture": "Adults model noticing changes in other people and responding sensitively. Children learn that sometimes kindness means checking in, sitting with someone or finding an adult to help.",
+      "why": "Noticing another person’s need is an early form of empathy. It helps children move from responding only when asked to becoming more thoughtful members of the community."
+    },
+    {
+      "signature": [
+        "Practical Art and DT",
+        "PE team activities",
+        "OPAL play"
+      ],
+      "curriculum": "Shared materials and team activities create genuine reasons to take turns. Children experience that successful group work depends on making space for other people to participate.",
+      "culture": "Games, equipment, classroom resources and play provide frequent opportunities to negotiate turns and share fairly without adult control of every decision.",
+      "why": "Taking turns helps children manage impulse, consider other people and participate successfully in groups. It is a practical building block for fairness and cooperation."
+    },
+    {
+      "signature": [
+        "Nature Scavenger Hunt",
+        "Kentish Town City Farm",
+        "Learning about plants and habitats"
+      ],
+      "curriculum": "Science, Geography and Art extend care beyond immediate friendships. Children learn about living things, habitats and the local environment and consider how their actions can protect what they value.",
+      "culture": "Children care for shared spaces, classroom resources, outdoor areas and one another. Adults highlight thoughtful acts that show care without requiring a reward.",
+      "why": "Care connects kindness with responsibility. Children begin to understand that they can positively affect people, animals, places and the wider world around them."
+    }
+  ],
+  "courage": [
+    {
+      "signature": [
+        "Whole School Exhibition",
+        "KS1 Performance",
+        "Open Afternoon"
+      ],
+      "curriculum": "English, PSHE, Music, BSL and practical learning give children many different ways to contribute. The emphasis is on becoming willing to join in, not on always being the loudest voice.",
+      "culture": "Carpet sessions, partner work, singing, games and class routines offer low-pressure opportunities to participate so confidence can grow gradually.",
+      "why": "Joining in helps children see themselves as active members of the class. Participation strengthens belonging and opens up more opportunities to learn from others."
+    },
+    {
+      "signature": [
+        "Zoo Trip",
+        "Local Area Walk Treasure Hunt",
+        "New Music, Dance and BSL experiences"
+      ],
+      "curriculum": "Year 1 deliberately introduces unfamiliar materials, ideas and ways of working through DT, Science, Music, Geography and History. Adults model curiosity and make new experiences feel achievable.",
+      "culture": "Children are encouraged to have a go before deciding something is too difficult. New routines, partners and activities are introduced with reassurance and clear modelling.",
+      "why": "Trying new learning teaches children that uncertainty is manageable. Each successful attempt expands what they believe they are capable of doing."
+    },
+    {
+      "signature": [
+        "Open Afternoon",
+        "Whole School Exhibition",
+        "Heritage map and ‘Guess Who?’ activity"
+      ],
+      "curriculum": "English develops explaining and describing; PSHE gives children language for ideas and feelings; BSL broadens their understanding of what expressive communication can look like.",
+      "culture": "Children regularly talk with familiar adults, classmates and learning partners about what they are doing, noticing and thinking.",
+      "why": "Talking about ideas helps children organise their thinking and recognise that their contribution has value. It is an important early step towards confident communication."
+    },
+    {
+      "signature": [
+        "KS1 Performance",
+        "Whole School Exhibition",
+        "Open Afternoon",
+        "Music and dance"
+      ],
+      "curriculum": "Music, dance, Art and English create natural opportunities to present, perform and explain. Children are prepared carefully so sharing feels like an achievable progression rather than a sudden demand.",
+      "culture": "Children often share first with a partner or small group before moving towards a whole class or wider audience. Effort and participation are celebrated alongside polish.",
+      "why": "Supported performance helps children develop pride and confidence. They learn that feeling nervous does not have to prevent them from taking part."
+    },
+    {
+      "signature": [
+        "DT design challenges",
+        "Model-plane work",
+        "Swimming and PE"
+      ],
+      "curriculum": "DT, PE, Maths, writing and practical Science all include tasks that improve through repeated attempts. Teachers make the connection between practice, feedback and progress explicit.",
+      "culture": "When something feels hard, children are encouraged to pause, ask for support, change strategy and continue. Small improvements are noticed and named.",
+      "why": "Courage is also the decision to continue when learning feels uncomfortable. Children who practise this become more willing to face future challenges rather than avoid them."
+    }
+  ],
+  "aspiration": [
+    {
+      "signature": [
+        "Local Area Walk Treasure Hunt",
+        "Hampstead Heath",
+        "Open Afternoon"
+      ],
+      "curriculum": "Year 1 enquiries introduce children to new places, people, stories, materials and natural phenomena. Teachers encourage questions and wonder rather than treating curiosity as something separate from learning.",
+      "culture": "Interesting questions, new discoveries and enthusiastic contributions are noticed and celebrated. Children are encouraged to follow up the things that capture their attention.",
+      "why": "Curiosity is the starting point for aspiration. Children who enjoy discovering new things are more likely to see learning as something they actively want to pursue."
+    },
+    {
+      "signature": [
+        "Trips beyond the classroom",
+        "Whole-school exhibitions",
+        "Curriculum workshops"
+      ],
+      "curriculum": "Across the curriculum, children encounter unfamiliar activities and environments—from practical making and performance to History, Geography and Science experiences.",
+      "culture": "Adults encourage children to volunteer, join in and try opportunities they may not yet know they will enjoy, without making success the condition for participation.",
+      "why": "Taking part broadens children’s sense of possibility. New experiences help them discover interests and strengths they could not identify without first having a go."
+    },
+    {
+      "signature": [
+        "Open Afternoon",
+        "Creative Art inspired by King’s Cross",
+        "Music and performance"
+      ],
+      "curriculum": "English, Art, Music and PSHE give children different ways to talk about favourite learning, creative choices and things they are proud of.",
+      "culture": "Adults ask children what they enjoy and why, celebrate individual interests and make space for children to share enthusiasms with one another.",
+      "why": "Talking about enjoyment helps children develop a sense of themselves as learners. Recognising what engages them is an early step towards sustaining interests over time."
+    },
+    {
+      "signature": [
+        "Music, dance and BSL",
+        "Outdoor learning",
+        "Practical curriculum challenges"
+      ],
+      "curriculum": "Year 1 offers variety deliberately. Children experience creative, physical, linguistic, scientific and practical activities so that preferences emerge from genuine participation rather than assumption.",
+      "culture": "Children are supported to approach unfamiliar clubs, activities and classroom experiences with encouragement and to reflect afterwards on what they liked or found challenging.",
+      "why": "Trying different activities helps children learn about themselves. It builds adaptability while also giving them a richer basis for deciding what they want to explore further."
+    },
+    {
+      "signature": [
+        "Open Afternoon",
+        "Whole School Exhibition",
+        "Local community exploration"
+      ],
+      "curriculum": "Reflection across Art, writing, Music, PE and practical learning helps children notice the kinds of tasks, topics and experiences they are drawn towards.",
+      "culture": "Teachers talk with children about favourite subjects, books, activities and achievements and encourage them to notice patterns in what excites or motivates them.",
+      "why": "Developing interests and preferences strengthens identity. It gives children an early sense that their own curiosity can shape the direction of future learning."
+    }
+  ]
+};
+
 const yearGrowthSection = document.getElementById("yearGrowthSection");
 const yearGrowthEyebrow = document.getElementById("yearGrowthEyebrow");
 const growthValueButtons = document.querySelectorAll('.year-growth-value[data-growth-value]');
@@ -1317,13 +1624,19 @@ function renderInlineGrowthMap(valueKey) {
 
   const items = isYear3
     ? map.behaviours
-    : map.behaviours.map(statement => ({
-        statement,
-        signature: evidence?.signature || [],
-        curriculum: evidence?.curriculum || "No curriculum link has yet been documented for this behaviour.",
-        culture: evidence?.culture || "This is a useful prompt for staff to identify the everyday routines and opportunities that strengthen this behaviour.",
-        why: evidence?.why || "Staff will refine why this behaviour matters as the Growth Framework develops."
-      }));
+    : map.behaviours.map((statement, index) => {
+        const detailedEvidence = activeYear === 1
+          ? year1BehaviourEvidence?.[valueKey]?.[index]
+          : null;
+
+        return {
+          statement,
+          signature: detailedEvidence?.signature || evidence?.signature || [],
+          curriculum: detailedEvidence?.curriculum || evidence?.curriculum || "No curriculum link has yet been documented for this behaviour.",
+          culture: detailedEvidence?.culture || evidence?.culture || "This is a useful prompt for staff to identify the everyday routines and opportunities that strengthen this behaviour.",
+          why: detailedEvidence?.why || evidence?.why || "Staff will refine why this behaviour matters as the Growth Framework develops."
+        };
+      });
 
   inlineBehaviourAccordion.innerHTML = items.map(item => `
     <article class="behaviour-item">
