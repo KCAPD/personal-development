@@ -968,6 +968,312 @@ const year3GrowthMaps = {
 };
 
 
+const provisionalYearEvidence = {
+  "1": {
+    "integrity": {
+      "signature": [
+        "Food tasting — crops grown in Kenya",
+        "Open Afternoon",
+        "Kentish Town City Farm"
+      ],
+      "curriculum": "The Integrity project asks why it is important to know where our food comes from. Relevant learning includes Geography maps of a farm, food technology, Science and PSHE: Being Me in My World.",
+      "culture": "Daily classroom routines, supported reflection and responsibility for simple actions give children repeated opportunities to practise making positive choices.",
+      "why": "Year 1 children begin to connect everyday choices with responsibility, honesty and the impact their actions have on their learning community."
+    },
+    "respect": {
+      "signature": [
+        "Heritage map and ‘Guess Who?’ class game",
+        "KS1 Performance",
+        "St Pancras Church"
+      ],
+      "curriculum": "The Respect project explores what makes every person and family unique. RE introduces belonging across Islam, Christianity, Sikhism, Hinduism and Judaism; PSHE includes Celebrating Difference; BSL develops communication and response.",
+      "culture": "Listening, sharing resources, polite language and treating others well are practised throughout class discussion, partner work and shared routines.",
+      "why": "Respect begins with recognising that other people have their own identities, experiences and voices, and that everyone deserves to belong."
+    },
+    "endurance": {
+      "signature": [
+        "Inventing and junk-modelling playground equipment",
+        "Whole School Exhibition",
+        "Zoo Trip"
+      ],
+      "curriculum": "The Endurance project asks how inventors keep going when solving problems. History studies the Wright Brothers and DT includes designing and making a model plane with a spinning propeller.",
+      "culture": "Children are encouraged to keep trying, use help appropriately and complete increasingly independent classroom routines and short tasks.",
+      "why": "Early experiences of challenge help children learn that success often comes through repeated attempts, support and persistence."
+    },
+    "kindness": {
+      "signature": [
+        "Nature Scavenger Hunt with iPads",
+        "Whole School Exhibition"
+      ],
+      "curriculum": "The Kindness project asks how we can care for the world around us. Science includes seasonal change and plants; Art explores nature; PSHE includes Relationships; RE considers the importance of community, friends and family.",
+      "culture": "Play, learning partners and shared classroom responsibilities give children everyday opportunities to help, take turns and notice when someone needs care.",
+      "why": "Kindness develops when children learn to notice the needs of people and the world around them and respond with care."
+    },
+    "courage": {
+      "signature": [
+        "Representing a special place through Art",
+        "Whole School Exhibition",
+        "BBC Ten Pieces — ‘No Place Like’"
+      ],
+      "curriculum": "The Courage project asks how people show courage. History includes the Great Fire of London; Music, Art and class learning provide opportunities to express ideas and share work.",
+      "culture": "Class discussion, answering questions, trying unfamiliar learning and sharing work with others provide frequent low-stakes opportunities to build confidence.",
+      "why": "Courage in Year 1 is about joining in, trying something new and discovering that confidence grows through supported participation."
+    },
+    "aspiration": {
+      "signature": [
+        "Local Area Walk Treasure Hunt",
+        "Open Afternoon",
+        "Hampstead Heath"
+      ],
+      "curriculum": "The Aspiration project asks how we can make our local area an even better place. Geography explores the UK and local area; Art includes drawing inspired by King’s Cross Estate; PSHE includes Dreams & Goals.",
+      "culture": "Children are encouraged to notice what interests them, talk about what they enjoy and approach new opportunities with curiosity.",
+      "why": "Aspiration starts with curiosity: discovering interests, recognising possibilities and beginning to imagine what children might contribute in the future."
+    }
+  },
+  "2": {
+    "integrity": {
+      "signature": [
+        "Special-item show and tell",
+        "Identity self-portrait",
+        "Open Afternoon",
+        "Canal workshop"
+      ],
+      "curriculum": "The Integrity project asks how our experiences shape who we become. History explores Camden’s people and events; PSHE includes Being Me in My World; Art includes sculptures inspired by King’s Cross Estate.",
+      "culture": "Reflection, taking responsibility and resolving everyday problems fairly are practised through classroom routines, learning and play.",
+      "why": "Children begin to understand that integrity involves owning their actions and recognising how choices shape both themselves and others."
+    },
+    "respect": {
+      "signature": [
+        "Tasting food from India",
+        "KS1 Performance",
+        "Indian Food Workshop"
+      ],
+      "curriculum": "The Respect project asks how food connects people and culture. Geography compares London and India; RE explores food and faith; Music includes traditional instruments and improvisation from India; PSHE includes Celebrating Difference.",
+      "culture": "Collaborative learning and discussion give children repeated opportunities to listen, include others and respond respectfully.",
+      "why": "Respect becomes deeper when children learn that people may have different experiences, cultures and beliefs while still sharing a community."
+    },
+    "endurance": {
+      "signature": [
+        "Victorian Day",
+        "Whole School Exhibition",
+        "Tower Bridge"
+      ],
+      "curriculum": "The Endurance project asks how determination changed Victorian Britain. History studies the Victorians and DT involves designing and making a Victorian toy with STEAM links.",
+      "culture": "Longer activities, growing independence and supported recovery from setbacks help children build stamina and self-management.",
+      "why": "Endurance grows when children experience challenge, recover from difficulty and see that sustained attention can lead to worthwhile outcomes."
+    },
+    "kindness": {
+      "signature": [
+        "Story Tree arts and crafts",
+        "Whole School Exhibition",
+        "London Aquarium"
+      ],
+      "curriculum": "The Kindness project asks how learning about other cultures can help us show kindness. Art explores work inspired by African, American and Indian cultures; RE compares religious festivals; PSHE includes Relationships.",
+      "culture": "Games, group work and daily relationships give children opportunities to include others, offer help and use positive language.",
+      "why": "Learning about difference can help children move from simply being friendly to actively including and supporting other people."
+    },
+    "courage": {
+      "signature": [
+        "Stop-motion dinosaur video",
+        "Whole School Exhibition",
+        "Spitalfields City Farm"
+      ],
+      "curriculum": "The Courage project asks how exploring our world helps us grow. Geography studies continents, oceans and physical features; Computing includes photography and coding; presentations create authentic opportunities to speak and share.",
+      "culture": "Children are increasingly expected to share ideas, attempt unfamiliar tasks and see mistakes as part of learning.",
+      "why": "Courage develops when children are willing to explore, participate and learn from attempts that do not work first time."
+    },
+    "aspiration": {
+      "signature": [
+        "Exploring how King’s Cross Estate has changed",
+        "Open Afternoon",
+        "Kew Gardens"
+      ],
+      "curriculum": "The Aspiration project asks how learning from the past can help shape the future. History includes Medicine Through Time; Science includes Plants; PSHE includes Dreams & Goals.",
+      "culture": "Children reflect on strengths, interests and experiences and are encouraged to approach enrichment with enthusiasm.",
+      "why": "Recognising strengths and connecting past learning with future possibility helps children begin to see themselves as active learners with growing ambitions."
+    }
+  },
+  "4": {
+    "integrity": {
+      "signature": [
+        "Nature Day — London and Essex",
+        "Open Afternoon"
+      ],
+      "curriculum": "The Integrity project asks why it is our responsibility to care for the natural world. Science and Humanities explore living things, habitats and the wider environment; PSHE includes Being Me in My World.",
+      "culture": "Children take increasing responsibility for choices, collaboration, organisation and how their actions affect shared learning and environments.",
+      "why": "Integrity in Year 4 increasingly means applying values without constant adult direction and recognising responsibility beyond oneself."
+    },
+    "respect": {
+      "signature": [
+        "Kew Gardens & Barbican Conservatory Rainforest Experience",
+        "KS1 Performance"
+      ],
+      "curriculum": "The Respect project asks why we should protect the world’s rainforests. Geography studies South America and the Amazon Rainforest; DT creates a 3D rainforest model; Music includes rainforest body and tuned percussion.",
+      "culture": "Discussion, debate and collaborative learning ask children to value other contributions and communicate respectfully even when views differ.",
+      "why": "Respect grows from listening to others and recognising that people, cultures and environments have value beyond our immediate experience."
+    },
+    "endurance": {
+      "signature": [
+        "Exploring Camden & Immigration",
+        "Whole School Exhibition"
+      ],
+      "curriculum": "The Endurance project asks how people have overcome challenges to build new lives. Geography studies Immigration & Settlement; DT explores electrical engineers who immigrated; writing includes Ahmet’s journey.",
+      "culture": "Children increasingly manage frustration, organise themselves and sustain effort across longer and more demanding tasks.",
+      "why": "Studying how people overcome challenge helps children connect perseverance in learning with resilience in wider life."
+    },
+    "kindness": {
+      "signature": [
+        "Ancient Greek Day",
+        "Whole School Exhibition"
+      ],
+      "curriculum": "The Kindness project asks what Ancient Greece can teach us about living well together. History studies Ancient Greece; RE explores the importance of peace; PSHE includes Relationships.",
+      "culture": "Children are expected to resolve friendship difficulties respectfully, encourage peers and contribute positively to their classroom community.",
+      "why": "Kindness becomes increasingly intentional when children choose actions that strengthen relationships and the wider group."
+    },
+    "courage": {
+      "signature": [
+        "Romans Day",
+        "Whole School Exhibition",
+        "LAMDA Speaking in Public Entry Level exam"
+      ],
+      "curriculum": "The Courage project explores how the Romans changed Britain. History studies the Romans; English includes debate on Roman invention; Art creates Roman mosaics; Music adapts Roman-themed motifs.",
+      "culture": "Children are encouraged to express opinions, volunteer for responsibility and use their voice constructively in collaborative work.",
+      "why": "Courage at this stage includes speaking with purpose, taking responsibility and staying positive when learning or leadership feels challenging."
+    },
+    "aspiration": {
+      "signature": [
+        "Food Discovery",
+        "Open Afternoon",
+        "Djembe Drums"
+      ],
+      "curriculum": "The Aspiration project asks how food choices can change the world. Geography explores Food & World Trade and Globalisation; DT considers global food choices; Year 4 Music includes Djembe Drums.",
+      "culture": "Children are supported to recognise achievements, sustain interests and begin talking about talents, opportunities and aspirations.",
+      "why": "Aspiration grows when children see that their interests and choices can connect to a much wider world of opportunity."
+    }
+  },
+  "5": {
+    "integrity": {
+      "signature": [
+        "Volcano Day",
+        "Open Afternoon"
+      ],
+      "curriculum": "The Integrity project is built around Volcanoes and Earthquakes. Geography studies North America and natural hazards; Art uses stop-motion animation; Science investigates changes and properties of materials.",
+      "culture": "Increasing independence requires children to take ownership of mistakes, responsibilities and the choices they make when learning becomes demanding.",
+      "why": "Integrity in upper KS2 involves self-discipline and taking responsibility even when situations are complex or challenging."
+    },
+    "respect": {
+      "signature": [
+        "Anglo-Saxon Day",
+        "KS1 Performance"
+      ],
+      "curriculum": "The Respect project studies the Anglo-Saxons and their impact. History, food technology through an Anglo-Saxon feast and wider discussion of culture provide opportunities to consider different lives and perspectives.",
+      "culture": "Children work with a wider range of peers and are expected to listen maturely, include others and represent KCA respectfully.",
+      "why": "Respect at this stage means moving beyond politeness towards mature collaboration, inclusion and reflection on impact."
+    },
+    "endurance": {
+      "signature": [
+        "Round-the-world biomes discovery",
+        "Whole School Exhibition",
+        "Shackleton boat-design challenge"
+      ],
+      "curriculum": "The Endurance term includes climate zones and biomes, writing about the Endurance discovery and DT work designing a boat for Shackleton and his shipmates.",
+      "culture": "Longer projects and responsibilities require children to regulate themselves, sustain effort and balance independence with asking for support.",
+      "why": "Endurance is increasingly about managing oneself over time, not simply persisting for a few minutes when something is difficult."
+    },
+    "kindness": {
+      "signature": [
+        "Vikings Day",
+        "Whole School Exhibition"
+      ],
+      "curriculum": "The Kindness project sits within a year that includes History of the Vikings, RE exploring leaders and human actions, PSHE Relationships and caring responsibilities, and collaborative creative work.",
+      "culture": "Older pupils are increasingly expected to support peers, encourage participation and contribute positively beyond their immediate friendship group.",
+      "why": "Kindness develops into contribution: recognising that empathy and encouragement can shape the culture of a whole community."
+    },
+    "courage": {
+      "signature": [
+        "Wonder Dome — Space & Earth",
+        "Whole School Exhibition",
+        "LAMDA Speaking in Public Grade 1 exam"
+      ],
+      "curriculum": "The Courage project asks how we can look after Earth and Space. Geography studies climate change and sustainability; DT designs and evaluates a spacecraft; Music explores space soundscapes; writing includes a climate speech/news report.",
+      "culture": "Children are expected to speak confidently, represent the school, take positive risks and reflect honestly on personal challenge.",
+      "why": "Courage in Year 5 means using confidence with purpose—particularly when situations are unfamiliar or when others need encouragement."
+    },
+    "aspiration": {
+      "signature": [
+        "Tudor Experience Day",
+        "Open Afternoon",
+        "Keyboard Unit"
+      ],
+      "curriculum": "The Aspiration project explores Tudor history. History studies the Tudors; Art develops Tudor portraits; Music includes keyboard, soundscape and blues work; PSHE includes Dreams & Goals.",
+      "culture": "Children are encouraged to commit to interests over time, recognise the link between effort and success and support others to achieve.",
+      "why": "Aspiration becomes stronger when children sustain commitment and begin to understand that talent develops through deliberate effort."
+    }
+  },
+  "6": {
+    "integrity": {
+      "signature": [
+        "Experience of Injustice",
+        "KCA Community Assembly",
+        "Camden Citizenship Scheme"
+      ],
+      "curriculum": "The Integrity project studies the Benin Kingdom. History, a balanced argument about the Benin Bronzes and Art through Printmaking & Activism give children opportunities to consider morality, fairness and responsibility.",
+      "culture": "Year 6 pupils are expected to model values, act responsibly with greater independence and understand the effect of their decisions on the wider school community.",
+      "why": "Integrity at the end of primary school means applying moral judgement consistently, including when adults are not directing the choice."
+    },
+    "respect": {
+      "signature": [
+        "Windrush Generation / Notting Hill Carnival experience",
+        "Learning Presentations"
+      ],
+      "curriculum": "The Respect project explores Caribbean migration to Britain. Geography studies Fairtrade in the Caribbean and Migration; History and writing explore the Windrush journey; Music includes a Caribbean unit; PSHE includes Celebrating Difference.",
+      "culture": "As senior pupils, children are expected to listen maturely, challenge disrespect appropriately and help younger pupils feel included.",
+      "why": "Respect culminates in active inclusion: not only treating others well, but helping create a community where difference is valued."
+    },
+    "endurance": {
+      "signature": [
+        "World War 1 Day",
+        "Whole School Exhibition",
+        "Residential programme"
+      ],
+      "curriculum": "The Endurance project studies World War 1. History, WW1 cooking in DT and extended writing provide sustained learning around challenge, sacrifice and resilience.",
+      "culture": "Year 6 brings significant responsibilities, transition and challenge, requiring mature emotional regulation, persistence and self-management.",
+      "why": "Endurance at this stage is about sustaining responsibility and resilience through significant challenges and periods of change."
+    },
+    "kindness": {
+      "signature": [
+        "WW2 Evacuation Day",
+        "Whole School Exhibition"
+      ],
+      "curriculum": "The Kindness/Courage project considers how communities handled the impact of World War 2. History, WW2 shadow puppets, Songs of World War 2 and PSHE relationships/caring responsibilities support reflection on community and compassion.",
+      "culture": "Year 6 pupils have an important role in modelling empathy, supporting others and shaping an inclusive environment for younger children.",
+      "why": "Kindness reaches beyond individual acts when older pupils recognise that compassion and leadership can influence the culture around them."
+    },
+    "courage": {
+      "signature": [
+        "WW2 Evacuation Day",
+        "Whole School Exhibition",
+        "Final End of Year Performance",
+        "Musical performance"
+      ],
+      "curriculum": "The Courage strand is linked to the WW2 community project. Music includes whole-class instrumental learning and Songs of World War 2; presentation and performance opportunities require children to communicate with confidence.",
+      "culture": "Children are expected to advocate appropriately, lead discussion and use their voice for different audiences while modelling confidence to younger pupils.",
+      "why": "Courage culminates in purposeful voice: speaking not just for oneself, but to lead, advocate and positively influence others."
+    },
+    "aspiration": {
+      "signature": [
+        "Time travel — ‘Who am I in thirty years?’",
+        "Learning Presentations / Central Saint Martins Exhibition",
+        "Final End of Year Performance",
+        "Bright Futures Academy"
+      ],
+      "curriculum": "The Aspiration project asks how children can prepare for their future. Geography includes a European Study of France; DT creates an upcycled KCA journey cushion for transition; Music includes composing and performing a leavers’ song; PSHE covers Dreams & Goals and Coping with Change.",
+      "culture": "Transition work asks children to speak confidently about their strengths, interests and ambitions and to approach future pathways with readiness and curiosity.",
+      "why": "By Year 6, aspiration means turning interests and ambitions into purposeful next steps and leaving KCA ready to engage positively with future opportunities."
+    }
+  }
+};
+
 const yearGrowthSection = document.getElementById("yearGrowthSection");
 const yearGrowthEyebrow = document.getElementById("yearGrowthEyebrow");
 const growthValueButtons = document.querySelectorAll('.year-growth-value[data-growth-value]');
@@ -998,31 +1304,28 @@ function renderInlineGrowthMap(valueKey) {
   inlineGrowthEyebrow.textContent = `${map.title} · ${map.strand}`;
   inlineGrowthCharacter.src = map.character;
   inlineGrowthCharacter.alt = map.characterAlt;
+  inlineGrowthHeading.textContent = `By the end of Year ${activeYear}...`;
 
-  const isObservableOnlyYear = activeYear !== 3;
+  const isYear3 = activeYear === 3;
+  inlineGrowthCulture.textContent = isYear3
+    ? `These are the observable behaviours children are developing through ${map.title.toLowerCase()} in Year 3. Open each behaviour to explore how this is developed at KCA.`
+    : `These are the observable behaviours children are developing through ${map.title.toLowerCase()} in Year ${activeYear}. Open each behaviour to explore the curriculum starting points already mapped at KCA.`;
 
-  if (isObservableOnlyYear) {
-    inlineGrowthHeading.textContent = `By the end of Year ${activeYear}...`;
-    inlineGrowthCulture.textContent = `These are the observable behaviours children are developing through ${map.title.toLowerCase()} in Year ${activeYear}.`;
-
-    inlineBehaviourAccordion.innerHTML = map.behaviours.map(statement => `
-      <article class="behaviour-item behaviour-statement-only">
-        <div class="behaviour-trigger behaviour-trigger-static">
-          <span class="behaviour-check">✓</span>
-          <strong>${statement}</strong>
-        </div>
-      </article>
-    `).join("");
-
-    growthCurriculumLink.hidden = true;
-    return;
-  }
-
-  inlineGrowthHeading.textContent = `By the end of Year 3...`;
-  inlineGrowthCulture.textContent = `These are the observable behaviours children are developing through ${map.title.toLowerCase()} in Year 3. Open each behaviour to explore how this is developed at KCA.`;
   growthCurriculumLink.hidden = false;
 
-  inlineBehaviourAccordion.innerHTML = map.behaviours.map(item => `
+  const evidence = provisionalYearEvidence?.[activeYear]?.[valueKey];
+
+  const items = isYear3
+    ? map.behaviours
+    : map.behaviours.map(statement => ({
+        statement,
+        signature: evidence?.signature || [],
+        curriculum: evidence?.curriculum || "No curriculum link has yet been documented for this behaviour.",
+        culture: evidence?.culture || "This is a useful prompt for staff to identify the everyday routines and opportunities that strengthen this behaviour.",
+        why: evidence?.why || "Staff will refine why this behaviour matters as the Growth Framework develops."
+      }));
+
+  inlineBehaviourAccordion.innerHTML = items.map(item => `
     <article class="behaviour-item">
       <button class="behaviour-trigger"
               type="button"

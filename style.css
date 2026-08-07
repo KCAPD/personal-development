@@ -2073,3 +2073,12 @@ body.journal-dialog-open { overflow: hidden; }
     grid-template-columns: 28px 1fr;
   }
 }
+
+
+/* =========================================================
+   RELEASE 4.0 STEP 4 — PROVISIONAL CURRICULUM MAPPING
+   ========================================================= */
+
+.behaviour-content .demonstration-copy {
+  max-width: 72ch;
+}
