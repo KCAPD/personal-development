@@ -1274,6 +1274,373 @@ const provisionalYearEvidence = {
   }
 };
 
+const year6BehaviourEvidence = {
+  "respect": [
+    {
+      "signature": [
+        "Windrush Generation / Notting Hill Carnival experience",
+        "Learning presentations",
+        "Whole School Exhibition"
+      ],
+      "curriculum": "History and Geography explore migration, the Caribbean and the Windrush generation, while English asks pupils to write from different viewpoints and RE/PSHE compare beliefs, identities and relationships. These contexts require children to consider fairness and inclusion in real historical and contemporary settings.",
+      "culture": "As the oldest pupils in school, Year 6 children are expected to notice exclusion, question unfairness appropriately and help make group spaces welcoming rather than leaving inclusion to adults.",
+      "why": "Advocating for fairness turns respect into action. Children learn that belonging is not created simply by being personally polite, but by noticing when systems or behaviours disadvantage somebody else."
+    },
+    {
+      "signature": [
+        "Experience of Injustice",
+        "Windrush learning",
+        "KCA Community Assembly"
+      ],
+      "curriculum": "The Year 6 curriculum deliberately includes histories of injustice, migration and conflict. English, History, RE and PSHE help pupils distinguish respectful challenge from aggression and give them language for responding to prejudice or demeaning behaviour.",
+      "culture": "Children are encouraged to challenge disrespect safely, name what is wrong and seek support when needed rather than joining in, ignoring it or escalating the situation.",
+      "why": "Challenging disrespect appropriately is a key part of responsible citizenship. It teaches children that respect sometimes requires courage as well as courtesy."
+    },
+    {
+      "signature": [
+        "Supporting younger pupils",
+        "Whole-school events",
+        "KCA Community Assembly"
+      ],
+      "curriculum": "Leadership and presentation opportunities place Year 6 pupils in visible roles where younger children can observe how they listen, speak and behave. Collaborative learning reinforces that modelling is often more influential than instruction.",
+      "culture": "Year 6 pupils are expected to demonstrate calm routines, inclusive language and respectful interaction because younger pupils naturally look to them as examples.",
+      "why": "Role modelling makes respect contagious. Children begin to understand that their behaviour can shape the expectations and confidence of younger members of the community."
+    },
+    {
+      "signature": [
+        "Debate and balanced argument",
+        "Learning presentations",
+        "RE discussion"
+      ],
+      "curriculum": "English includes balanced argument and formal discussion, while RE and PSHE introduce complex questions where mature disagreement is necessary. Pupils learn to listen for meaning, weigh evidence and respond to what was actually said.",
+      "culture": "Classroom discussion expects pupils to remain composed, ask clarifying questions and respond thoughtfully even when opinions differ sharply.",
+      "why": "Listening maturely to different opinions prepares children for secondary classrooms and democratic life. It allows disagreement to deepen understanding rather than damage relationships."
+    },
+    {
+      "signature": [
+        "Whole School Exhibition",
+        "Final End of Year Performance",
+        "Transition work"
+      ],
+      "curriculum": "Shared outcomes across Year 6 require pupils to include others, coordinate responsibilities and contribute to a positive group culture. PSHE Relationships and transition work encourage reflection on the kind of community they want to help create.",
+      "culture": "Children are expected to welcome others into groups, protect dignity, use humour responsibly and notice how everyday interactions contribute to whether people feel they belong.",
+      "why": "Creating a culture of belonging is a mature expression of respect. It moves children from participating in a community to consciously shaping one."
+    }
+  ],
+  "integrity": [
+    {
+      "signature": [
+        "Camden Citizenship Scheme",
+        "KCA Community Assembly",
+        "Experience of Injustice"
+      ],
+      "curriculum": "History, RE, English and PSHE repeatedly explore questions of truth, responsibility and fairness—from Benin and migration to conflict, sacrifice and citizenship. Pupils are expected to justify decisions using principles rather than convenience.",
+      "culture": "Year 6 children are trusted with greater independence and visibility. Adults expect consistency between what pupils say they value and the choices they make when nobody is prompting them.",
+      "why": "Consistent honesty, responsibility and fairness demonstrate an internal moral compass. This is the foundation of being someone other people can trust."
+    },
+    {
+      "signature": [
+        "Experience of Injustice",
+        "Benin Bronzes balanced argument",
+        "Camden Citizenship Scheme"
+      ],
+      "curriculum": "The Year 6 curriculum includes ethically complex material such as injustice, contested artefacts, war and social responsibility. Pupils learn to consider evidence, competing interests and the possible consequences of different decisions.",
+      "culture": "Adults increasingly ask pupils not only what choice they made, but what principle guided it and whether they would stand by that choice if challenged.",
+      "why": "Thoughtful moral decision making prepares children for situations where rules alone are not enough. They learn to reason about what is right, fair and responsible."
+    },
+    {
+      "signature": [
+        "Residential programme",
+        "Independent project work",
+        "Transition responsibilities"
+      ],
+      "curriculum": "Year 6 learning expects pupils to manage complex tasks, equipment and routines with far less direct supervision. Residential and transition experiences extend that independence beyond the familiar classroom.",
+      "culture": "Children are trusted to move around school, manage belongings, use technology and complete responsibilities appropriately even when an adult is not immediately present.",
+      "why": "Acting responsibly without supervision shows that expectations have been internalised. It is essential preparation for the greater freedom and responsibility of secondary school."
+    },
+    {
+      "signature": [
+        "Peer leadership",
+        "Whole-school events",
+        "Camden Citizenship Scheme"
+      ],
+      "curriculum": "Collaborative work and leadership opportunities give pupils chances to influence group decisions and behaviour. PSHE and RE provide language for encouragement, responsibility and constructive intervention.",
+      "culture": "Year 6 pupils are encouraged to redirect peers calmly, reinforce positive expectations and help others make better choices without becoming controlling or self-righteous.",
+      "why": "Supporting others to make positive choices turns integrity into leadership. Children learn that influence can be used to strengthen the behaviour of a whole community."
+    },
+    {
+      "signature": [
+        "KCA Community Assembly",
+        "Whole School Exhibition",
+        "Community-facing presentations"
+      ],
+      "curriculum": "History, Geography and PSHE connect individual actions with communities, migration, conflict and citizenship. Pupils are encouraged to consider how choices can affect people well beyond their immediate friendship group.",
+      "culture": "Adults ask Year 6 pupils to think beyond immediate consequences and recognise the wider effect of their behaviour on younger pupils, visitors, families and the reputation of the school.",
+      "why": "Understanding wider impact develops civic responsibility. Children begin to see themselves as people whose actions can strengthen—or weaken—the communities they belong to."
+    },
+    {
+      "signature": [
+        "Camden Citizenship Scheme"
+      ],
+      "curriculum": "The citizenship scheme provides a concrete context for applying knowledge of fairness, responsibility, community and participation beyond ordinary classroom discussion.",
+      "culture": "Pupils are encouraged to connect citizenship learning with their actual behaviour in school and local community settings rather than treating it as a separate award activity.",
+      "why": "Taking part in a citizenship scheme helps pupils recognise that their values have relevance beyond KCA and that they are already members of a wider civic community."
+    }
+  ],
+  "endurance": [
+    {
+      "signature": [
+        "Residential programme",
+        "SATs preparation",
+        "Final End of Year Performance"
+      ],
+      "curriculum": "Year 6 contains sustained academic, physical and performance demands. Extended writing, problem solving, rehearsal and revision all require pupils to regulate effort rather than rely on short bursts of motivation.",
+      "culture": "Adults expect children to organise themselves, persist through fatigue or frustration and use established strategies before seeking rescue from challenge.",
+      "why": "Consistent self-discipline and resilience allow children to sustain high standards over time. These habits are essential for managing the greater demands of secondary education."
+    },
+    {
+      "signature": [
+        "Residential programme",
+        "Transition work",
+        "PSHE Coping with Change"
+      ],
+      "curriculum": "PSHE explicitly addresses change and healthy relationships, while residential and transition experiences ask children to manage emotion, responsibility and unfamiliar routines with increasing maturity.",
+      "culture": "Year 6 pupils are expected to recognise emotional responses, choose appropriate strategies and communicate needs without allowing strong feelings to derail responsibilities.",
+      "why": "Managing emotions and responsibilities together is a key marker of readiness for adolescence. Children learn that feelings can be acknowledged without controlling every action."
+    },
+    {
+      "signature": [
+        "SATs preparation",
+        "Residential programme",
+        "Challenging PE and performance"
+      ],
+      "curriculum": "Mathematics, writing, PE and performance regularly place pupils in situations where the task is demanding and progress may be gradual. Teachers frame challenge as evidence of ambition rather than inability.",
+      "culture": "Children are encouraged to approach hard tasks with a plan, use feedback, persist and recognise that confidence often develops after beginning rather than before.",
+      "why": "Approaching challenge with confidence and persistence prevents avoidance from narrowing opportunity. Children learn that difficult experiences can be entered deliberately and worked through."
+    },
+    {
+      "signature": [
+        "Looking back on the KCA journey",
+        "Transition reflection",
+        "End-of-year celebration"
+      ],
+      "curriculum": "Year 6 reflection asks pupils to look across several years of learning and personal development, identifying turning points, setbacks and habits that have shaped their progress.",
+      "culture": "Teachers encourage honest, evidence-based reflection rather than generic claims about being ‘better’ or ‘more confident’, helping pupils articulate how they have changed.",
+      "why": "Critical reflection helps children understand their own growth. That self-knowledge gives them strategies and perspective they can carry into secondary school."
+    },
+    {
+      "signature": [
+        "Supporting younger pupils",
+        "Whole-school leadership",
+        "Team activities"
+      ],
+      "curriculum": "Leadership roles and collaborative work allow Year 6 pupils to demonstrate perseverance visibly. Younger pupils see how older children respond when learning, sport or performance becomes difficult.",
+      "culture": "Adults draw attention to calm persistence, responsible preparation and constructive responses to setbacks as behaviours worth modelling for younger children.",
+      "why": "Modelling perseverance turns endurance into leadership. Pupils realise that the way they handle difficulty can influence how others approach challenge."
+    },
+    {
+      "signature": [
+        "Residential programme"
+      ],
+      "curriculum": "The residential places children in an unfamiliar environment where they must manage routines, relationships, belongings and emotions away from home for a sustained period.",
+      "culture": "Preparation emphasises practical independence, mutual support and the expectation that nervousness can be managed without preventing participation.",
+      "why": "Staying away from home provides a powerful experience of independence and resilience. Children return with evidence that they can manage unfamiliar situations successfully."
+    },
+    {
+      "signature": [
+        "Swimming"
+      ],
+      "curriculum": "Swimming requires sustained physical effort, attention to safety, repeated practice and awareness of others in the pool. By Year 6, pupils can also use their growing competence to support peers appropriately.",
+      "culture": "Children are expected to prepare independently, respond to coaching, persevere through physical challenge and encourage others without distracting from safety.",
+      "why": "Supporting others while managing their own effort shows mature resilience. Children learn that endurance can strengthen a group, not only an individual."
+    }
+  ],
+  "kindness": [
+    {
+      "signature": [
+        "Supporting younger pupils",
+        "Whole-school events",
+        "Peer leadership"
+      ],
+      "curriculum": "PSHE, RE and literature explore empathy, responsibility and relationships, while leadership opportunities allow children to put these ideas into practice with younger pupils and peers.",
+      "culture": "Year 6 pupils are expected to notice need, respond sensitively and demonstrate inclusive behaviour without waiting for adult recognition.",
+      "why": "Acting as a role model for kindness shows that compassion has become part of identity. Younger children learn from what Year 6 pupils consistently do, not only what they say."
+    },
+    {
+      "signature": [
+        "Peer leadership",
+        "KCA Community Assembly",
+        "Whole-school responsibilities"
+      ],
+      "curriculum": "Citizenship, PSHE and collaborative work create opportunities for pupils to speak up for others, organise support and help groups function more successfully.",
+      "culture": "Children are encouraged to use positions of confidence or responsibility to make participation easier for others rather than to gain status over them.",
+      "why": "Leadership and advocacy make kindness active. Pupils learn to use influence in service of other people, particularly those who may have less confidence or power."
+    },
+    {
+      "signature": [
+        "WW2 Evacuation Day",
+        "Residential programme",
+        "PSHE Relationships"
+      ],
+      "curriculum": "History and literature expose pupils to situations involving separation, fear, loss and difficult choices. PSHE helps them consider how compassion can be expressed when circumstances are emotionally complex.",
+      "culture": "Adults expect children to respond sensitively when peers are distressed, disappointed or facing difficulty, choosing care rather than humour, impatience or avoidance.",
+      "why": "Compassion matters most when situations are difficult. Mature kindness means remaining thoughtful even when another person’s needs are inconvenient or emotionally demanding."
+    },
+    {
+      "signature": [
+        "Whole School Exhibition",
+        "Final End of Year Performance",
+        "Community-facing events"
+      ],
+      "curriculum": "Shared performances and exhibitions depend on pupils creating a supportive environment in which different people can contribute confidently. PSHE and RE reinforce the importance of inclusion and relationships.",
+      "culture": "Year 6 pupils are expected to notice tone, language, group dynamics and exclusion and to take practical steps that make the environment more positive.",
+      "why": "Encouraging a positive, inclusive environment shows children that culture is something people create together. Kindness becomes part of collective responsibility."
+    },
+    {
+      "signature": [
+        "KCA Community Assembly",
+        "Camden Citizenship Scheme",
+        "Community learning"
+      ],
+      "curriculum": "Citizenship, migration, conflict and community learning help pupils see how compassion, inclusion and mutual support affect groups far larger than a friendship circle.",
+      "culture": "Adults encourage pupils to connect small daily acts with the wider atmosphere of school and to recognise that community wellbeing is built cumulatively.",
+      "why": "Understanding the wider impact of kindness develops civic empathy. Children see compassion not as a private virtue but as something that can strengthen whole communities."
+    }
+  ],
+  "courage": [
+    {
+      "signature": [
+        "Learning presentations",
+        "Transition meetings and activities",
+        "Camden Citizenship Scheme"
+      ],
+      "curriculum": "English, PSHE and citizenship provide opportunities to articulate needs, viewpoints and concerns clearly. Transition work makes self-advocacy particularly important as pupils prepare to enter a larger, less familiar setting.",
+      "culture": "Children are encouraged to ask for what they need respectfully, speak up for others and seek appropriate help when something is unfair or unsafe.",
+      "why": "Respectful advocacy helps children enter secondary school able to use their voice constructively. It combines confidence with responsibility."
+    },
+    {
+      "signature": [
+        "KCA Community Assembly",
+        "Learning presentations",
+        "Final End of Year Performance"
+      ],
+      "curriculum": "Year 6 gives pupils repeated opportunities to present, perform and lead in front of different audiences. English and project work develop organisation of ideas as well as confident delivery.",
+      "culture": "Children are trusted to lead parts of discussion, explain learning to visitors and coordinate group activity with less adult prompting.",
+      "why": "Leading communication confidently prepares pupils for the increased expectations of secondary school and helps them see themselves as capable contributors in unfamiliar groups."
+    },
+    {
+      "signature": [
+        "Experience of Injustice",
+        "Citizenship learning",
+        "PSHE"
+      ],
+      "curriculum": "History, RE, PSHE and English expose pupils to injustice, discrimination and contested choices. Teachers model how unfairness can be challenged through evidence, calm language and appropriate action.",
+      "culture": "Pupils are encouraged to name unfairness, support those affected and involve adults when necessary rather than staying silent or escalating conflict.",
+      "why": "Challenging unfairness respectfully is moral courage in practice. Children learn that influence is strongest when conviction is paired with judgement."
+    },
+    {
+      "signature": [
+        "Supporting younger pupils",
+        "Whole-school events",
+        "Final performance"
+      ],
+      "curriculum": "Leadership and performance opportunities make Year 6 confidence visible to younger pupils. Children experience how calm preparation and willingness to take part can reassure others.",
+      "culture": "Adults encourage pupils to talk honestly about nerves and challenge while still modelling that these feelings can be managed constructively.",
+      "why": "Modelling confidence and resilience helps younger children see that courage is learned rather than innate. It also strengthens Year 6 pupils’ own sense of responsibility as role models."
+    },
+    {
+      "signature": [
+        "KCA Community Assembly",
+        "Learning presentations",
+        "Final End of Year Performance"
+      ],
+      "curriculum": "English, Music, performance and transition work require pupils to adjust vocabulary, tone and level of detail depending on whether they are speaking to peers, younger children, families or visitors.",
+      "culture": "Children are encouraged to think about audience before speaking—what this person needs to understand, how formal the situation is and what response they hope to achieve.",
+      "why": "Purposeful communication is more than speaking confidently. It helps pupils use voice strategically to explain, persuade, reassure and lead."
+    },
+    {
+      "signature": [
+        "Final End of Year Performance",
+        "Whole-class instrumental learning",
+        "Leavers’ song"
+      ],
+      "curriculum": "Year 6 Music includes instrumental work, Songs of World War 2 and composing and performing a leavers’ song. The final performance provides an authentic culmination for rehearsal, ensemble discipline and confidence before an audience.",
+      "culture": "Rehearsal normalises correction, repetition and nerves. Pupils learn that successful public performance depends on collective preparation rather than individual confidence alone.",
+      "why": "Performing musically to an audience gives pupils a memorable experience of courage, collaboration and achievement at the end of their primary journey."
+    }
+  ],
+  "aspiration": [
+    {
+      "signature": [
+        "Time travel — ‘Who am I in thirty years?’",
+        "Transition work",
+        "Final End of Year Performance"
+      ],
+      "curriculum": "The final Year 6 enquiry asks how children can prepare for their future. PSHE Dreams & Goals, transition learning and reflection across subjects encourage pupils to connect current habits with the challenges ahead.",
+      "culture": "Adults expect Year 6 pupils to organise themselves, accept feedback and approach the move to secondary school as an opportunity requiring preparation rather than something that simply happens to them.",
+      "why": "Ambition paired with readiness is more powerful than aspiration alone. Children leave KCA understanding that future success depends on both hope and preparation."
+    },
+    {
+      "signature": [
+        "Learning presentations",
+        "Transition activities",
+        "Bright Futures Academy"
+      ],
+      "curriculum": "PSHE, English and transition work give pupils opportunities to articulate interests, strengths and goals. They are encouraged to explain why something matters to them rather than simply name a future ambition.",
+      "culture": "Adults ask pupils to speak specifically about what they enjoy, what they have improved and what they hope to explore next, building confidence in self-presentation.",
+      "why": "Speaking confidently about goals helps children enter new settings with a clearer sense of identity. It also enables adults and peers to understand how best to support their development."
+    },
+    {
+      "signature": [
+        "Music and performance",
+        "Bright Futures Academy",
+        "Extended projects"
+      ],
+      "curriculum": "Year 6 offers opportunities to deepen interests through Music, performance, digital work, Art, PE and wider curriculum projects rather than simply sample them briefly.",
+      "culture": "Children are encouraged to maintain commitments, practise deliberately and recognise that passion becomes expertise only when it is sustained over time.",
+      "why": "Sustained commitment helps children carry genuine interests beyond primary school. It teaches them that enthusiasm can become capability through continued investment."
+    },
+    {
+      "signature": [
+        "Central Saint Martins exhibition links",
+        "European Study of France",
+        "Transition experiences"
+      ],
+      "curriculum": "Year 6 learning connects pupils with wider cultural, educational and geographical contexts. Visits, exhibitions and transition opportunities allow children to see possible pathways beyond the familiar world of primary school.",
+      "culture": "Adults encourage pupils to approach unfamiliar opportunities with curiosity, ask questions and treat new settings as spaces they have a right to enter and learn from.",
+      "why": "Engaging positively with future pathways broadens what children can imagine for themselves. Confidence grows when opportunity feels accessible rather than reserved for other people."
+    },
+    {
+      "signature": [
+        "Supporting younger pupils",
+        "KCA Community Assembly",
+        "Bright Futures Academy"
+      ],
+      "curriculum": "Leadership, citizenship and future-focused work give Year 6 pupils opportunities to demonstrate curiosity and ambition publicly. Their choices can influence how younger children imagine their own future.",
+      "culture": "Pupils are encouraged to share enthusiasm, celebrate effort and talk positively about learning without presenting achievement as effortless or competitive.",
+      "why": "Modelling aspiration helps create a school culture where ambition feels normal and inclusive. Younger pupils see that curiosity and effort are behaviours they can develop too."
+    },
+    {
+      "signature": [
+        "Bright Futures Academy"
+      ],
+      "curriculum": "The Bright Futures Academy gives pupils a concrete experience of applying for a role, committing to responsibilities and understanding expectations associated with work and future pathways.",
+      "culture": "Children are expected to take the commitment seriously—preparing appropriately, following through on responsibilities and reflecting on what the experience teaches them about themselves.",
+      "why": "Applying for and completing a role turns aspiration into action. Pupils experience that opportunities often require preparation, commitment and reliability as well as enthusiasm."
+    },
+    {
+      "signature": [
+        "Whole-class instrumental lessons",
+        "Composing and performing a leavers’ song",
+        "Final End of Year Performance"
+      ],
+      "curriculum": "Year 6 Music develops instrumental, compositional and performance skills through whole-class learning, Caribbean Music, film music, Songs of World War 2 and the leavers’ song.",
+      "culture": "Pupils are encouraged to recognise musical progress across their time at KCA and to consider how they might continue performing, composing or learning instruments beyond primary school.",
+      "why": "Continuing musical exploration reinforces the idea that interests do not end with Year 6. Children leave with permission to deepen passions and carry creative learning into the next stage of life."
+    }
+  ]
+};
+
 const year5BehaviourEvidence = {
   "respect": [
     {
@@ -2618,7 +2985,8 @@ function renderInlineGrowthMap(valueKey) {
           1: year1BehaviourEvidence,
           2: year2BehaviourEvidence,
           4: year4BehaviourEvidence,
-          5: year5BehaviourEvidence
+          5: year5BehaviourEvidence,
+          6: year6BehaviourEvidence
         };
 
         const detailedEvidence = detailedEvidenceByYear[activeYear]?.[valueKey]?.[index] || null;
