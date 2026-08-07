@@ -1274,6 +1274,321 @@ const provisionalYearEvidence = {
   }
 };
 
+const year2BehaviourEvidence = {
+  "respect": [
+    {
+      "signature": [
+        "KS1 Performance",
+        "Indian Food Workshop",
+        "Collaborative practical learning"
+      ],
+      "curriculum": "Geography compares London and India, while Music introduces traditional instruments and improvisation linked to India. Working towards shared performances and practical outcomes gives children authentic reasons to cooperate, listen and contribute rather than work alongside one another independently.",
+      "culture": "Learning partners, group tasks, PE and shared classroom responsibilities increasingly expect children to negotiate roles, listen to one another and help the group reach a successful outcome.",
+      "why": "Cooperation asks children to balance their own ideas with the needs of a group. It prepares them for increasingly complex collaborative learning as they move through school."
+    },
+    {
+      "signature": [
+        "PE team activities",
+        "KS1 Performance",
+        "OPAL play"
+      ],
+      "curriculum": "PE, Music and practical Art/DT all include moments when children need to wait, share a role and make space for somebody else. These experiences help children understand inclusion through action rather than simply talking about it.",
+      "culture": "Games, playtimes, partner work and classroom resources provide frequent opportunities to invite others in, take turns and notice when somebody has been left out.",
+      "why": "Taking turns and including others helps children understand that belonging is created by everyday choices. It strengthens fairness, friendships and successful group participation."
+    },
+    {
+      "signature": [
+        "Tasting food from India",
+        "Indian Food Workshop",
+        "Story Tree cultural art"
+      ],
+      "curriculum": "Geography compares London and India; RE explores sacred books, food and faith, prayer, festivals and beliefs about creation; Art draws on African, American and Indian influences. Together these experiences show children that people may live, celebrate and believe in different ways.",
+      "culture": "Class discussion gives children permission to share family experiences, traditions and viewpoints without expecting everyone to have the same story.",
+      "why": "Recognising difference without judging it is an important step towards genuine respect. Children begin to understand that their own experience is one among many."
+    },
+    {
+      "signature": [
+        "Canal workshop",
+        "London Aquarium",
+        "Kew Gardens"
+      ],
+      "curriculum": "Science explores habitats, plants and living things, while Art and DT require children to care for tools and materials. Visits beyond school extend this responsibility to public spaces and environments shared with other people.",
+      "culture": "Children are expected to leave classrooms, play spaces and resources ready for the next person, developing the idea that shared spaces belong to everyone.",
+      "why": "Caring for shared spaces develops responsibility beyond personal belongings. It teaches children that respect can be shown through how they treat places, resources and environments."
+    },
+    {
+      "signature": [
+        "Trips and workshops across Year 2",
+        "Open Afternoon",
+        "KS1 Performance"
+      ],
+      "curriculum": "BSL develops careful communication with different people, while English, RE and PSHE give children language for respectful discussion. Visits and performances allow them to practise these habits with adults and children beyond their immediate class.",
+      "culture": "Greeting adults, responding to instructions, speaking with peers and representing KCA around the school all reinforce the expectation that respect remains important in every setting.",
+      "why": "Responding respectfully helps children build trust with both peers and adults. It also prepares them to adapt their communication appropriately as their world becomes wider."
+    }
+  ],
+  "integrity": [
+    {
+      "signature": [
+        "Special-item show and tell",
+        "Identity self-portrait",
+        "Open Afternoon"
+      ],
+      "curriculum": "The Year 2 identity work asks children to think about experiences that shape who they are. PSHE: Being Me in My World provides structured opportunities to reflect on choices, behaviour and how they contribute to a community.",
+      "culture": "After difficulties, adults support children to revisit what happened, identify their part in it and consider what they could do differently next time.",
+      "why": "Reflection turns behaviour into learning. With support, children begin moving from simply knowing a rule towards understanding their own choices and patterns."
+    },
+    {
+      "signature": [
+        "Classroom responsibilities",
+        "Trips beyond school",
+        "Shared project outcomes"
+      ],
+      "curriculum": "Art, DT and Computing require children to manage equipment and complete their part of a task. Practical learning makes the consequences of taking—or avoiding—responsibility easy to see.",
+      "culture": "Children increasingly take ownership of belongings, routines, learning tasks and small mistakes instead of expecting an adult to resolve everything for them.",
+      "why": "Taking responsibility helps children develop agency. They learn that they can influence what happens next by owning their actions and making a constructive response."
+    },
+    {
+      "signature": [
+        "Show and tell",
+        "Collaborative learning",
+        "OPAL play"
+      ],
+      "curriculum": "English stories and PSHE discussions explore trust, truth and the consequences of choices. These provide safe contexts for discussing honesty before children need to apply it in real situations.",
+      "culture": "Adults respond calmly when mistakes or disagreements happen, creating conditions in which children can be honest about their part without honesty becoming something to fear.",
+      "why": "Honesty builds trust. Acting truthfully during both learning and play helps children understand that integrity matters in ordinary moments, not only when an adult is checking."
+    },
+    {
+      "signature": [
+        "KS1 Performance",
+        "Whole School Exhibition",
+        "Collaborative DT"
+      ],
+      "curriculum": "Group performance, Art and design work make interdependence visible: one child’s preparation, behaviour or use of resources can affect everyone else’s experience and outcome.",
+      "culture": "Teachers help children notice the ripple effect of choices during partner work, transitions and play—both when their actions help a group and when they make things harder for others.",
+      "why": "Understanding impact develops moral awareness. Children begin to move from ‘What happens to me?’ towards ‘What does my choice mean for other people?’"
+    },
+    {
+      "signature": [
+        "OPAL play",
+        "Collaborative classroom challenges",
+        "PSHE discussion"
+      ],
+      "curriculum": "PSHE and RE provide language for fairness, forgiveness and relationships. Practical group work gives children real problems to solve where compromise is often more useful than simply insisting on their first choice.",
+      "culture": "Children are supported to listen to both sides, explain what they need and find workable solutions during small disagreements rather than relying immediately on adult judgement.",
+      "why": "Resolving problems fairly builds confidence in managing conflict. Children learn that fairness often involves listening, compromise and repairing relationships."
+    }
+  ],
+  "endurance": [
+    {
+      "signature": [
+        "Victorian Day",
+        "Victorian toy design — STEAM Ambassador",
+        "Whole School Exhibition"
+      ],
+      "curriculum": "History explores determination in Victorian Britain, while DT asks children to design and make a Victorian toy. Maths, writing and practical subjects all provide tasks where improvement depends on staying with a problem rather than seeking an instant answer.",
+      "culture": "Teachers notice perseverance, strategy changes and useful help-seeking, reinforcing that successful learning often includes moments of difficulty.",
+      "why": "Perseverance helps children discover that effort can change an outcome. This develops confidence to approach learning that initially feels beyond them."
+    },
+    {
+      "signature": [
+        "Swimming",
+        "Gymnastics",
+        "OAA and team PE"
+      ],
+      "curriculum": "PSHE: Healthy Me supports children to recognise feelings and use simple strategies, while PE and swimming provide real contexts for managing excitement, frustration, nerves and physical challenge.",
+      "culture": "Children practise pausing, using familiar calming strategies, talking to an adult and returning to an activity once they are ready.",
+      "why": "Managing emotions helps children stay engaged with both learning and relationships. Simple strategies in Year 2 create the foundations for more independent self-regulation later."
+    },
+    {
+      "signature": [
+        "Victorian toy design",
+        "Coding and on-screen robots",
+        "PE skill development"
+      ],
+      "curriculum": "Design, coding and physical learning all involve attempts that do not work first time. Children are encouraged to identify what went wrong, use feedback and make another attempt.",
+      "culture": "Adults help children see setbacks as temporary. Reassurance is paired with an expectation that, when ready, they return to the task rather than abandon it.",
+      "why": "Recovering from a setback is different from never finding something difficult. Children develop resilience when they learn that disappointment can be followed by another constructive step."
+    },
+    {
+      "signature": [
+        "Whole School Exhibition preparation",
+        "Extended reading groups",
+        "Art and DT projects"
+      ],
+      "curriculum": "Little Wandle reading groups build fluency, comprehension and prosody through sustained attention. Longer creative and practical tasks require children to remain engaged across several stages rather than complete a quick activity.",
+      "culture": "Children are increasingly expected to stay with learning for longer, use reminders and routines, and return their attention after minor distractions.",
+      "why": "Sustained attention enables deeper learning. Building this capacity gradually helps children cope confidently with the longer and more complex tasks of Key Stage 2."
+    },
+    {
+      "signature": [
+        "Photography and coding",
+        "Independent project tasks",
+        "Open Afternoon preparation"
+      ],
+      "curriculum": "Computing, writing, Art and Maths include familiar processes children can increasingly manage without step-by-step adult direction. Teachers deliberately release responsibility as competence grows.",
+      "culture": "Children organise equipment, begin familiar tasks, use classroom prompts and check what they need before asking an adult to direct every step.",
+      "why": "Beginning to work independently builds self-belief and learning efficiency. Children start to see themselves as people who can make decisions and move their own learning forward."
+    }
+  ],
+  "kindness": [
+    {
+      "signature": [
+        "OPAL play",
+        "Story Tree cultural activities",
+        "PE games"
+      ],
+      "curriculum": "PSHE Relationships and collaborative Art, Music and PE require children to work with different classmates. Story Tree work broadens their understanding of different cultures while shared tasks create practical opportunities to include others.",
+      "culture": "Children are encouraged to notice who is already part of a game, who is waiting to join and how they can make play welcoming rather than closed.",
+      "why": "Inclusion is an active form of kindness. Children learn that belonging is strengthened when they notice other people and deliberately make space for them."
+    },
+    {
+      "signature": [
+        "Collaborative Art and DT",
+        "Whole School Exhibition",
+        "Shared reading"
+      ],
+      "curriculum": "Practical projects make it natural for children to explain an idea, find a resource or offer encouragement when somebody is stuck. Teachers distinguish helpful support from simply doing the task for someone.",
+      "culture": "Children are encouraged to notice when a peer needs appropriate help during learning, routines or play and to offer support before waiting for an adult to intervene.",
+      "why": "Offering help develops empathy and contribution. Children begin to recognise that they have skills and attention that can make somebody else’s experience easier."
+    },
+    {
+      "signature": [
+        "PSHE Relationships",
+        "RE: forgiveness",
+        "Collaborative performances"
+      ],
+      "curriculum": "PSHE explores relationships, while RE considers forgiveness across different religions. Stories and group outcomes give children examples of how one person’s words or choices can affect feelings and relationships.",
+      "culture": "Restorative conversations help children connect actions with impact rather than focusing only on whether they have broken a rule.",
+      "why": "Understanding impact is central to empathy. It helps children make more thoughtful choices because they can increasingly anticipate how another person may experience them."
+    },
+    {
+      "signature": [
+        "KS1 Performance",
+        "West African call-and-response Music",
+        "Team PE"
+      ],
+      "curriculum": "Music, performance and PE depend on children responding to one another, keeping shared rhythms or rules and contributing positively to a collective outcome.",
+      "culture": "Friendly greetings, cooperative talk, encouragement and flexible groupings make positive social behaviour a daily expectation across the school day.",
+      "why": "Friendly cooperation helps children build relationships beyond close friendships. It gives them the social confidence to work successfully with many different people."
+    },
+    {
+      "signature": [
+        "Open Afternoon",
+        "Learning presentations",
+        "Shared creative work"
+      ],
+      "curriculum": "English, BSL and performance work develop children’s ability to communicate encouragement, appreciation and constructive responses in different forms.",
+      "culture": "Adults model language that builds other people up: noticing effort, thanking others, celebrating success and disagreeing without putting someone down.",
+      "why": "Positive language shapes how a community feels. Children learn that their words can increase another person’s confidence, sense of belonging and willingness to participate."
+    }
+  ],
+  "courage": [
+    {
+      "signature": [
+        "Special-item show and tell",
+        "Open Afternoon",
+        "Whole School Exhibition"
+      ],
+      "curriculum": "English, PSHE and practical subjects regularly ask children to explain choices, predictions and ideas. Teachers create structured opportunities for all children to contribute, not only those who volunteer most quickly.",
+      "culture": "Partner rehearsal, small-group discussion and whole-class sharing provide a gradual pathway for children to become more comfortable putting their thinking into words.",
+      "why": "Sharing ideas helps children discover that their thinking is worth contributing. It builds both communication and confidence to participate in increasingly demanding discussion."
+    },
+    {
+      "signature": [
+        "Stop-motion dinosaur video",
+        "Spitalfields City Farm",
+        "Indian Food Workshop"
+      ],
+      "curriculum": "Computing, visits and practical learning introduce tools, settings and processes children may not have encountered before. Clear modelling and encouragement help them approach unfamiliarity as something to explore.",
+      "culture": "Children are praised for willingness to try, particularly when an activity feels new or uncertain, rather than only for polished outcomes.",
+      "why": "Trying unfamiliar tasks expands children’s sense of what they can do. Confidence grows when they experience uncertainty and discover that they can manage it."
+    },
+    {
+      "signature": [
+        "KS1 Performance",
+        "Open Afternoon",
+        "BSL communication"
+      ],
+      "curriculum": "English develops spoken language; BSL requires deliberate expressive communication; Music and performance ask children to project and respond as part of a group.",
+      "culture": "Children practise speaking first with familiar partners and groups before contributing to larger class discussions, developing volume, clarity and confidence over time.",
+      "why": "Clear speech allows children to make their ideas accessible to other people. It supports participation, advocacy and the confidence to be heard."
+    },
+    {
+      "signature": [
+        "KS1 Performance",
+        "Whole School Exhibition",
+        "Open Afternoon"
+      ],
+      "curriculum": "Music, English and creative project outcomes provide regular reasons to perform, explain and present. Preparation is built into learning so public sharing feels purposeful rather than separate from the curriculum.",
+      "culture": "Children experience a progression from sharing with a partner to a group, class and wider audience, learning that nerves can coexist with successful participation.",
+      "why": "Performance and presentation build confidence through experience. Children learn that they can prepare, contribute and communicate even when being watched feels challenging."
+    },
+    {
+      "signature": [
+        "Victorian toy design",
+        "Coding",
+        "Art and printmaking"
+      ],
+      "curriculum": "DT and Computing make iteration explicit: a design or sequence is tested, errors are noticed and changes are made. Creative work similarly encourages refinement rather than expecting a perfect first attempt.",
+      "culture": "Adults talk openly about mistakes, model corrections and celebrate useful changes in strategy so that error becomes part of learning rather than a source of embarrassment.",
+      "why": "Understanding the value of mistakes protects children from avoiding challenge. It encourages experimentation, reflection and a stronger belief that ability can improve."
+    }
+  ],
+  "aspiration": [
+    {
+      "signature": [
+        "Indian Food Workshop",
+        "Spitalfields City Farm",
+        "Kew Gardens"
+      ],
+      "curriculum": "Year 2 introduces children to contrasting places, cultures, history, science, music and practical making. New experiences are deliberately varied so curiosity has many different opportunities to be sparked.",
+      "culture": "Adults notice enthusiasm and encourage children to ask follow-up questions, volunteer and approach unfamiliar opportunities positively.",
+      "why": "Enthusiasm opens the door to deeper engagement. Children who expect new opportunities to be interesting become more willing to explore and discover what matters to them."
+    },
+    {
+      "signature": [
+        "Looking back on Year 2",
+        "Open Afternoon",
+        "Creative and performance experiences"
+      ],
+      "curriculum": "PSHE Dreams & Goals and reflection across creative subjects encourage children to talk about what they enjoyed, what challenged them and which experiences they would like to pursue again.",
+      "culture": "Teachers ask children to explain preferences rather than simply name them, helping them become more aware of what different experiences bring out in them.",
+      "why": "Reflecting on enjoyment helps children understand themselves as learners. It turns a series of experiences into growing awareness of interests and preferences."
+    },
+    {
+      "signature": [
+        "Trips across Year 2",
+        "KS1 Performance",
+        "Whole School Exhibition"
+      ],
+      "curriculum": "The curriculum offers visits, workshops, performance, creative work and practical projects across the year. Children are expected to take an active role rather than remain passive observers.",
+      "culture": "Staff encourage children to join in positively, follow expectations and make the most of opportunities even when an activity is not immediately familiar.",
+      "why": "Positive participation helps children gain more from enrichment and discover capabilities they might otherwise never encounter."
+    },
+    {
+      "signature": [
+        "Contrasting London and India",
+        "Continents and Oceans",
+        "Kew Gardens"
+      ],
+      "curriculum": "Geography broadens children’s view from the local area to India, continents, oceans and physical features. RE, Music and Art add cultural and religious perspectives, while Science opens up the natural world.",
+      "culture": "Questions about places, people and ideas are welcomed, and children are encouraged to connect new learning with things they already know or have experienced.",
+      "why": "Curiosity about the wider world develops openness and ambition. It helps children see that there is far more to explore than what is immediately familiar."
+    },
+    {
+      "signature": [
+        "Open Afternoon",
+        "Music across different traditions",
+        "Art, DT and PE"
+      ],
+      "curriculum": "Year 2 gives children multiple ways to succeed: creative making, performance, physical activity, writing, problem solving and enquiry. PSHE Dreams & Goals supports them to notice emerging strengths.",
+      "culture": "Adults name specific improvements and strengths rather than offering only general praise, helping children build a more accurate and confident picture of what they can do.",
+      "why": "Recognising strengths supports self-belief without suggesting children are finished developing. It helps them identify areas they may want to invest effort in next."
+    }
+  ]
+};
+
 const year1BehaviourEvidence = {
   "respect": [
     {
@@ -1625,9 +1940,12 @@ function renderInlineGrowthMap(valueKey) {
   const items = isYear3
     ? map.behaviours
     : map.behaviours.map((statement, index) => {
-        const detailedEvidence = activeYear === 1
-          ? year1BehaviourEvidence?.[valueKey]?.[index]
-          : null;
+        const detailedEvidenceByYear = {
+          1: year1BehaviourEvidence,
+          2: year2BehaviourEvidence
+        };
+
+        const detailedEvidence = detailedEvidenceByYear[activeYear]?.[valueKey]?.[index] || null;
 
         return {
           statement,
