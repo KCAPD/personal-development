@@ -102,8 +102,10 @@ const caption = document.getElementById("characterCaption");
 const speech = document.getElementById("speechBubble");
 const fill = document.getElementById("lineFill");
 const train = document.getElementById("movingTrain");
+let activeYear = 1;
 
 function renderYear(number) {
+  activeYear = number;
   const year = years[number];
   kicker.textContent = `Platform ${number}`;
   title.textContent = year.title;
@@ -225,9 +227,123 @@ const dialogLead = document.getElementById("dialogLead");
 const dialogDetails = document.getElementById("dialogDetails");
 const dialogAction = document.getElementById("dialogAction");
 
+
+const year3CourageGrowthMap = [
+  {
+    statement: "I can contribute my ideas independently during discussions.",
+    signature: ["Learning Presentations"],
+    curriculum: "Children regularly contribute, explain and justify their thinking through structured discussion across the curriculum.",
+    culture: "Every child is encouraged to use their voice. Adults create classrooms where children know their ideas are valued and where respectful discussion is part of everyday learning.",
+    why: "Children learn that courage can be as simple as putting forward an idea, joining a discussion or sharing a viewpoint without waiting to be prompted."
+  },
+  {
+    statement: "I can speak clearly to different audiences.",
+    signature: ["LAMDA", "Learning Presentations", "Whole School Exhibition"],
+    curriculum: "Children regularly present, explain and communicate their learning across a range of subjects and for different purposes.",
+    culture: "KCA creates authentic audiences for children's learning so that speaking confidently has a real purpose beyond the classroom.",
+    why: "Repeated opportunities to speak to classmates, families, visitors and wider audiences help children adapt their communication and grow in confidence."
+  },
+  {
+    statement: "I can take part in performances with confidence.",
+    signature: ["LAMDA Solo Introductory Examination", "Songs Under the Tree", "Class performances and assemblies"],
+    curriculum: "Performance, rehearsal and spoken communication give children repeated opportunities to practise expressive speaking and presentation.",
+    culture: "Performance is celebrated as part of life at KCA. Children are supported to rehearse, take positive risks and feel proud when they perform for others.",
+    why: "Children experience the satisfaction of stepping beyond their comfort zone and discovering that confidence grows through practice."
+  },
+  {
+    statement: "I can attempt challenging work without giving up quickly.",
+    signature: ["Bridge Engineering Project", "Stone Age enquiry"],
+    curriculum: "Ambitious tasks across the curriculum ask children to solve problems, refine ideas and persist when the first attempt is not successful.",
+    culture: "Mistakes are treated as part of learning. Adults expect children to have a go, seek support when needed and keep working when learning becomes difficult.",
+    why: "Courage in learning means being willing to attempt something difficult rather than avoiding challenge."
+  },
+  {
+    statement: "I can reflect on times when I showed courage.",
+    signature: ["Personal Development Journey Journal"],
+    curriculum: "Children reflect on experiences, achievements and challenges, identifying the values they have demonstrated and the ways they have grown.",
+    culture: "Reflection helps children notice that courage appears in both memorable experiences and small everyday choices.",
+    why: "Recognising courageous moments helps children understand their own progress and builds confidence for the next challenge."
+  },
+  {
+    statement: "I can complete my LAMDA Solo Introductory Exam.",
+    signature: ["LAMDA preparation", "Rehearsal and feedback", "Solo Introductory Examination"],
+    curriculum: "Children prepare a solo performance, rehearse deliberately, respond to feedback and complete the Year 3 LAMDA examination.",
+    culture: "Every child is supported to see themselves as a performer and communicator who can rise to a significant personal challenge.",
+    why: "The examination provides a clear, authentic milestone where children can demonstrate courage, preparation, resilience and confident communication."
+  }
+];
+
+const growthMapPanel = document.getElementById("growthMapPanel");
+const behaviourAccordion = document.getElementById("behaviourAccordion");
+const year3CurriculumLink = document.getElementById("year3CurriculumLink");
+
+function renderYear3CourageGrowthMap() {
+  behaviourAccordion.innerHTML = year3CourageGrowthMap.map((item, index) => `
+    <article class="behaviour-item${index === 0 ? " open" : ""}">
+      <button class="behaviour-trigger"
+              type="button"
+              aria-expanded="${index === 0 ? "true" : "false"}">
+        <span class="behaviour-check">✓</span>
+        <strong>${item.statement}</strong>
+        <span class="behaviour-chevron" aria-hidden="true">⌄</span>
+      </button>
+
+      <div class="behaviour-content">
+        <div class="demonstration-group">
+          <p class="demonstration-label">🌟 Signature experiences</p>
+          <div class="demonstration-chips">
+            ${item.signature.map(experience => `<span class="demonstration-chip">${experience}</span>`).join("")}
+          </div>
+        </div>
+
+        <div class="demonstration-group">
+          <p class="demonstration-label">📚 Across our curriculum</p>
+          <p class="demonstration-copy">${item.curriculum}</p>
+        </div>
+
+        <div class="demonstration-group">
+          <p class="demonstration-label">🏫 Everyday school life</p>
+          <p class="demonstration-copy">${item.culture}</p>
+        </div>
+
+        <div class="why-it-matters">
+          <strong>Why this matters</strong>
+          <p>${item.why}</p>
+        </div>
+      </div>
+    </article>
+  `).join("");
+
+  behaviourAccordion.querySelectorAll(".behaviour-trigger").forEach(trigger => {
+    trigger.addEventListener("click", () => {
+      const item = trigger.closest(".behaviour-item");
+      const willOpen = !item.classList.contains("open");
+
+      behaviourAccordion.querySelectorAll(".behaviour-item").forEach(other => {
+        other.classList.remove("open");
+        other.querySelector(".behaviour-trigger").setAttribute("aria-expanded", "false");
+      });
+
+      if (willOpen) {
+        item.classList.add("open");
+        trigger.setAttribute("aria-expanded", "true");
+      }
+    });
+  });
+}
+
+year3CurriculumLink.addEventListener("click", event => {
+  if (year3CurriculumLink.getAttribute("aria-disabled") === "true") {
+    event.preventDefault();
+  }
+});
+
+
 document.querySelectorAll(".value-card[data-value]").forEach(card => {
   card.addEventListener("click", () => {
-    const story = valueStories[card.dataset.value];
+    const value = card.dataset.value;
+    const story = valueStories[value];
+
     dialogImage.src = story.image;
     dialogImage.alt = story.title;
     dialogTitle.textContent = story.title;
@@ -235,6 +351,15 @@ document.querySelectorAll(".value-card[data-value]").forEach(card => {
     dialogLead.textContent = story.lead;
     dialogDetails.innerHTML = story.details.map(paragraph => `<p>${paragraph}</p>`).join("");
     dialogAction.textContent = story.action;
+
+    const showGrowthMap = activeYear === 3 && value === "courage";
+    growthMapPanel.hidden = !showGrowthMap;
+    dialog.classList.toggle("growth-map-active", showGrowthMap);
+
+    if (showGrowthMap) {
+      renderYear3CourageGrowthMap();
+    }
+
     dialog.showModal();
     document.body.classList.add("dialog-open");
   });
@@ -243,6 +368,8 @@ document.querySelectorAll(".value-card[data-value]").forEach(card => {
 function closeCharacterDialog() {
   dialog.close();
   document.body.classList.remove("dialog-open");
+  dialog.classList.remove("growth-map-active");
+  growthMapPanel.hidden = true;
 }
 
 dialogClose.addEventListener("click", closeCharacterDialog);
