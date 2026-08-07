@@ -160,7 +160,7 @@ function renderYear(number) {
     button.setAttribute("aria-selected", active ? "true" : "false");
   });
 
-  const hasGrowthMap = [1, 2, 3, 4, 6].includes(number);
+  const hasGrowthMap = [1, 2, 3, 4, 5, 6].includes(number);
   yearGrowthSection.hidden = !hasGrowthMap;
   eyfsFoundationSection.hidden = !isEYFS;
 
@@ -506,6 +506,90 @@ const year4GrowthMaps = {
       "I can engage positively with opportunities beyond school.",
       "I can reflect on my talents and aspirations.",
       "I can start to learn an instrument at school."
+    ]
+  }
+};
+
+
+const year5GrowthMaps = {
+  respect: {
+    title: "Respect",
+    strand: "Belonging and understanding others",
+    character: "images/riley-respect.png",
+    characterAlt: "Riley Respect",
+    behaviours: [
+      "I can work maturely with different people.",
+      "I can listen respectfully during disagreements.",
+      "I can encourage inclusive behaviour within groups.",
+      "I can treat public spaces, visitors and the wider community respectfully.",
+      "I can reflect on how my behaviour affects others."
+    ]
+  },
+  integrity: {
+    title: "Integrity",
+    strand: "Making good choices",
+    character: "images/isaac-integrity.png",
+    characterAlt: "Isaac Integrity",
+    behaviours: [
+      "I can act honestly and responsibly across school life.",
+      "I can take ownership of my mistakes and learning.",
+      "I can show self-discipline and responsibility.",
+      "I can make thoughtful choices during challenging situations.",
+      "I can encourage positive behaviour in others."
+    ]
+  },
+  endurance: {
+    title: "Endurance",
+    strand: "Managing myself and staying the course",
+    character: "images/eli-endurance.png",
+    characterAlt: "Eli Endurance",
+    behaviours: [
+      "I can stay positive during challenge and change.",
+      "I can use self-regulation strategies independently.",
+      "I can balance independence with asking for support when needed.",
+      "I can sustain effort across longer projects and responsibilities.",
+      "I can encourage others to persevere."
+    ]
+  },
+  kindness: {
+    title: "Kindness",
+    strand: "Relationships and contribution",
+    character: "images/kiki-kofi-kindness.png",
+    characterAlt: "Kiki and Kofi Kindness",
+    behaviours: [
+      "I can support younger pupils and peers appropriately.",
+      "I can show empathy in different situations.",
+      "I can contribute positively to the wider school community.",
+      "I can understand the importance of encouragement and inclusion.",
+      "I can reflect on how kindness strengthens relationships."
+    ]
+  },
+  courage: {
+    title: "Courage",
+    strand: "Finding and using my voice",
+    character: "images/connor-courage.png",
+    characterAlt: "Connor Courage",
+    behaviours: [
+      "I can speak confidently in unfamiliar situations.",
+      "I can use my voice to support and encourage others.",
+      "I can take positive risks in learning and performance.",
+      "I can represent the school confidently.",
+      "I can reflect thoughtfully on my personal growth and challenges.",
+      "I can complete my LAMDA Speaking in Public Grade 1 exam."
+    ]
+  },
+  aspiration: {
+    title: "Aspiration",
+    strand: "Exploring my future and my passions",
+    character: "images/aria-aspiration.png",
+    characterAlt: "Aria Aspiration",
+    behaviours: [
+      "I can show commitment to my interests and responsibilities.",
+      "I can show ambition in learning and enrichment activities.",
+      "I can recognise how effort supports future success.",
+      "I can engage confidently with new opportunities.",
+      "I can encourage others to participate and achieve.",
+      "I can continue to explore musical instruments and commit time to developing my skillset."
     ]
   }
 };
@@ -902,6 +986,7 @@ function renderInlineGrowthMap(valueKey) {
     2: year2GrowthMaps,
     3: year3GrowthMaps,
     4: year4GrowthMaps,
+    5: year5GrowthMaps,
     6: year6GrowthMaps
   };
 
@@ -933,8 +1018,8 @@ function renderInlineGrowthMap(valueKey) {
     return;
   }
 
-  inlineGrowthHeading.textContent = `What ${map.title} feels like at KCA`;
-  inlineGrowthCulture.textContent = map.culture;
+  inlineGrowthHeading.textContent = `By the end of Year 3...`;
+  inlineGrowthCulture.textContent = `These are the observable behaviours children are developing through ${map.title.toLowerCase()} in Year 3. Open each behaviour to explore how this is developed at KCA.`;
   growthCurriculumLink.hidden = false;
 
   inlineBehaviourAccordion.innerHTML = map.behaviours.map(item => `
