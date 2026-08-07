@@ -1274,6 +1274,339 @@ const provisionalYearEvidence = {
   }
 };
 
+const year5BehaviourEvidence = {
+  "respect": [
+    {
+      "signature": [
+        "Anglo-Saxon Day",
+        "KS1 Performance",
+        "Whole School Exhibition"
+      ],
+      "curriculum": "History, DT and shared project work require children to work successfully with classmates who may bring different ideas, strengths and approaches. The Anglo-Saxon feast and exhibition-style outcomes make mature collaboration important to the quality of the final result.",
+      "culture": "Children increasingly work in changing groups rather than only with close friends. They are expected to share responsibility, adapt to different working styles and contribute constructively without relying on adults to manage every interaction.",
+      "why": "Working maturely with different people prepares children for the more varied teams and relationships of Year 6 and secondary school. It teaches them that successful collaboration depends on flexibility as well as friendship."
+    },
+    {
+      "signature": [
+        "English discussion and debate",
+        "PSHE Relationships",
+        "Collaborative enquiry"
+      ],
+      "curriculum": "English, RE and PSHE introduce questions where pupils may reasonably reach different conclusions. Teachers model listening to the substance of another person’s view before responding rather than treating disagreement as a competition to win.",
+      "culture": "During group work and everyday disagreements, children are expected to regulate tone, hear the other person out and respond to the issue rather than attacking the individual.",
+      "why": "Listening respectfully during disagreement allows relationships and learning to continue even when views differ. It is an essential skill for thoughtful participation in a diverse community."
+    },
+    {
+      "signature": [
+        "Whole School Exhibition",
+        "Vikings lesson delivered to younger pupils",
+        "Collaborative performances"
+      ],
+      "curriculum": "Year 5 includes shared outcomes in History, Music, DT and performance where group success depends on everyone being able to participate. Teaching younger pupils gives children a particularly clear reason to make participation welcoming and accessible.",
+      "culture": "Children are encouraged to notice who has not yet contributed, invite others into discussion and challenge exclusion without taking over the group themselves.",
+      "why": "Inclusive behaviour moves respect beyond personal politeness. Children begin to take responsibility for whether other people feel able to belong and contribute."
+    },
+    {
+      "signature": [
+        "Trips and exhibitions",
+        "Central Saint Martins exhibition links",
+        "Representing KCA beyond the classroom"
+      ],
+      "curriculum": "Geography, History and community-facing project outcomes connect classroom learning with public places and wider audiences. Children learn that the way they behave in these spaces communicates something about both themselves and their school.",
+      "culture": "Year 5 pupils are expected to treat visitors, shared public spaces and members of the wider community with the same respect they show within their own classroom.",
+      "why": "Respect should travel with the child. Learning to represent KCA positively helps children understand that responsible citizenship extends beyond the school gates."
+    },
+    {
+      "signature": [
+        "Collaborative projects",
+        "Learning presentations",
+        "PSHE reflection"
+      ],
+      "curriculum": "Group enquiries and presentation work make the effect of behaviour visible: organisation, encouragement and attentive listening help others succeed, while disengagement or dismissiveness can weaken the whole outcome.",
+      "culture": "Restorative conversations increasingly ask children to consider impact as well as intention—what happened for the other person, the group or the learning because of their behaviour.",
+      "why": "Reflecting on impact develops mature self-awareness. Children begin to judge behaviour not only by what they meant to do, but by the effect their choices actually had."
+    }
+  ],
+  "integrity": [
+    {
+      "signature": [
+        "Whole School Exhibition",
+        "Independent project work",
+        "Open Afternoon"
+      ],
+      "curriculum": "Across Year 5, children manage more complex tasks, resources and collaborative responsibilities. English, DT, Computing and enquiry work provide repeated opportunities to demonstrate honesty and reliability without constant adult checking.",
+      "culture": "Children are increasingly trusted to organise themselves, use technology appropriately, meet expectations and make sensible choices across different parts of school life.",
+      "why": "Acting honestly and responsibly across school life shows that integrity is becoming consistent rather than situational. Trust grows when others know they can rely on a child’s choices."
+    },
+    {
+      "signature": [
+        "Extended writing",
+        "DT design-and-improve work",
+        "Performance rehearsal"
+      ],
+      "curriculum": "Writing, design and performance all include feedback, revision and moments when something has not worked. Teachers expect children to identify their own contribution honestly and use mistakes as information for the next attempt.",
+      "culture": "When difficulties occur, pupils are increasingly expected to acknowledge their part before explaining what somebody else did. Adults focus conversations on ownership, repair and what will change next.",
+      "why": "Owning mistakes protects children from becoming defensive learners. It allows them to improve more quickly because energy is spent on the next step rather than avoiding responsibility."
+    },
+    {
+      "signature": [
+        "Longer-term projects",
+        "Independent research",
+        "Classroom responsibilities"
+      ],
+      "curriculum": "Year 5 learning involves sustained tasks that require planning, organisation and attention without step-by-step adult direction. Pupils experience that self-discipline often matters most after the initial excitement of a task has passed.",
+      "culture": "Children are expected to begin promptly, manage resources, sustain appropriate behaviour and complete responsibilities even when adults are occupied elsewhere.",
+      "why": "Self-discipline helps children turn good intentions into dependable action. It is a critical part of readiness for the greater independence of Year 6 and secondary school."
+    },
+    {
+      "signature": [
+        "Climate and sustainability learning",
+        "RE ethical discussion",
+        "Collaborative problem solving"
+      ],
+      "curriculum": "Geography, RE, English and PSHE expose children to choices involving competing needs, fairness and longer-term consequences. They are encouraged to justify decisions rather than simply choose the easiest or most popular option.",
+      "culture": "Adults ask children to pause in difficult moments, consider who may be affected and choose a response they will still regard as fair once emotions have settled.",
+      "why": "Thoughtful choices under pressure are a stronger test of integrity than easy decisions. Children learn to use principles when circumstances are complicated."
+    },
+    {
+      "signature": [
+        "Vikings lesson for younger pupils",
+        "Whole School Exhibition",
+        "Team and performance work"
+      ],
+      "curriculum": "Teaching, presenting and collaborative outcomes give Year 5 pupils opportunities to influence the tone and behaviour of a group. Their example can make participation safer, calmer and more productive for others.",
+      "culture": "Older pupils are encouraged to model positive choices, acknowledge good behaviour in peers and use influence constructively rather than joining in when standards slip.",
+      "why": "Encouraging positive behaviour marks a shift from managing oneself to influencing a community. Children begin to recognise that integrity can strengthen the choices of people around them."
+    }
+  ],
+  "endurance": [
+    {
+      "signature": [
+        "Shackleton boat-design challenge",
+        "Whole School Exhibition",
+        "Extended curriculum projects"
+      ],
+      "curriculum": "The Year 5 curriculum includes extended writing, DT design cycles, Maths reasoning and enquiry work that cannot be completed successfully through a quick first attempt. The Shackleton-linked learning provides an especially strong context for perseverance.",
+      "culture": "Teachers expect children to identify a next step when work becomes difficult, use available strategies and return to the task rather than interpreting challenge as a reason to stop.",
+      "why": "Staying positive through challenge helps children protect motivation when success is not immediate. It develops the resilience needed for increasingly demanding learning."
+    },
+    {
+      "signature": [
+        "PE and OAA",
+        "Longer project work",
+        "PSHE Healthy Me"
+      ],
+      "curriculum": "PSHE supports pupils to identify strategies for managing emotions, while PE, OAA and demanding academic tasks provide real situations in which those strategies need to be used independently.",
+      "culture": "Children are expected to recognise when they need to pause, reset, organise themselves or seek appropriate support without an adult directing each stage of regulation.",
+      "why": "Independent self-regulation allows children to recover more quickly from frustration and remain connected to learning and relationships. It is increasingly important as adult scaffolding reduces."
+    },
+    {
+      "signature": [
+        "Independent research",
+        "Extended writing",
+        "Whole School Exhibition preparation"
+      ],
+      "curriculum": "Year 5 deliberately combines increasing independence with access to appropriate scaffolds, feedback and expertise. Children learn that independence does not mean struggling alone.",
+      "culture": "Pupils are encouraged to try known strategies first, then ask purposeful questions when support will genuinely move learning forward.",
+      "why": "Balancing independence with help-seeking is a sophisticated learning habit. Children become neither over-dependent nor reluctant to access support when it is useful."
+    },
+    {
+      "signature": [
+        "DT spacecraft project",
+        "Whole School Exhibition",
+        "Extended writing and enquiry"
+      ],
+      "curriculum": "Several Year 5 outcomes develop across multiple lessons: designing and improving a spacecraft, sustained writing, exhibitions and longer historical or geographical enquiries. Children must maintain standards and organisation over time.",
+      "culture": "Teachers help pupils plan milestones, keep track of unfinished work and maintain effort after the novelty of a project has faded.",
+      "why": "Sustaining effort across longer responsibilities develops reliability and stamina. It prepares children for projects and commitments that cannot be completed in a single burst of motivation."
+    },
+    {
+      "signature": [
+        "Team sports",
+        "Collaborative DT",
+        "Group performance"
+      ],
+      "curriculum": "PE, Music and practical group work allow children to see how encouragement affects persistence. A well-timed reassurance or constructive suggestion can help another pupil stay engaged with challenge.",
+      "culture": "Year 5 pupils are encouraged to respond positively when others struggle, offering encouragement without rescuing them from the challenge itself.",
+      "why": "Encouraging perseverance in others develops both empathy and leadership. Children learn that resilience can be strengthened by the culture a group creates together."
+    }
+  ],
+  "kindness": [
+    {
+      "signature": [
+        "Vikings lesson delivered to younger pupils",
+        "Whole School Exhibition",
+        "Shared school events"
+      ],
+      "curriculum": "Teaching younger children and presenting learning to different audiences gives Year 5 pupils practical experience of adjusting explanations, offering reassurance and taking responsibility for somebody else’s participation.",
+      "culture": "Older pupils are increasingly expected to notice when younger children or peers need appropriate help and respond in a way that supports rather than patronises.",
+      "why": "Supporting others appropriately develops service and responsibility. Children learn that kindness includes using their growing confidence and competence for somebody else’s benefit."
+    },
+    {
+      "signature": [
+        "PSHE Relationships",
+        "RE reflection",
+        "Collaborative literature and discussion"
+      ],
+      "curriculum": "PSHE, RE and English expose pupils to increasingly complex relationships and perspectives. Children consider not only what somebody feels, but why their experience might lead them to respond differently.",
+      "culture": "Restorative conversations and everyday relationships ask children to consider another person’s position before deciding how to respond.",
+      "why": "Empathy in Year 5 moves beyond recognising obvious feelings. Children begin to understand experiences from another person’s point of view even when it differs from their own."
+    },
+    {
+      "signature": [
+        "Whole School Exhibition",
+        "Vikings teaching activity",
+        "Collaborative performances"
+      ],
+      "curriculum": "Authentic audiences and shared outcomes allow children to contribute beyond their own individual success. Presenting, teaching and creating together make the quality of the wider community part of the learning.",
+      "culture": "Children take responsibilities, support peers and contribute to shared routines with increasing awareness that their actions influence the atmosphere of the school.",
+      "why": "Positive contribution helps children see themselves as members of a community with something to give. Kindness becomes active participation rather than simply avoiding harm."
+    },
+    {
+      "signature": [
+        "Group performances",
+        "Team PE",
+        "Whole School Exhibition"
+      ],
+      "curriculum": "Music, PE and collaborative projects make encouragement and inclusion visible ingredients of success. Children see how confidence grows when a group actively supports participation.",
+      "culture": "Adults expect pupils to invite others in, recognise effort and avoid humour or behaviour that gains status by making somebody else feel smaller.",
+      "why": "Encouragement and inclusion strengthen belonging. Children learn that they can deliberately create conditions in which other people feel confident enough to participate."
+    },
+    {
+      "signature": [
+        "PSHE Relationships",
+        "Collaborative learning",
+        "Everyday peer support"
+      ],
+      "curriculum": "Literature, PSHE and RE help children explore trust, loyalty, compassion and the way relationships are sustained over time rather than through isolated acts.",
+      "culture": "Children reflect on the cumulative effect of everyday kindness—checking in, including, forgiving, encouraging and reliably treating others with care.",
+      "why": "Strong relationships are built through repeated acts of consideration. Recognising this helps children see kindness as something that shapes long-term trust and community."
+    }
+  ],
+  "courage": [
+    {
+      "signature": [
+        "LAMDA Speaking in Public Grade 1 exam",
+        "Learning presentations",
+        "Whole School Exhibition"
+      ],
+      "curriculum": "English, LAMDA and project presentations require children to communicate in contexts where the audience or situation may be less familiar. Preparation and rehearsal give pupils strategies for managing nerves rather than avoiding the situation.",
+      "culture": "Children are encouraged to volunteer, introduce themselves appropriately and communicate with visitors or unfamiliar adults when opportunities arise.",
+      "why": "Speaking confidently in unfamiliar situations helps children transfer communication skills beyond the safety of their usual classroom and prepares them for new environments."
+    },
+    {
+      "signature": [
+        "Vikings lesson for younger pupils",
+        "Collaborative presentations",
+        "Team projects"
+      ],
+      "curriculum": "Teaching and presenting give children a purposeful reason to use their voice for somebody else. Collaborative learning also requires them to reassure, explain and encourage rather than speaking only to promote their own ideas.",
+      "culture": "Pupils are encouraged to notice when their words could help somebody participate, persist or feel valued and to use their confidence generously.",
+      "why": "Using voice to support others turns confidence into leadership. Children learn that communication can strengthen other people as well as express themselves."
+    },
+    {
+      "signature": [
+        "LAMDA Grade 1",
+        "Musical Theatre",
+        "Whole School Exhibition"
+      ],
+      "curriculum": "Performance, public speaking, creative work and ambitious practical tasks all involve the possibility of visible mistakes. Teachers deliberately create supportive conditions in which taking a sensible risk is valued.",
+      "culture": "Children are praised for volunteering, trying a harder approach or performing despite nerves, even when the result is not perfect.",
+      "why": "Positive risk-taking expands what children believe they can do. It teaches them that growth often requires tolerating uncertainty and the possibility of imperfection."
+    },
+    {
+      "signature": [
+        "Open Afternoon",
+        "Whole School Exhibition",
+        "Learning presentations"
+      ],
+      "curriculum": "Authentic audiences require children to explain learning clearly, behave responsibly and respond appropriately to questions. These experiences make representing the school a real responsibility rather than an abstract expectation.",
+      "culture": "Year 5 pupils are increasingly aware that visitors and younger children may look to them as examples of KCA behaviour and attitudes.",
+      "why": "Representing the school confidently develops pride and responsibility together. Children learn that their actions contribute to how a wider community experiences KCA."
+    },
+    {
+      "signature": [
+        "LAMDA preparation",
+        "Longer-term projects",
+        "End-of-year reflection"
+      ],
+      "curriculum": "Feedback, revision and reflection across performance, writing and project work encourage children to identify moments when they were stretched and what helped them respond.",
+      "culture": "Adults create space for honest reflection on nerves, mistakes and challenge without turning difficulty into failure or something to hide.",
+      "why": "Thoughtful reflection helps children understand how they respond to challenge. This self-knowledge allows them to approach future difficulties with more effective strategies."
+    },
+    {
+      "signature": [
+        "LAMDA Speaking in Public Grade 1 exam"
+      ],
+      "curriculum": "LAMDA Grade 1 provides a formal progression from earlier speaking experiences. Pupils prepare, rehearse and deliver work to an external standard, using feedback to refine both content and presentation.",
+      "culture": "Rehearsal teaches children that confidence is built through preparation, feedback and repetition. Nerves are treated as a manageable part of performance.",
+      "why": "Completing Grade 1 gives children concrete evidence of progress as communicators and prepares them for the increased presentation and leadership demands of Year 6."
+    }
+  ],
+  "aspiration": [
+    {
+      "signature": [
+        "Longer-term projects",
+        "Whole School Exhibition",
+        "Music and performance"
+      ],
+      "curriculum": "Year 5 learning requires pupils to sustain effort across interests and responsibilities rather than rely on initial enthusiasm. Music, DT, extended writing and enquiry all reward continued commitment.",
+      "culture": "Teachers help children distinguish between briefly liking something and choosing to invest the practice required to improve at it.",
+      "why": "Commitment allows interests to deepen into genuine strengths. Children learn that enjoyment and responsibility can coexist when something matters to them."
+    },
+    {
+      "signature": [
+        "LAMDA Grade 1",
+        "Whole School Exhibition",
+        "STEAM spacecraft project"
+      ],
+      "curriculum": "Public speaking, exhibition work and ambitious DT outcomes give children concrete opportunities to aim beyond minimum completion and take pride in improving the quality of what they produce.",
+      "culture": "Adults use ambitious but realistic language about what pupils can achieve and encourage them to set personal standards rather than simply compare themselves with classmates.",
+      "why": "Ambition helps children see current attainment as a starting point rather than a ceiling. It encourages purposeful effort towards outcomes they value."
+    },
+    {
+      "signature": [
+        "Shackleton learning",
+        "LAMDA preparation",
+        "Extended project work"
+      ],
+      "curriculum": "Across Year 5, children can see clear links between repeated effort and better outcomes—from rehearsal and performance to design, writing and historical enquiry.",
+      "culture": "Feedback explicitly names the habits behind progress: practice, organisation, perseverance, reflection and willingness to respond to advice.",
+      "why": "Understanding the role of effort gives children agency over future success. Achievement becomes something they can influence through habits rather than something that simply happens to them."
+    },
+    {
+      "signature": [
+        "Wonder Dome — Space & Earth",
+        "Whole School Exhibition",
+        "Tudor Experience Day"
+      ],
+      "curriculum": "The curriculum deliberately exposes children to unfamiliar ideas, settings and disciplines—from Earth and Space to history, performance, technology and creative practice.",
+      "culture": "Pupils are encouraged to approach opportunities with curiosity, volunteer and reflect afterwards on what they discovered about the subject and themselves.",
+      "why": "Engaging confidently with new opportunities broadens horizons. Children are more likely to discover future interests when unfamiliar experiences are approached with openness rather than hesitation."
+    },
+    {
+      "signature": [
+        "Vikings lesson for younger pupils",
+        "Team projects",
+        "Collaborative performance"
+      ],
+      "curriculum": "Teaching, group work and performance show children that ambition can be collective. Encouraging somebody else to participate or improve can raise the quality of an outcome for everyone.",
+      "culture": "Children are expected to celebrate peers, share useful strategies and use their own motivation in ways that make achievement feel possible for others.",
+      "why": "Aspiration is stronger in a culture where success is shared rather than guarded. Encouraging others develops generous leadership and collective ambition."
+    },
+    {
+      "signature": [
+        "Keyboard Unit",
+        "Exploring soundscapes",
+        "Understanding the Blues"
+      ],
+      "curriculum": "Year 5 Music allows children to continue exploring instrumental and compositional skills through keyboard work, soundscapes and the Blues. These experiences require regular practice and increasingly deliberate musical choices.",
+      "culture": "Children are encouraged to recognise that developing a skillset takes time and to value progress that comes through sustained rehearsal rather than instant mastery.",
+      "why": "Continued musical exploration gives children another area in which to experience the relationship between interest, practice and growing expertise."
+    }
+  ]
+};
+
 const year4BehaviourEvidence = {
   "respect": [
     {
@@ -2284,7 +2617,8 @@ function renderInlineGrowthMap(valueKey) {
         const detailedEvidenceByYear = {
           1: year1BehaviourEvidence,
           2: year2BehaviourEvidence,
-          4: year4BehaviourEvidence
+          4: year4BehaviourEvidence,
+          5: year5BehaviourEvidence
         };
 
         const detailedEvidence = detailedEvidenceByYear[activeYear]?.[valueKey]?.[index] || null;
