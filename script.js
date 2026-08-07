@@ -160,7 +160,7 @@ function renderYear(number) {
     button.setAttribute("aria-selected", active ? "true" : "false");
   });
 
-  const hasGrowthMap = number === 1 || number === 3;
+  const hasGrowthMap = [1, 2, 3, 4, 6].includes(number);
   yearGrowthSection.hidden = !hasGrowthMap;
   eyfsFoundationSection.hidden = !isEYFS;
 
@@ -340,6 +340,259 @@ const year1GrowthMaps = {
       "I can talk about things I enjoy learning.",
       "I can try different activities with encouragement.",
       "I can begin to develop interests and preferences."
+    ]
+  }
+};
+
+
+const year2GrowthMaps = {
+  respect: {
+    title: "Respect",
+    strand: "Belonging and understanding others",
+    character: "images/riley-respect.png",
+    characterAlt: "Riley Respect",
+    behaviours: [
+      "I can work cooperatively with others.",
+      "I can take turns and include others in activities.",
+      "I can recognise that people may have different experiences and beliefs.",
+      "I can care for shared spaces and resources.",
+      "I can respond respectfully to adults and other children."
+    ]
+  },
+  integrity: {
+    title: "Integrity",
+    strand: "Making good choices",
+    character: "images/isaac-integrity.png",
+    characterAlt: "Isaac Integrity",
+    behaviours: [
+      "I can reflect on my behaviour with support.",
+      "I can take responsibility for my actions.",
+      "I can act honestly during learning and play.",
+      "I can understand that my choices affect others.",
+      "I can try to resolve problems fairly."
+    ]
+  },
+  endurance: {
+    title: "Endurance",
+    strand: "Managing myself and staying the course",
+    character: "images/eli-endurance.png",
+    characterAlt: "Eli Endurance",
+    behaviours: [
+      "I can persevere during learning activities.",
+      "I can use simple strategies to manage my emotions.",
+      "I can recover from setbacks with support.",
+      "I can sustain attention during longer activities.",
+      "I can begin to work independently."
+    ]
+  },
+  kindness: {
+    title: "Kindness",
+    strand: "Relationships and contribution",
+    character: "images/kiki-kofi-kindness.png",
+    characterAlt: "Kiki and Kofi Kindness",
+    behaviours: [
+      "I can include others in games and activities.",
+      "I can offer help when someone is struggling.",
+      "I can understand that my actions affect others.",
+      "I can use friendly and cooperative behaviour.",
+      "I can use positive language with others."
+    ]
+  },
+  courage: {
+    title: "Courage",
+    strand: "Finding and using my voice",
+    character: "images/connor-courage.png",
+    characterAlt: "Connor Courage",
+    behaviours: [
+      "I can share my ideas during learning activities.",
+      "I can try unfamiliar tasks with growing confidence.",
+      "I can speak clearly in small groups and class discussions.",
+      "I can take part in performances and presentations.",
+      "I can understand that mistakes help me to learn and improve."
+    ]
+  },
+  aspiration: {
+    title: "Aspiration",
+    strand: "Exploring my future and my passions",
+    character: "images/aria-aspiration.png",
+    characterAlt: "Aria Aspiration",
+    behaviours: [
+      "I can show enthusiasm for new opportunities.",
+      "I can reflect on experiences and activities I enjoy.",
+      "I can participate positively in enrichment opportunities.",
+      "I can show curiosity about the wider world.",
+      "I can recognise some of my strengths."
+    ]
+  }
+};
+
+const year4GrowthMaps = {
+  respect: {
+    title: "Respect",
+    strand: "Belonging and understanding others",
+    character: "images/riley-respect.png",
+    characterAlt: "Riley Respect",
+    behaviours: [
+      "I can show respect during discussions and debates.",
+      "I can value the contributions of others.",
+      "I can show curiosity about different cultures, beliefs and experiences.",
+      "I can take responsibility for my behaviour towards others.",
+      "I can use respectful language even when frustrated."
+    ]
+  },
+  integrity: {
+    title: "Integrity",
+    strand: "Making good choices",
+    character: "images/isaac-integrity.png",
+    characterAlt: "Isaac Integrity",
+    behaviours: [
+      "I can take responsibility during collaborative work.",
+      "I can reflect thoughtfully on my behaviour and learning.",
+      "I can make respectful choices even when unsupervised.",
+      "I can understand fairness and accountability.",
+      "I can apply school values in different situations."
+    ]
+  },
+  endurance: {
+    title: "Endurance",
+    strand: "Managing myself and staying the course",
+    character: "images/eli-endurance.png",
+    characterAlt: "Eli Endurance",
+    behaviours: [
+      "I can manage frustration more independently.",
+      "I can sustain focus during learning.",
+      "I can reflect on strategies that help me succeed.",
+      "I can persist with challenging tasks.",
+      "I can take responsibility for organisation and routines.",
+      "I can sustain effort and show growing independence when swimming."
+    ]
+  },
+  kindness: {
+    title: "Kindness",
+    strand: "Relationships and contribution",
+    character: "images/kiki-kofi-kindness.png",
+    characterAlt: "Kiki and Kofi Kindness",
+    behaviours: [
+      "I can show consideration for other people’s feelings.",
+      "I can resolve friendship difficulties respectfully.",
+      "I can encourage others during collaborative work.",
+      "I can contribute positively to the classroom community.",
+      "I can choose kindness independently."
+    ]
+  },
+  courage: {
+    title: "Courage",
+    strand: "Finding and using my voice",
+    character: "images/connor-courage.png",
+    characterAlt: "Connor Courage",
+    behaviours: [
+      "I can express my opinions respectfully.",
+      "I can use my voice during collaborative work.",
+      "I can volunteer for responsibilities and leadership opportunities.",
+      "I can stay positive when learning becomes challenging.",
+      "I can encourage others to participate confidently.",
+      "I can complete my LAMDA Speaking in Public Entry Level exam."
+    ]
+  },
+  aspiration: {
+    title: "Aspiration",
+    strand: "Exploring my future and my passions",
+    character: "images/aria-aspiration.png",
+    characterAlt: "Aria Aspiration",
+    behaviours: [
+      "I can sustain participation in areas of interest.",
+      "I can show pride in my achievements.",
+      "I can show curiosity about careers, culture and opportunities.",
+      "I can engage positively with opportunities beyond school.",
+      "I can reflect on my talents and aspirations.",
+      "I can start to learn an instrument at school."
+    ]
+  }
+};
+
+const year6GrowthMaps = {
+  respect: {
+    title: "Respect",
+    strand: "Belonging and understanding others",
+    character: "images/riley-respect.png",
+    characterAlt: "Riley Respect",
+    behaviours: [
+      "I can advocate for fairness and inclusion.",
+      "I can challenge disrespectful behaviour appropriately.",
+      "I can model respectful behaviour to younger pupils.",
+      "I can listen thoughtfully and respond maturely to different opinions.",
+      "I can help create a culture of belonging within the school."
+    ]
+  },
+  integrity: {
+    title: "Integrity",
+    strand: "Making good choices",
+    character: "images/isaac-integrity.png",
+    characterAlt: "Isaac Integrity",
+    behaviours: [
+      "I can model honesty, responsibility and fairness consistently.",
+      "I can make thoughtful moral decisions.",
+      "I can act responsibly even without adult supervision.",
+      "I can support others to make positive choices.",
+      "I can understand the impact of my actions on the wider community.",
+      "I can take part in the Camden Citizenship Scheme."
+    ]
+  },
+  endurance: {
+    title: "Endurance",
+    strand: "Managing myself and staying the course",
+    character: "images/eli-endurance.png",
+    characterAlt: "Eli Endurance",
+    behaviours: [
+      "I can demonstrate self-discipline and resilience consistently.",
+      "I can manage my emotions and responsibilities maturely.",
+      "I can approach challenge with confidence and persistence.",
+      "I can reflect critically on my personal growth.",
+      "I can model perseverance and self-management for younger pupils.",
+      "I can take part in a residential programme, staying away from home for a period of time.",
+      "I can act responsibly and show resilience by supporting others when swimming."
+    ]
+  },
+  kindness: {
+    title: "Kindness",
+    strand: "Relationships and contribution",
+    character: "images/kiki-kofi-kindness.png",
+    characterAlt: "Kiki and Kofi Kindness",
+    behaviours: [
+      "I can act as a role model for kindness and empathy.",
+      "I can support others through leadership and advocacy.",
+      "I can show compassion and maturity during difficult situations.",
+      "I can encourage a positive and inclusive environment.",
+      "I can understand the wider impact of kindness within a community."
+    ]
+  },
+  courage: {
+    title: "Courage",
+    strand: "Finding and using my voice",
+    character: "images/connor-courage.png",
+    characterAlt: "Connor Courage",
+    behaviours: [
+      "I can advocate respectfully for myself and others.",
+      "I can lead discussions, presentations and group activities confidently.",
+      "I can challenge unfairness respectfully.",
+      "I can model confidence and resilience to younger pupils.",
+      "I can use my voice purposefully for different audiences and situations.",
+      "I can take part in a musical performance in front of an audience."
+    ]
+  },
+  aspiration: {
+    title: "Aspiration",
+    strand: "Exploring my future and my passions",
+    character: "images/aria-aspiration.png",
+    characterAlt: "Aria Aspiration",
+    behaviours: [
+      "I can demonstrate ambition and readiness for future challenges.",
+      "I can speak confidently about my goals, interests and aspirations.",
+      "I can sustain commitment to areas I am passionate about.",
+      "I can engage positively with opportunities linked to future pathways.",
+      "I can model aspiration, curiosity and ambition to younger pupils.",
+      "I can apply for a job and commit to completing as part of the Bright Futures Academy.",
+      "I can continue to explore musical instruments and deepen my understanding of music."
     ]
   }
 };
@@ -644,9 +897,16 @@ const growthCurriculumLink = document.getElementById("growthCurriculumLink");
 let activeGrowthValue = null;
 
 function renderInlineGrowthMap(valueKey) {
-  const isYear1 = activeYear === 1;
-  const maps = isYear1 ? year1GrowthMaps : year3GrowthMaps;
-  const map = maps[valueKey];
+  const mapsByYear = {
+    1: year1GrowthMaps,
+    2: year2GrowthMaps,
+    3: year3GrowthMaps,
+    4: year4GrowthMaps,
+    6: year6GrowthMaps
+  };
+
+  const maps = mapsByYear[activeYear];
+  const map = maps?.[valueKey];
   if (!map) return;
 
   activeGrowthValue = valueKey;
@@ -654,9 +914,11 @@ function renderInlineGrowthMap(valueKey) {
   inlineGrowthCharacter.src = map.character;
   inlineGrowthCharacter.alt = map.characterAlt;
 
-  if (isYear1) {
-    inlineGrowthHeading.textContent = `By the end of Year 1...`;
-    inlineGrowthCulture.textContent = `These are the observable behaviours children are beginning to develop through ${map.title.toLowerCase()} in Year 1.`;
+  const isObservableOnlyYear = activeYear !== 3;
+
+  if (isObservableOnlyYear) {
+    inlineGrowthHeading.textContent = `By the end of Year ${activeYear}...`;
+    inlineGrowthCulture.textContent = `These are the observable behaviours children are developing through ${map.title.toLowerCase()} in Year ${activeYear}.`;
 
     inlineBehaviourAccordion.innerHTML = map.behaviours.map(statement => `
       <article class="behaviour-item behaviour-statement-only">
