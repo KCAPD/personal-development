@@ -2028,3 +2028,24 @@ body.journal-dialog-open { overflow: hidden; }
     justify-content: center;
   }
 }
+
+
+/* =========================================================
+   RELEASE 3.4 — COMPLETE YEAR 3 GROWTH MAP
+   ========================================================= */
+
+.year-growth-value.is-live.is-selected {
+  border-color: #6a55a4;
+  background: #f3ecfb;
+  box-shadow: 0 8px 20px rgba(106, 85, 164, .12);
+}
+
+.year-growth-value.is-live.is-selected em {
+  color: #4f3d82;
+}
+
+@media screen and (max-width: 600px) {
+  .year-growth-value.is-live.is-selected {
+    transform: none;
+  }
+}

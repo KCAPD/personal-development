@@ -170,7 +170,11 @@ function renderYear(number) {
 
   if (!isYear3) {
     inlineGrowthMap.hidden = true;
-    courageGrowthButton.setAttribute("aria-expanded", "false");
+    activeGrowthValue = null;
+    growthValueButtons.forEach(button => {
+      button.setAttribute("aria-expanded", "false");
+      button.classList.remove("is-selected");
+    });
   }
 }
 
@@ -256,61 +260,317 @@ const dialogLead = document.getElementById("dialogLead");
 const dialogDetails = document.getElementById("dialogDetails");
 
 
-const year3CourageGrowthMap = [
-  {
-    statement: "I can contribute my ideas independently during discussions.",
-    signature: ["Learning Presentations"],
-    curriculum: "Children regularly contribute, explain and justify their thinking through structured discussion across the curriculum.",
-    culture: "Every child is encouraged to use their voice. Adults create classrooms where children know their ideas are valued and where respectful discussion is part of everyday learning.",
-    why: "Children learn that courage can be as simple as putting forward an idea, joining a discussion or sharing a viewpoint without waiting to be prompted."
+
+const year3GrowthMaps = {
+  integrity: {
+    title: "Integrity",
+    strand: "Making good choices",
+    character: "images/isaac-integrity.png",
+    characterAlt: "Isaac Integrity",
+    culture: "At King's Cross Academy, integrity is demonstrated through everyday choices. Children are increasingly trusted to make responsible decisions, reflect honestly, learn from mistakes and understand how their actions affect themselves and others.",
+    behaviours: [
+      {
+        statement: "I can make positive choices independently.",
+        signature: [],
+        curriculum: "Across the curriculum, children are expected to make purposeful choices about how they approach tasks, use resources and respond to challenges.",
+        culture: "Year 3 marks a step towards greater independence. Children are increasingly trusted to make positive choices without waiting for constant adult prompting.",
+        why: "Integrity grows when children begin to do the right thing because they understand why it matters, not simply because an adult is watching."
+      },
+      {
+        statement: "I can reflect on the consequences of my actions.",
+        signature: [],
+        curriculum: "PSHE provides planned opportunities to think about choices, relationships, consequences and how actions affect other people.",
+        culture: "Reflective and restorative conversations help children think beyond the immediate moment and consider what they could do differently next time.",
+        why: "Reflection helps children connect their choices with their impact and take increasing responsibility for what happens next."
+      },
+      {
+        statement: "I can be honest when I make mistakes.",
+        signature: [],
+        curriculum: "Learning across subjects gives children frequent opportunities to notice errors, correct misconceptions and talk honestly about what has not yet worked.",
+        culture: "Mistakes are treated as part of learning. Children are encouraged to acknowledge them openly rather than hide them, then use them as a starting point for improvement.",
+        why: "Being honest about mistakes builds trust and helps children understand that integrity matters most when something has gone wrong."
+      },
+      {
+        statement: "I can respond positively to feedback.",
+        signature: ["LAMDA coaching and rehearsal"],
+        curriculum: "Children respond to their teacher's feedback and make improvements across a range of subjects.",
+        culture: "Feedback is understood as part of growth rather than criticism. Children are expected to listen, reflect and make purposeful improvements.",
+        why: "Responding constructively to feedback helps children take responsibility for improving their own learning."
+      },
+      {
+        statement: "I can regulate my behaviour in different situations.",
+        signature: [],
+        curriculum: "Children practise the habits needed to participate successfully in lessons, collaborative work and independent tasks.",
+        culture: "Through consistent behaviour expectations, children increasingly manage themselves and understand what it means to be ready for learning in different situations.",
+        why: "Self-regulation allows children to make choices that support both their own learning and the learning of those around them."
+      }
+    ]
   },
-  {
-    statement: "I can speak clearly to different audiences.",
-    signature: ["LAMDA", "Learning Presentations", "Whole School Exhibition"],
-    curriculum: "Children regularly present, explain and communicate their learning across a range of subjects and for different purposes.",
-    culture: "KCA creates authentic audiences for children's learning so that speaking confidently has a real purpose beyond the classroom.",
-    why: "Repeated opportunities to speak to classmates, families, visitors and wider audiences help children adapt their communication and grow in confidence."
+
+  respect: {
+    title: "Respect",
+    strand: "Belonging and understanding others",
+    character: "images/riley-respect.png",
+    characterAlt: "Riley Respect",
+    culture: "At King's Cross Academy, respect is reflected in the way children listen, communicate, value difference and represent their school. Year 3 children learn that belonging is strengthened when everyone is heard, included and treated with consideration.",
+    behaviours: [
+      {
+        statement: "I can listen carefully to different viewpoints.",
+        signature: [],
+        curriculum: "The PSHE curriculum provides regular opportunities for reflection, discussion and consideration of different views.",
+        culture: "Children are expected to listen to one another before responding, recognising that disagreement does not prevent respectful dialogue.",
+        why: "Listening to different viewpoints helps children understand others more deeply and develops thoughtful, respectful communication."
+      },
+      {
+        statement: "I can work positively with different people.",
+        signature: ["Year 2 → Year 3 class reorganisation"],
+        curriculum: "Collaborative tasks across the curriculum give children opportunities to share ideas, solve problems and learn alongside different classmates.",
+        culture: "Children enter Year 3 in newly organised classes, creating an authentic opportunity to build relationships and work successfully with a new group of peers.",
+        why: "Learning to collaborate beyond familiar friendship groups helps children become flexible, inclusive members of a community."
+      },
+      {
+        statement: "I can show respectful behaviour during visits and trips.",
+        signature: ["British Library", "British Museum", "London visits and workshops"],
+        curriculum: "Visits extend curriculum learning beyond the classroom and require children to engage thoughtfully with new environments, experts and public spaces.",
+        culture: "Children understand that when they are out in London they represent KCA and are expected to be ready, respectful and safe.",
+        why: "Visits provide a genuine opportunity to demonstrate respect beyond the familiar routines of school."
+      },
+      {
+        statement: "I can show awareness of fairness and inclusion.",
+        signature: ["BSL with Frank Barnes School"],
+        curriculum: "PSHE supports children to explore fairness, equality, belonging and inclusion.",
+        culture: "By Year 3, children have a working knowledge of BSL and can communicate with children and staff from Frank Barnes School with growing confidence. Inclusion is experienced as part of everyday school life, not simply discussed in lessons.",
+        why: "Children see that fairness and inclusion require active choices that help everybody participate, communicate and belong."
+      },
+      {
+        statement: "I can resolve disagreements with support.",
+        signature: [],
+        curriculum: "PSHE and collaborative learning provide opportunities to practise listening, compromise and resolving differences respectfully.",
+        culture: "Adults support children to talk through disagreements, hear another person's perspective and find a constructive way forward rather than simply deciding who is right.",
+        why: "Supported conflict resolution gives children the language and habits they need to manage relationships increasingly independently."
+      },
+      {
+        statement: "I can take responsibility for a Chromebook, following the instructions to use it safely and responsibly.",
+        signature: ["Year 3 Chromebook responsibility"],
+        curriculum: "Technology is used across learning with explicit expectations for safe, purposeful and responsible use.",
+        culture: "Being trusted with a Chromebook is a visible Year 3 milestone. Children learn that greater independence also brings greater responsibility.",
+        why: "Responsible technology use turns respect into a practical habit: caring for shared resources, following guidance and making safe choices."
+      }
+    ]
   },
-  {
-    statement: "I can take part in performances with confidence.",
-    signature: ["LAMDA Solo Introductory Examination", "Songs Under the Tree", "Class performances and assemblies"],
-    curriculum: "Performance, rehearsal and spoken communication give children repeated opportunities to practise expressive speaking and presentation.",
-    culture: "Performance is celebrated as part of life at KCA. Children are supported to rehearse, take positive risks and feel proud when they perform for others.",
-    why: "Children experience the satisfaction of stepping beyond their comfort zone and discovering that confidence grows through practice."
+
+  endurance: {
+    title: "Endurance",
+    strand: "Managing myself and staying the course",
+    character: "images/eli-endurance.png",
+    characterAlt: "Eli Endurance",
+    culture: "At King's Cross Academy, challenge is embraced rather than avoided. Children are encouraged to persevere, make mistakes, improve their work and understand that success comes through sustained effort, reflection and increasing independence.",
+    behaviours: [
+      {
+        statement: "I can show resilience during challenging tasks.",
+        signature: ["Bridge Engineering Project", "Stone Age enquiry"],
+        curriculum: "Ambitious learning across subjects asks children to solve problems, rethink ideas and persist when a first attempt is not successful.",
+        culture: "Adults expect children to have a go, seek support when needed and keep working when learning becomes difficult.",
+        why: "Resilience grows when children experience challenge as a normal and worthwhile part of learning."
+      },
+      {
+        statement: "I can use agreed strategies to regulate my emotions.",
+        signature: [],
+        curriculum: "Children learn and practise strategies that help them remain engaged and ready to participate when learning feels difficult or emotions become strong.",
+        culture: "Consistent behaviour expectations and Ready for Learning routines help children increasingly manage themselves throughout the school day.",
+        why: "Being able to regulate emotions helps children stay connected to learning, relationships and the choices they want to make."
+      },
+      {
+        statement: "I can complete sustained pieces of work.",
+        signature: ["Whole School Exhibition"],
+        curriculum: "Children produce a great volume of increasingly substantial, high-quality work across lessons and subjects.",
+        culture: "High expectations for presentation, completion and sustained effort help children develop the stamina needed to see significant pieces of learning through.",
+        why: "Sustained work teaches children that meaningful outcomes are often built over time rather than completed instantly."
+      },
+      {
+        statement: "I can respond positively to feedback.",
+        signature: ["LAMDA coaching and rehearsal"],
+        curriculum: "Children respond to their teacher's feedback and make improvements across a range of subjects based on this.",
+        culture: "Feedback is seen as an expected part of improvement. Children learn to act on advice rather than seeing a first attempt as finished.",
+        why: "Using feedback develops persistence, humility and the understanding that quality comes through refinement."
+      },
+      {
+        statement: "I can demonstrate growing independence.",
+        signature: [],
+        curriculum: "Across Year 3, children are increasingly expected to organise themselves, begin tasks and sustain learning without repeated adult direction.",
+        culture: "Children can be trusted to complete tasks and activities without constant adult support.",
+        why: "Growing independence prepares children to take greater ownership of both their learning and their behaviour as they move through Key Stage 2."
+      }
+    ]
   },
-  {
-    statement: "I can attempt challenging work without giving up quickly.",
-    signature: ["Bridge Engineering Project", "Stone Age enquiry"],
-    curriculum: "Ambitious tasks across the curriculum ask children to solve problems, refine ideas and persist when the first attempt is not successful.",
-    culture: "Mistakes are treated as part of learning. Adults expect children to have a go, seek support when needed and keep working when learning becomes difficult.",
-    why: "Courage in learning means being willing to attempt something difficult rather than avoiding challenge."
+
+  kindness: {
+    title: "Kindness",
+    strand: "Relationships and contribution",
+    character: "images/kiki-kofi-kindness.png",
+    characterAlt: "Kiki and Kofi Kindness",
+    culture: "Kindness is woven through everyday life at KCA. Children are encouraged to notice when others need support, celebrate one another's successes and understand that learning and community are strongest when people help, include and encourage each other.",
+    behaviours: [
+      {
+        statement: "I can show empathy towards others.",
+        signature: [],
+        curriculum: "PSHE gives children opportunities to recognise feelings, consider other perspectives and think about how experiences can affect people differently.",
+        culture: "Adults model empathy and children are encouraged to notice how others may be feeling rather than focusing only on their own point of view.",
+        why: "Empathy helps children respond to people with understanding rather than assumption."
+      },
+      {
+        statement: "I can support others during learning activities.",
+        signature: [],
+        curriculum: "Partner work, collaborative enquiry and practical tasks require children to explain, encourage, share resources and help one another succeed.",
+        culture: "Classrooms are designed for collaboration. Helping another learner is understood as a positive contribution rather than a distraction from one's own learning.",
+        why: "Supporting others teaches children that successful learning communities are built through contribution, not competition alone."
+      },
+      {
+        statement: "I can contribute positively to group work.",
+        signature: ["Year 2 → Year 3 class reorganisation", "Whole School Exhibition"],
+        curriculum: "Group tasks across subjects give children repeated opportunities to take a role, share ideas and contribute towards a common outcome.",
+        culture: "Joining a newly organised Year 3 class means children build new relationships and learn how to contribute positively within a different class community.",
+        why: "Positive group contribution helps children understand that everyone has something useful to offer."
+      },
+      {
+        statement: "I can recognise when someone may need support.",
+        signature: [],
+        curriculum: "PSHE supports children to recognise emotions, wellbeing and the different ways people may communicate that they need help.",
+        culture: "Children are encouraged to notice when a friend or classmate is struggling, check in with them and seek adult help when appropriate.",
+        why: "Kindness begins with noticing. Recognising another person's needs is the first step towards offering meaningful support."
+      },
+      {
+        statement: "I can reflect on ways to be kind and helpful.",
+        signature: ["Personal Development Journey Journal"],
+        curriculum: "Reflection within the Personal Development Journey helps children connect values with real choices, relationships and experiences.",
+        culture: "Children are regularly encouraged to think about the impact of their actions and the small ways they can make their class and school community better.",
+        why: "Reflection helps kindness become intentional rather than accidental."
+      }
+    ]
   },
-  {
-    statement: "I can reflect on times when I showed courage.",
-    signature: ["Personal Development Journey Journal"],
-    curriculum: "Children reflect on experiences, achievements and challenges, identifying the values they have demonstrated and the ways they have grown.",
-    culture: "Reflection helps children notice that courage appears in both memorable experiences and small everyday choices.",
-    why: "Recognising courageous moments helps children understand their own progress and builds confidence for the next challenge."
+
+  courage: {
+    title: "Courage",
+    strand: "Finding and using my voice",
+    character: "images/connor-courage.png",
+    characterAlt: "Connor Courage",
+    culture: "At King's Cross Academy, courage is about having the confidence to be yourself, share your ideas and embrace challenge. Children are encouraged to take risks in their learning, perform in front of others and understand that mistakes are a natural part of becoming a successful learner.",
+    behaviours: [
+      {
+        statement: "I can contribute my ideas independently during discussions.",
+        signature: ["Learning Presentations"],
+        curriculum: "Children regularly contribute, explain and justify their thinking through structured discussion across the curriculum.",
+        culture: "Every child is encouraged to use their voice. Adults create classrooms where children know their ideas are valued and where respectful discussion is part of everyday learning.",
+        why: "Children learn that courage can be as simple as putting forward an idea, joining a discussion or sharing a viewpoint without waiting to be prompted."
+      },
+      {
+        statement: "I can speak clearly to different audiences.",
+        signature: ["LAMDA", "Learning Presentations", "Whole School Exhibition"],
+        curriculum: "Children regularly present, explain and communicate their learning across a range of subjects and for different purposes.",
+        culture: "KCA creates authentic audiences for children's learning so that speaking confidently has a real purpose beyond the classroom.",
+        why: "Repeated opportunities to speak to classmates, families, visitors and wider audiences help children adapt their communication and grow in confidence."
+      },
+      {
+        statement: "I can take part in performances with confidence.",
+        signature: ["LAMDA Solo Introductory Examination", "Songs Under the Tree", "Class performances and assemblies"],
+        curriculum: "Performance, rehearsal and spoken communication give children repeated opportunities to practise expressive speaking and presentation.",
+        culture: "Performance is celebrated as part of life at KCA. Children are supported to rehearse, take positive risks and feel proud when they perform for others.",
+        why: "Children experience the satisfaction of stepping beyond their comfort zone and discovering that confidence grows through practice."
+      },
+      {
+        statement: "I can attempt challenging work without giving up quickly.",
+        signature: ["Bridge Engineering Project", "Stone Age enquiry"],
+        curriculum: "Ambitious tasks across the curriculum ask children to solve problems, refine ideas and persist when the first attempt is not successful.",
+        culture: "Mistakes are treated as part of learning. Adults expect children to have a go, seek support when needed and keep working when learning becomes difficult.",
+        why: "Courage in learning means being willing to attempt something difficult rather than avoiding challenge."
+      },
+      {
+        statement: "I can reflect on times when I showed courage.",
+        signature: ["Personal Development Journey Journal"],
+        curriculum: "Children reflect on experiences, achievements and challenges, identifying the values they have demonstrated and the ways they have grown.",
+        culture: "Reflection helps children notice that courage appears in both memorable experiences and small everyday choices.",
+        why: "Recognising courageous moments helps children understand their own progress and builds confidence for the next challenge."
+      },
+      {
+        statement: "I can complete my LAMDA Solo Introductory Exam.",
+        signature: ["LAMDA preparation", "Rehearsal and feedback", "Solo Introductory Examination"],
+        curriculum: "Children prepare a solo performance, rehearse deliberately, respond to feedback and complete the Year 3 LAMDA examination.",
+        culture: "Every child is supported to see themselves as a performer and communicator who can rise to a significant personal challenge.",
+        why: "The examination provides a clear, authentic milestone where children can demonstrate courage, preparation, resilience and confident communication."
+      }
+    ]
   },
-  {
-    statement: "I can complete my LAMDA Solo Introductory Exam.",
-    signature: ["LAMDA preparation", "Rehearsal and feedback", "Solo Introductory Examination"],
-    curriculum: "Children prepare a solo performance, rehearse deliberately, respond to feedback and complete the Year 3 LAMDA examination.",
-    culture: "Every child is supported to see themselves as a performer and communicator who can rise to a significant personal challenge.",
-    why: "The examination provides a clear, authentic milestone where children can demonstrate courage, preparation, resilience and confident communication."
+
+  aspiration: {
+    title: "Aspiration",
+    strand: "Exploring my future and my passions",
+    character: "images/aria-aspiration.png",
+    characterAlt: "Aria Aspiration",
+    culture: "At King's Cross Academy, aspiration begins with curiosity. Children encounter ambitious experiences, new places, interests and people so that they can begin to recognise their strengths and imagine a future full of possibilities.",
+    behaviours: [
+      {
+        statement: "I can engage positively with new experiences and responsibilities.",
+        signature: ["London Exploration Day", "Ancient Egyptians Day", "Year 3 responsibilities"],
+        curriculum: "The Year 3 curriculum deliberately introduces unfamiliar contexts, new subject knowledge and increasingly independent ways of working.",
+        culture: "Beginning Key Stage 2 brings greater responsibility. Children are encouraged to approach new experiences positively and see unfamiliarity as an opportunity to grow.",
+        why: "Aspiration depends on being willing to step into new experiences rather than staying only with what already feels comfortable."
+      },
+      {
+        statement: "I can develop interests through clubs and enrichment.",
+        signature: ["LAMDA", "Clubs and enrichment"],
+        curriculum: "Enrichment broadens children's experiences beyond core classroom learning and gives them opportunities to discover interests and talents.",
+        culture: "Children are encouraged to try activities, notice what excites them and recognise that interests can grow through participation and practice.",
+        why: "Discovering interests helps children begin building a stronger sense of identity, possibility and future direction."
+      },
+      {
+        statement: "I can reflect on skills and activities I enjoy.",
+        signature: ["Learning Presentations", "Whole School Exhibition", "Personal Development Journey Journal"],
+        curriculum: "Reflection helps children identify the areas of learning, creativity and participation that they find most rewarding.",
+        culture: "KCA celebrates different kinds of success so children can recognise strengths beyond a single subject or outcome.",
+        why: "Knowing what they enjoy helps children understand themselves as learners and begin making connections between interests, strengths and future possibilities."
+      },
+      {
+        statement: "I can show curiosity during visits and workshops.",
+        signature: ["British Museum", "British Library", "London Wetland Centre", "Canal Museum", "Horizon 22"],
+        curriculum: "Visits and workshops are deliberately used to extend learning beyond the classroom and invite children to question, observe and investigate first-hand.",
+        culture: "Children are encouraged to ask thoughtful questions and see London's museums, institutions, environments and experts as places that belong to their learning journey.",
+        why: "Curiosity opens doors to knowledge, interests and experiences that children may not yet know are available to them."
+      },
+      {
+        statement: "I can begin to think about future goals and ambitions.",
+        signature: ["Bright Futures Festival", "Horizon 22", "LAMDA"],
+        curriculum: "Children begin to connect their current interests, learning and strengths with wider opportunities and future possibilities.",
+        culture: "The Bright Futures Festival gives children direct opportunities to meet professionals, hear about different pathways and begin imagining their own ambitions.",
+        why: "Early conversations about goals help children see their future as something they can actively shape rather than something that simply happens to them."
+      }
+    ]
   }
-];
+};
 
 
 const yearGrowthSection = document.getElementById("yearGrowthSection");
-const eyfsFoundationSection = document.getElementById("eyfsFoundationSection");
-const courageGrowthButton = document.querySelector('.year-growth-value[data-growth-value="courage"]');
+const growthValueButtons = document.querySelectorAll('.year-growth-value[data-growth-value]');
 const inlineGrowthMap = document.getElementById("inlineGrowthMap");
 const inlineBehaviourAccordion = document.getElementById("inlineBehaviourAccordion");
+const inlineGrowthEyebrow = document.getElementById("inlineGrowthEyebrow");
+const inlineGrowthHeading = document.getElementById("inlineGrowthHeading");
+const inlineGrowthCulture = document.getElementById("inlineGrowthCulture");
+const inlineGrowthCharacter = document.getElementById("inlineGrowthCharacter");
 const year3CurriculumLink = document.getElementById("year3CurriculumLink");
+let activeGrowthValue = null;
 
-function renderInlineCourageGrowthMap() {
-  inlineBehaviourAccordion.innerHTML = year3CourageGrowthMap.map((item, index) => `
+function renderInlineGrowthMap(valueKey) {
+  const map = year3GrowthMaps[valueKey];
+  if (!map) return;
+
+  activeGrowthValue = valueKey;
+  inlineGrowthEyebrow.textContent = `${map.title} · ${map.strand}`;
+  inlineGrowthHeading.textContent = `What ${map.title} feels like at KCA`;
+  inlineGrowthCulture.textContent = map.culture;
+  inlineGrowthCharacter.src = map.character;
+  inlineGrowthCharacter.alt = map.characterAlt;
+
+  inlineBehaviourAccordion.innerHTML = map.behaviours.map(item => `
     <article class="behaviour-item">
       <button class="behaviour-trigger"
               type="button"
@@ -321,12 +581,13 @@ function renderInlineCourageGrowthMap() {
       </button>
 
       <div class="behaviour-content">
+        ${item.signature && item.signature.length ? `
         <div class="demonstration-group">
           <p class="demonstration-label">🌟 Signature experiences</p>
           <div class="demonstration-chips">
             ${item.signature.map(experience => `<span class="demonstration-chip">${experience}</span>`).join("")}
           </div>
-        </div>
+        </div>` : ""}
 
         <div class="demonstration-group">
           <p class="demonstration-label">📚 Across our curriculum</p>
@@ -364,22 +625,37 @@ function renderInlineCourageGrowthMap() {
   });
 }
 
-courageGrowthButton.addEventListener("click", () => {
-  const opening = inlineGrowthMap.hidden;
+growthValueButtons.forEach(button => {
+  button.addEventListener("click", () => {
+    const valueKey = button.dataset.growthValue;
+    const openingNewValue = inlineGrowthMap.hidden || activeGrowthValue !== valueKey;
 
-  if (opening) {
-    renderInlineCourageGrowthMap();
-    inlineGrowthMap.hidden = false;
-    courageGrowthButton.setAttribute("aria-expanded", "true");
-
-    requestAnimationFrame(() => {
-      inlineGrowthMap.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    growthValueButtons.forEach(other => {
+      other.setAttribute("aria-expanded", "false");
+      other.classList.remove("is-selected");
     });
-  } else {
-    inlineGrowthMap.hidden = true;
-    courageGrowthButton.setAttribute("aria-expanded", "false");
-  }
+
+    if (openingNewValue) {
+      renderInlineGrowthMap(valueKey);
+      inlineGrowthMap.hidden = false;
+      button.setAttribute("aria-expanded", "true");
+      button.classList.add("is-selected");
+
+      requestAnimationFrame(() => {
+        inlineGrowthMap.scrollIntoView({ behavior: "smooth", block: "nearest" });
+      });
+    } else {
+      inlineGrowthMap.hidden = true;
+      activeGrowthValue = null;
+    }
+  });
 });
+
+year3CurriculumLink.href = "https://kcapd.github.io/KCACurriculum/";
+year3CurriculumLink.removeAttribute("aria-disabled");
+year3CurriculumLink.classList.remove("is-placeholder");
+year3CurriculumLink.removeAttribute("title");
+
 
 renderYear(1);
 
