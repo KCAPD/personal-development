@@ -42,7 +42,16 @@ const years = {
       ["Build resilience", "Complete sustained work and use regulation strategies."],
       ["Communicate", "Speak clearly to different audiences and perform with confidence."]
     ],
-    experiences: ["LAMDA introductory exam", "Clubs", "Visits", "Workshops", "Responsible technology use"]
+    experiences: [
+      "LAMDA Solo Introductory Exam",
+      "Learning Presentations",
+      "Songs Under the Tree",
+      "Bright Futures Festival",
+      "BSL with Frank Barnes School",
+      "British Museum",
+      "British Library",
+      "Whole School Exhibition"
+    ]
   },
   4: {
     title: "Year 4 — Taking Responsibility",

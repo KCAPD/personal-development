@@ -1559,3 +1559,214 @@ body.journal-dialog-open { overflow: hidden; }
     width: 100%;
   }
 }
+
+
+/* =========================================================
+   RELEASE 3.2 — SIGNATURE EXPERIENCES + MOBILE POLISH
+   ========================================================= */
+
+/* Signature experiences are deliberately curated rather than exhaustive. */
+.experiences h4 {
+  letter-spacing: .01em;
+}
+
+/* ---------- Mobile hero: purpose-built composition ---------- */
+@media (max-width: 600px) {
+  .hero {
+    min-height: 700px;
+    overflow: hidden;
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 12;
+    margin-top: 24px;
+    padding: 0 18px 250px;
+  }
+
+  .hero h1 {
+    max-width: 94%;
+    font-size: clamp(3rem, 15vw, 3.7rem);
+    line-height: .94;
+  }
+
+  .hero-copy {
+    max-width: 92%;
+    margin: 17px 0 20px;
+    font-size: .96rem;
+    line-height: 1.52;
+  }
+
+  .primary-button {
+    min-height: 49px;
+    padding: 12px 17px;
+  }
+
+  /* On mobile the characters become a small, intentional group
+     above the railway rather than oversized desktop artwork. */
+  .hero-characters {
+    position: absolute;
+    z-index: 9;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 250px;
+    opacity: 1;
+    pointer-events: none;
+  }
+
+  .hero-characters img {
+    filter: drop-shadow(0 10px 8px rgba(16,42,69,.16));
+  }
+
+  .hero-aria {
+    display: block;
+    right: 6%;
+    bottom: 84px;
+    width: min(35vw, 138px);
+    opacity: .98;
+  }
+
+  .hero-connor {
+    display: block;
+    right: 36%;
+    bottom: 76px;
+    width: min(29vw, 110px);
+    opacity: 1;
+  }
+
+  .hero-riley {
+    display: block;
+    right: auto;
+    left: 5%;
+    bottom: 81px;
+    width: min(25vw, 96px);
+    opacity: .96;
+  }
+
+  .hero-skyline {
+    bottom: 84px;
+    height: 145px;
+    opacity: .32;
+  }
+
+  .railway {
+    height: 86px;
+  }
+
+  /* ---------- Character gallery: two per row ---------- */
+  .value-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .value-card {
+    min-width: 0;
+    min-height: 278px;
+    border-radius: 17px;
+  }
+
+  .value-card img {
+    top: 11px;
+    width: 94%;
+    height: 182px;
+  }
+
+  .value-card div {
+    padding: 13px 11px 14px;
+  }
+
+  .value-card p {
+    min-height: 29px;
+    margin-bottom: 3px;
+    font-size: .6rem;
+    line-height: 1.22;
+  }
+
+  .value-card h3 {
+    font-size: 1rem;
+    line-height: 1.08;
+  }
+
+  .value-card div span {
+    margin-top: 6px;
+    font-size: .69rem;
+  }
+
+  /* Keep the year selector compact too: no long single-column list. */
+  .platform-board {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 9px;
+  }
+
+  .platform {
+    min-width: 0;
+    min-height: 84px;
+    padding: 10px 8px;
+  }
+
+  .platform-number {
+    flex: 0 0 34px;
+    width: 34px;
+    height: 34px;
+    font-size: 1.05rem;
+  }
+
+  .platform strong {
+    font-size: .9rem;
+    line-height: 1.12;
+  }
+
+  .platform small {
+    font-size: .65rem;
+    line-height: 1.22;
+  }
+
+  /* Signature-experience tags remain compact and wrap naturally. */
+  .experience-tags {
+    gap: 6px;
+  }
+
+  .experience-tags span {
+    padding: 7px 9px;
+    font-size: .74rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .hero {
+    min-height: 690px;
+  }
+
+  .hero-content {
+    padding-bottom: 238px;
+  }
+
+  .hero-aria {
+    width: 34vw;
+  }
+
+  .hero-connor {
+    width: 28vw;
+  }
+
+  .hero-riley {
+    width: 24vw;
+  }
+
+  .value-card {
+    min-height: 252px;
+  }
+
+  .value-card img {
+    height: 161px;
+  }
+
+  .value-card h3 {
+    font-size: .9rem;
+  }
+
+  .value-card p {
+    font-size: .55rem;
+  }
+}
