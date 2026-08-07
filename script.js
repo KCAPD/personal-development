@@ -311,10 +311,10 @@ const year3CurriculumLink = document.getElementById("year3CurriculumLink");
 
 function renderInlineCourageGrowthMap() {
   inlineBehaviourAccordion.innerHTML = year3CourageGrowthMap.map((item, index) => `
-    <article class="behaviour-item${index === 0 ? " open" : ""}">
+    <article class="behaviour-item">
       <button class="behaviour-trigger"
               type="button"
-              aria-expanded="${index === 0 ? "true" : "false"}">
+              aria-expanded="false">
         <span class="behaviour-check">✓</span>
         <strong>${item.statement}</strong>
         <span class="behaviour-chevron" aria-hidden="true">⌄</span>
