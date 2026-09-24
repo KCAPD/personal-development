@@ -2093,3 +2093,76 @@ body.journal-dialog-open { overflow: hidden; }
     padding-top: 26px;
   }
 }
+
+
+/* =========================================================
+   RELEASE 5.5 — PERSONAL DEVELOPMENT ENTITLEMENT
+   ========================================================= */
+.entitlement-section {
+  padding: 92px 24px;
+  background:
+    radial-gradient(circle at 8% 12%, rgba(255,216,77,.20), transparent 25%),
+    radial-gradient(circle at 92% 88%, rgba(57,169,232,.13), transparent 28%),
+    #fff;
+}
+
+.entitlement-intro {
+  max-width: 900px;
+  margin: -12px auto 30px;
+  padding: 20px 24px;
+  border-left: 6px solid var(--red);
+  border-radius: 0 18px 18px 0;
+  background: var(--cream);
+}
+.entitlement-intro strong {
+  display: block;
+  margin-bottom: 5px;
+  font-family: "Fredoka", sans-serif;
+  font-size: 1.3rem;
+}
+.entitlement-intro p { margin: 0; color: var(--muted); line-height: 1.6; }
+
+.entitlement-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 14px;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+.entitlement-card {
+  min-width: 0;
+  padding: 22px 18px 20px;
+  border: 1px solid #dce7ed;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 10px 28px rgba(19,35,63,.07);
+}
+.entitlement-card > span { display: block; margin-bottom: 10px; font-size: 1.8rem; }
+.entitlement-card h3 { margin: 0 0 8px; font-family: "Fredoka", sans-serif; font-size: 1.25rem; }
+.entitlement-card p { margin: 0 0 13px; color: var(--muted); font-size: .9rem; line-height: 1.55; }
+.entitlement-card small { color: var(--red); font-size: .72rem; font-weight: 800; line-height: 1.35; }
+
+.progression-strip {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 1000px;
+  margin: 34px auto 0;
+  overflow: hidden;
+  border-radius: 20px;
+  background: var(--navy);
+  color: white;
+}
+.progression-strip div { padding: 19px 22px; border-right: 1px solid rgba(255,255,255,.16); }
+.progression-strip div:last-child { border-right: 0; }
+.progression-strip strong, .progression-strip span { display: block; }
+.progression-strip strong { color: var(--yellow); font-family: "Fredoka", sans-serif; font-size: 1.08rem; }
+.progression-strip span { margin-top: 5px; font-size: .86rem; line-height: 1.45; opacity: .9; }
+
+@media (max-width: 1050px) { .entitlement-grid { grid-template-columns: repeat(2, minmax(0,1fr)); } }
+@media (max-width: 650px) {
+  .entitlement-section { padding: 62px 14px; }
+  .entitlement-grid { grid-template-columns: 1fr; }
+  .progression-strip { grid-template-columns: 1fr; }
+  .progression-strip div { border-right: 0; border-bottom: 1px solid rgba(255,255,255,.16); }
+  .progression-strip div:last-child { border-bottom: 0; }
+}

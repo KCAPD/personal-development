@@ -22,7 +22,7 @@ const years = {
       ["Keep trying", "Continue when learning feels difficult and ask for help when needed."],
       ["Find my voice", "Join discussions, try new learning and share work with support."]
     ],
-    experiences: ["Trips", "Performances", "Enrichment", "Class discussions", "Yearly reflection"]
+    experiences: ["Performances and shows", "Swimming and PE", "RE and local visits", "Class responsibilities", "Pupil voice and voting", "Trying new activities", "Yearly reflection"]
   },
   2: {
     title: "Year 2 — Growing in Confidence",
@@ -37,7 +37,7 @@ const years = {
       ["Recover from setbacks", "Use simple strategies to manage emotions and keep going."],
       ["Speak clearly", "Contribute to groups, presentations and performances."]
     ],
-    experiences: ["Presentations", "Performances", "Collaborative learning", "Wider-world learning", "Reflection"]
+    experiences: ["Performances and presentations", "Swimming and PE", "RE and library visits", "Collaborative learning", "Pupil voice and voting", "Caring for shared spaces", "Wider-world learning"]
   },
   3: {
     title: "Year 3 — Discovering My Strengths",
@@ -60,7 +60,12 @@ const years = {
       "BSL with Frank Barnes School",
       "British Museum",
       "British Library",
-      "Whole School Exhibition"
+      "Whole School Exhibition",
+      "Swimming and sport",
+      "RE visits and cultural encounters",
+      "Clubs and enrichment",
+      "Helping younger pupils",
+      "Pupil voice and voting"
     ]
   },
   4: {
@@ -76,7 +81,7 @@ const years = {
       ["Understand difference", "Explore cultures, beliefs and experiences with curiosity."],
       ["Develop talents", "Reflect on strengths and begin learning an instrument."]
     ],
-    experiences: ["LAMDA Speaking in Public", "Swimming", "Instrument tuition", "Leadership", "Learning beyond school"]
+    experiences: ["LAMDA Speaking in Public", "Swimming", "Instrument tuition", "RE and cultural visits", "Pupil Parliament and pupil voice", "Team competitions and sport", "Playground and classroom responsibility", "Careers encounters"]
   },
   5: {
     title: "Year 5 — Contributing to My Community",
@@ -91,7 +96,7 @@ const years = {
       ["Sustain effort", "Persevere with longer projects and manage change positively."],
       ["Represent KCA", "Speak confidently in unfamiliar situations and lead by example."]
     ],
-    experiences: ["LAMDA Grade 1", "Musical development", "Supporting younger pupils", "School representation", "Leadership"]
+    experiences: ["LAMDA Grade 1", "Musical development", "Swimming and sport", "Supporting younger pupils", "Pupil Parliament and Eco Council", "Community contribution", "RE and cultural visits", "Careers and workplace encounters", "School representation"]
   },
   6: {
     title: "Year 6 — Ready for My Future",
@@ -106,7 +111,7 @@ const years = {
       ["Show resilience", "Manage responsibilities maturely and persist through challenge."],
       ["Prepare for the future", "Speak confidently about goals, interests and aspirations."]
     ],
-    experiences: ["Residential", "Camden Citizenship", "Bright Futures Academy", "Musical performance", "Secondary transition"]
+    experiences: ["Residential", "Camden Citizenship", "Bright Futures Academy", "Musical performance", "Swimming leadership", "Pupil leadership and advocacy", "Community contribution", "Cultural and RE encounters", "Secondary transition"]
   }
 };
 
